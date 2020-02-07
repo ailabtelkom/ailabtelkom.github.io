@@ -1,0 +1,15 @@
+{
+  "name": "ailabtelkom.github.io",
+  "version": "1.0.0",
+  "description": "ai landing page",
+  "main": "index.js",
+  "repository": "https://github.com/ailabtelkom/ailabtelkom.github.io.git",
+  "author": "raisoturu <anvaqta@student.telkomuniversity.ac.id>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  },
+  "scripts": {
+    "serve": "live-server"
+  }
+}
