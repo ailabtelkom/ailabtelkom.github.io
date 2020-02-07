@@ -30,35 +30,35 @@
   display: inline-block;
   background: -moz-linear-gradient(
     top,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.5) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 80%
   ); /* FF3.6+ */
   background: -webkit-gradient(
     linear,
     left top,
     left bottom,
-    color-stop(0%, rgba(0, 0, 0, 0.5)),
-    color-stop(100%, rgba(0, 0, 0, 0.5))
+    color-stop(0%, rgba(0, 0, 0, 0.3)),
+    color-stop(80%, rgba(0, 0, 0, 0.3))
   ); /* Chrome,Safari4+ */
   background: -webkit-linear-gradient(
     top,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.5) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 80%
   ); /* Chrome10+,Safari5.1+ */
   background: -o-linear-gradient(
     top,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.5) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 80%
   ); /* Opera 11.10+ */
   background: -ms-linear-gradient(
     top,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.5) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 80%
   ); /* IE10+ */
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.5) 0%,
-    rgba(0, 0, 0, 0.5) 100%
+    rgba(0, 0, 0, 0.3) 0%,
+    rgba(0, 0, 0, 0.3) 80%
   ); /* W3C */
 }
 @media (max-width: 800px) {
