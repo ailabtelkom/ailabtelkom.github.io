@@ -7,7 +7,7 @@ const loadDataResearch = async () =>
      <td>${item.title}</td>
      <td>${item.author}</td>
      <td>${item.publisher}</td>
-     <td><a target="_blank" href="${item.publisher}">Link</td>
+     <td><a target="_blank" href="${item.url}">Link</td>
    </tr>`);
     });
     $(document).ready(function() {
