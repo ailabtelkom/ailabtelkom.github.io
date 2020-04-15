@@ -11,7 +11,9 @@ const loadDataResearch = async () =>
    </tr>`);
     });
     $(document).ready(function() {
-      $("#research-datatable").DataTable();
+      $("#research-datatable").DataTable({
+        order: [[ 0, 'desc' ]]
+      });
     });
   });
 const loadDataAchievement = async () =>
