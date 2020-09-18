@@ -2,6 +2,8 @@
   background-image: url("/img/bg.png");
   background-repeat: repeat;
   animation: slide 20s linear infinite;
+  box-shadow: inset 0px -100px 100px -100px rgba(0, 0, 0, 0.7),
+    inset 0px 10px 100px 60px rgba(255, 255, 255, 0.9);
 }
 
 @keyframes slide {
@@ -9,6 +11,6 @@
     background-position: 0 0;
   }
   to {
-    background-position: 0 -300px;
+    background-position: 0 -200px;
   }
 }

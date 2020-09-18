@@ -3,11 +3,7 @@ import style from "./Jumbotron.module.scss";
 import { Box, Heading, Image, Stack, Text } from "@chakra-ui/core";
 const Jumbotron = () => {
   return (
-    <Box
-      h="100vh"
-      boxShadow="inset 0px -100px 100px -100px rgba(0,0,0,0.5);"
-      className={style.bgAnimation}
-    >
+    <Box h="100vh" className={style.bgAnimation}>
       <Stack
         h="full"
         alignItems="center"
