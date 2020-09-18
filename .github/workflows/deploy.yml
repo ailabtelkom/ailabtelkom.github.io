@@ -3,13 +3,18 @@ on: [push]
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [14.x]
     steps:
+      - name: Install 🔧
+        run: npm install
 
-      - name: Install and Build 🔧 
-        run: |
-          npm install
-          npm run build:production
-
+      - name: Build 🔧
+        run: npm run build:production
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
+          
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.1
         with:
