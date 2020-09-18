@@ -1,6 +1,6 @@
 {
   "name": "ailabtelkom.github.io",
-  "version": "1.0.0",
+  "version": "1.0.0-next",
   "description": "ai landing page",
   "main": "index.js",
   "repository": "https://github.com/ailabtelkom/ailabtelkom.github.io.git",
@@ -10,6 +10,14 @@
     "live-server": "^1.2.1"
   },
   "scripts": {
-    "serve": "live-server"
+    "dev": "next dev",
+    "build": "next build",
+    "build:production": "next build && next export",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.5.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
   }
 }
