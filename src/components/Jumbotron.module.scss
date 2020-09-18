@@ -1,0 +1,14 @@
+.bgAnimation {
+  background-image: url("/img/bg.png");
+  background-repeat: repeat;
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 0 -300px;
+  }
+}
