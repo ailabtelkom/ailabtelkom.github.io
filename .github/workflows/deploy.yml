@@ -1,5 +1,8 @@
 name: Build and Deploy
-on: [push]
+on:
+  push:
+    branches: [master]
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
@@ -15,7 +18,7 @@ jobs:
         run: npm run build:production
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
-          
+
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@3.6.1
         with:
