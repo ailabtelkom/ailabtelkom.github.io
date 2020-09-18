@@ -12,9 +12,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:production":"next build && next export",
     "start": "next start"
   },
-  
+
   "dependencies": {
     "next": "^9.5.3",
     "react": "^16.13.1",
