@@ -1,0 +1,17 @@
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media only screen and (max-width: 600px) {
+  #nprogress .spinner {
+    display: none;
+  }
+}
