@@ -1,10 +1,16 @@
-import { Box, Divider, Stack } from "@chakra-ui/core";
 import Jumbotron from "../components/Jumbotron";
 function LandingPage() {
   return (
-    <Stack>
-      <Jumbotron />
-    </Stack>
+    <div
+      style={{
+        overflowY: "scroll",
+        height: "100vh",
+        scrollSnapType: "y mandatory",
+      }}
+    >
+      <Jumbotron style={{ scrollSnapAlign: "start" }} />
+      {/* <div style={{ height: "120vh", scrollSnapAlign: "start" }}>whew</div> */}
+    </div>
   );
 }
 

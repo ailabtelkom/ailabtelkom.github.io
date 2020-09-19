@@ -1,6 +1,7 @@
 // import App from 'next/app'
 import { Box, ChakraProvider, Stack } from "@chakra-ui/core";
 import Router from "next/router";
+import Head from "next/head";
 import NProgress from "nprogress";
 import { AnimatePresence } from "framer-motion";
 
@@ -14,9 +15,15 @@ Router.events.on("routeChangeError", () => NProgress.done());
 function CustomApp({ Component, pageProps }) {
   return (
     <ChakraProvider resetCSS>
+      <Head>
+        <title>Artificial Intelligence Laboratory</title>
+        <link rel="icon" href="/img/favicon.ico" />
+      </Head>
       <Stack minH="100vh">
         <Box flexGrow={1}>
-          <Component {...pageProps} />
+          <AnimatePresence exitBeforeEnter>
+            <Component {...pageProps} />
+          </AnimatePresence>
         </Box>
       </Stack>
     </ChakraProvider>
