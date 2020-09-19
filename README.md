@@ -1,7 +1,7 @@
 # #AmazingAI
 
 <div style='text-align:center;'>
-    <img src='assets/img/logo-xs.png' alt='#amazingAI'>
+    <img src='public/img/logo-xs.png' alt='#amazingAI'>
 </div>
 
 _Artificial Intelligence Laboratory landing page_
