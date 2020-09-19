@@ -8,12 +8,14 @@ import {
   Link,
   Stack,
   Text,
+  useColorMode,
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLine, FaMedium } from "react-icons/fa";
 const Jumbotron = (props) => {
   const MotionStack = motion.custom(Stack);
   const MotionLink = motion.custom(Link);
+  const { colorMode } = useColorMode();
   const links = [
     {
       name: "instagram",
@@ -55,7 +57,12 @@ const Jumbotron = (props) => {
     end: { y: 0, opacity: 1 },
   };
   return (
-    <Box h="100vh" className={style.bgAnimation} {...props}>
+    <Box
+      h="100vh"
+      className={style.bgAnimation}
+      _before={colorMode == "dark" && { filter: "invert(80%)" }}
+      {...props}
+    >
       <MotionStack
         initial="start"
         animate="end"
@@ -92,7 +99,12 @@ const Jumbotron = (props) => {
           >
             {links.map((item, idx) => {
               return (
-                <MotionLink variants={linkVariant} href={item.url} isExternal>
+                <MotionLink
+                  key={idx}
+                  variants={linkVariant}
+                  href={item.url}
+                  isExternal
+                >
                   <IconButton
                     colorScheme="yellow"
                     aria-label={item.name}

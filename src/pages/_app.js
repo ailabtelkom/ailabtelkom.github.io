@@ -7,6 +7,7 @@ import { AnimatePresence } from "framer-motion";
 
 import "nprogress/nprogress.css";
 import "../assets/css/style.css";
+import Navbar from "../components/Navbar";
 
 Router.events.on("routeChangeStart", () => NProgress.start());
 Router.events.on("routeChangeComplete", () => NProgress.done());
@@ -19,7 +20,8 @@ function CustomApp({ Component, pageProps }) {
         <title>Artificial Intelligence Laboratory</title>
         <link rel="icon" href="/img/favicon.ico" />
       </Head>
-      <Stack minH="100vh">
+      <Stack minH="100vh" w="full" spacing={0}>
+        <Navbar />
         <Box flexGrow={1}>
           <AnimatePresence exitBeforeEnter>
             <Component {...pageProps} />
