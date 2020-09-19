@@ -19,8 +19,9 @@ import {
 } from "@chakra-ui/core";
 import { FaSun, FaMoon, FaBars } from "react-icons/fa";
 import Link from "./Link";
-
+import { useRouter } from "next/router";
 const Navbar = () => {
+  const router = useRouter();
   const { toggleColorMode } = useColorMode();
   const Icons = useColorModeValue(<FaSun />, <FaMoon />);
   const color = useColorModeValue("gray.800", "white");
@@ -29,16 +30,25 @@ const Navbar = () => {
   const btnRef = useRef();
   const [isTop, setIsTop] = useState(true);
   useEffect(() => {
-    window.addEventListener("scroll", () => {
+    const handleScroll = () => {
       const top = window.scrollY < 20;
       if (top !== isTop) {
         setIsTop(top);
       }
-    });
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
     <Box
-      style={{ background: isTop ? "transparent" : bgColor }}
+      style={{
+        background:
+          router.pathname === "/"
+            ? "transparent"
+            : isTop
+            ? "transparent"
+            : bgColor,
+      }}
       w="full"
       position="fixed"
       top
