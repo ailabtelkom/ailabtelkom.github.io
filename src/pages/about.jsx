@@ -207,7 +207,7 @@ const about = () => {
           >
             Meet The Gang 👊😎
           </Heading>
-          <SimpleGrid columns={{ base: 1, lg: 4 }} spacing={4}>
+          <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={4}>
             {teams.map((data, idx) => (
               <MotionBox
                 backgroundColor={bgColor}
