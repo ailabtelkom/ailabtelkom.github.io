@@ -5,12 +5,14 @@ import {
   Text,
   Image,
   SimpleGrid,
-  Stack,
   Divider,
   useColorModeValue,
+  Stack,
+  IconButton,
 } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 import Link from "../components/Link";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const about = () => {
   const MotionBox = motion.custom(Box);
@@ -23,12 +25,12 @@ const about = () => {
     start: {
       y: 20,
       opacity: 0,
-      transition: { staggerChildren: 0.3 },
+      transition: { staggerChildren: 0.25 },
     },
     end: {
       y: 0,
       opacity: 1,
-      transition: { staggerChildren: 0.3 },
+      transition: { staggerChildren: 0.25 },
     },
     exit: { opacity: 0, transition: { duration: 0.1 } },
   };
@@ -52,6 +54,89 @@ const about = () => {
       image: "/img/undraw_predictive_analytics_kf9n.svg",
     },
   ];
+  const teams = [
+    {
+      name: "Ade Romadhony",
+      position: "Laboratory Coordinator",
+      image: "https://dummyimage.com/500x500/eee/fff&text=AR",
+      social: {
+        linkedin: "https://id.linkedin.com/in/ade-romadhony-8a302668",
+      },
+    },
+    {
+      name: "Muhammad Alfhi Saputra",
+      position: "Lab.Assistant Coordinator",
+      image: "/img/aslab/alfhi.jpg",
+      social: {
+        linkedin: "https://id.linkedin.com/in/alfhisa",
+        github: "https://github.com/alfhi24",
+        instagram: "https://www.instagram.com/alfhisa_/",
+      },
+    },
+    {
+      name: "Kartika Putri Dwi Atmojo",
+      position: "Secretary",
+      image: "/img/aslab/tika.jpg",
+      social: {
+        instagram: "https://www.instagram.com/dwi.kartikaputri/",
+      },
+    },
+    {
+      name: "Muhammad Farrel",
+      position: "Treasurer",
+      image: "/img/aslab/farel.jpg",
+      social: {
+        github: "https://github.com/muhammadfarrel",
+        instagram: "https://www.instagram.com/mfarrell___/",
+      },
+    },
+    {
+      name: "Dimitri Irfan Dzidny",
+      position: "Internal",
+      image: "/img/aslab/dimit.jpg",
+      social: {
+        linkedin: "https://id.linkedin.com/in/dimitriirfan",
+        github: "https://github.com/dimitriirfan",
+        instagram: "https://www.instagram.com/dimitriirfann/",
+      },
+    },
+    {
+      name: "Anvaqta Tangguh Wisesa",
+      position: "Inventory 😎",
+      image: "/img/aslab/vaq.jpg",
+      social: {
+        linkedin: "https://id.linkedin.com/in/anvaqta",
+        github: "https://github.com/raisoturu",
+        instagram: "https://www.instagram.com/anvaqta/",
+      },
+    },
+    {
+      name: "Adriansyah Dwi Rendragraha",
+      position: "Focus Group",
+      image: "/img/aslab/adri.jpg",
+      social: {
+        linkedin:
+          "https://www.linkedin.com/in/adriansyahdr?originalSubdomain=id",
+        instagram: "https://www.instagram.com/adriansyah.d.r/",
+      },
+    },
+    {
+      name: "Dimas Bayu Nugraha",
+      position: "Study Group",
+      image: "/img/aslab/dimba.jpg",
+      social: {
+        linkedin: "https://id.linkedin.com/in/dimbay76",
+      },
+    },
+    {
+      name: "Kriesna Bayu Pratama",
+      position: "Media",
+      image: "/img/aslab/kris.jpg",
+      social: {
+        instagram: "https://www.instagram.com/kriesnapratama/",
+      },
+    },
+  ];
   return (
     <React.Fragment>
       <MotionBox
@@ -68,7 +153,7 @@ const about = () => {
           alt="First Meet AILAB 2020"
           src="/img/firstmeet2020.jpg"
         />
-        <Stack px={{ default: 6, md: 0 }}>
+        <Box px={{ default: 6, md: 0 }}>
           <Heading mt="2" fontSize={{ default: "2xl", lg: "3xl" }}>
             About Artificial Intelligence Laboratory Telkom University
           </Heading>
@@ -83,7 +168,7 @@ const about = () => {
             </Link>
             .
           </Text>
-          <Divider mb="4" />
+          <Divider mt="2" mb="4" />
           <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="4">
             Our activities
           </Heading>
@@ -114,7 +199,70 @@ const about = () => {
               </MotionBox>
             ))}
           </SimpleGrid>
-        </Stack>
+          <Heading
+            as="h2"
+            fontSize={{ default: "xl", lg: "2xl" }}
+            mt="8"
+            mb="4"
+          >
+            Meet The Gang 👊😎
+          </Heading>
+          <SimpleGrid columns={{ base: 1, lg: 4 }} spacing={4}>
+            {teams.map((data, idx) => (
+              <MotionBox
+                backgroundColor={bgColor}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                key={idx}
+                variants={itemVariant}
+                borderWidth="1px"
+              >
+                <Image
+                  alt={data.name}
+                  src={data.image}
+                  maxH="300px"
+                  mx="auto"
+                />
+                <Heading as="h4" fontSize="lg">
+                  {data.name}
+                </Heading>
+                <Text>{data.position}</Text>
+                <Stack direction="row" justifyContent="center" my="2">
+                  {data.social.linkedin && (
+                    <Link href={data.social.linkedin}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="LinkedIn"
+                        icon={<FaLinkedin />}
+                      />
+                    </Link>
+                  )}
+                  {data.social.github && (
+                    <Link href={data.social.github}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="LinkedIn"
+                        icon={<FaGithub />}
+                      />
+                    </Link>
+                  )}
+                  {data.social.instagram && (
+                    <Link href={data.social.instagram}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="LinkedIn"
+                        icon={<FaInstagram />}
+                      />
+                    </Link>
+                  )}
+                </Stack>
+              </MotionBox>
+            ))}
+          </SimpleGrid>
+        </Box>
       </MotionBox>
     </React.Fragment>
   );
