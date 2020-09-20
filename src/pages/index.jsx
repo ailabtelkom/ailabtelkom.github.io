@@ -1,7 +1,8 @@
+import { Box } from "@chakra-ui/core";
 import Jumbotron from "../components/Jumbotron";
 function LandingPage() {
   return (
-    <div
+    <Box
       style={{
         overflowY: "scroll",
         height: "100vh",
@@ -10,7 +11,7 @@ function LandingPage() {
     >
       <Jumbotron style={{ scrollSnapAlign: "start" }} />
       {/* <div style={{ height: "120vh", scrollSnapAlign: "start" }}>whew</div> */}
-    </div>
+    </Box>
   );
 }
 

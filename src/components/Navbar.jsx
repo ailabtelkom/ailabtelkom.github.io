@@ -63,9 +63,12 @@ const Navbar = () => {
         <Link route href="/" fontWeight="bold" color={color}>
           #AmazingAI
         </Link>
-        <Stack direction="row" d={{ base: "none", lg: "flex" }}>
+        <Stack spacing={5} direction="row" d={{ base: "none", lg: "flex" }}>
           <Link route href="/playground" color={color}>
             Playground
+          </Link>
+          <Link route href="/about" color={color}>
+            About
           </Link>
         </Stack>
       </Stack>
@@ -98,10 +101,10 @@ const Navbar = () => {
 
             <DrawerBody>
               <Stack>
-                <Link route href="/playground" color={color}>
+                <Link p="2" route href="/playground" color={color}>
                   Playground
                 </Link>
-                <Link route href="/" color={color}>
+                <Link p="2" route href="/about" color={color}>
                   About
                 </Link>
               </Stack>
