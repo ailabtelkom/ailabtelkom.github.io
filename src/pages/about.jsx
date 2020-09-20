@@ -1,11 +1,24 @@
 import React from "react";
-import { Box, Heading, Text, Image, SimpleGrid, Stack } from "@chakra-ui/core";
+import {
+  Box,
+  Heading,
+  Text,
+  Image,
+  SimpleGrid,
+  Stack,
+  Divider,
+  useColorModeValue,
+} from "@chakra-ui/core";
 import { motion } from "framer-motion";
-import ActivitiesCard from "../components/ActivitiesCard";
 import Link from "../components/Link";
 
 const about = () => {
   const MotionBox = motion.custom(Box);
+  const bgColor = useColorModeValue("white", "gray.700");
+  const itemVariant = {
+    start: { y: 20, opacity: 0 },
+    end: { y: 0, opacity: 1 },
+  };
   const containerVariant = {
     start: {
       y: 20,
@@ -70,12 +83,35 @@ const about = () => {
             </Link>
             .
           </Text>
-          <Heading my="4" as="h2" fontSize={{ default: "xl", lg: "2xl" }}>
+          <Divider mb="4" />
+          <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="4">
             Our activities
           </Heading>
           <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={4}>
             {activities.map((data, idx) => (
-              <ActivitiesCard data={data} idx={idx} key={idx} />
+              <MotionBox
+                backgroundColor={bgColor}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                p="2"
+                key={idx}
+                variants={itemVariant}
+                // shadow="md"
+                borderWidth="1px"
+              >
+                <Image
+                  alt={data.name}
+                  src={data.image}
+                  maxH="100px"
+                  mx="auto"
+                />
+                <Heading as="h4" fontSize="lg">
+                  {data.name}
+                </Heading>
+                <Text p="2" textAlign="justify">
+                  {data.desc}
+                </Text>
+              </MotionBox>
             ))}
           </SimpleGrid>
         </Stack>
