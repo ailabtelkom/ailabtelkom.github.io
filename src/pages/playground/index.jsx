@@ -90,7 +90,7 @@ const index = () => {
       transition={{ delay: 0.1 }}
       maxW={[null, null, "2xl", "5xl"]}
       m="auto"
-      mt="40px"
+      my="40px"
       px={{ default: 6, md: 0 }}
     >
       <Stack pt={{ default: "1em", lg: "2em" }}>
