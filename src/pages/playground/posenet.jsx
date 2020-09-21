@@ -15,6 +15,11 @@ const posenet = () => {
           width: 60vw;
           height: 90vh;
         }
+        @media screen and (max-width: 800px) {
+          .full{
+            width: 100vw;
+          }
+        }
       `}</style>
     </div>
   );
