@@ -10,8 +10,10 @@ const posenet = () => {
       />
       <style jsx>{`
         .full {
-          width: 100vw;
-          height: 100vh;
+          margin: auto;
+          margin-top: 50px;
+          width: 60vw;
+          height: 90vh;
         }
       `}</style>
     </div>
