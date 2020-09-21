@@ -97,6 +97,15 @@ const index = () => {
         "Hand-written digits recognition using Convolutional Neural Network (CNN).",
       isExternal: true,
     },
+    {
+      name: "Interactive KNN",
+      url: "https://lettier.com/projects/knearestneighbors/",
+      image: "https://github.com/lettier/interactiveknn/raw/master/preview.gif",
+      detail: "https://github.com/lettier/interactiveknn",
+      desc:
+        "KNN is a model that classifies data points based on the points that are most similar to it. Now you can see how KNN works with this.",
+      isExternal: true,
+    },
   ];
   return (
     <MotionBox
