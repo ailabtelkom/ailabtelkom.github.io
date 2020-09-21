@@ -29,7 +29,7 @@ const Jumbotron = (props) => {
     },
     {
       name: "line",
-      url: "http://line.me/ti/p/~jhf7225t",
+      url: "http://line.me/ti/p/~@jhf7225t",
       icon: <FaLine />,
     },
     {
