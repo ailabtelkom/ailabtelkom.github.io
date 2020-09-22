@@ -5,7 +5,15 @@ div#__next,
 div#__next > div {
   height: 100%;
 }
+::-moz-selection {
+  color: white;
+  background: #ecc94b;
+}
 
+::selection {
+  color: white;
+  background: #ecc94b;
+}
 html {
   scroll-behavior: smooth;
 }
