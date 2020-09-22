@@ -6,9 +6,6 @@
   "repository": "https://github.com/ailabtelkom/ailabtelkom.github.io.git",
   "author": "raisoturu <anvaqta@student.telkomuniversity.ac.id>",
   "license": "MIT",
-  "devDependencies": {
-    "live-server": "^1.2.1"
-  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,12 +15,14 @@
   "dependencies": {
     "@chakra-ui/core": "^1.0.0-rc.3",
     "framer-motion": "^2.6.15",
-    "import": "^0.0.6",
     "next": "^9.5.3",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
     "sass": "^1.26.11"
+  },
+  "devDependencies": {
+    "serve": "^11.3.2"
   }
 }
