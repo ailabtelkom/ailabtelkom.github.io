@@ -79,8 +79,8 @@ const Jumbotron = (props) => {
           <Image
             shadow="lg"
             rounded="full"
-            src="img/logo-lg.png"
-            fallbackSrc="https://raw.githubusercontent.com/ailabtelkom/ailabtelkom.github.io/master/public/img/logo-lg.png"
+            src="/img/logo-md.png"
+            fallbackSrc="https://raw.githubusercontent.com/ailabtelkom/ailabtelkom.github.io/master/public/img/logo-md.png"
             w={{ base: "200px", lg: "xl" }}
             alt="Artificial Intelligence logo"
           />
