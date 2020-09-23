@@ -118,8 +118,8 @@ const Navbar = () => {
 
             <DrawerFooter>
               <Text fontSize="sm">
-                Developed by{" "}
-                <Link isExternal href="https://wisesa.dev">
+                Made with ❤️ by{" "}
+                <Link isExternal href="https://github.com/raisoturu">
                   @raisoturu
                 </Link>
               </Text>
