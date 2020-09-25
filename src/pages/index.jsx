@@ -4,7 +4,7 @@ function LandingPage() {
   return (
     <Box
       style={{
-        overflowY: "scroll",
+        // overflowY: "scroll",
         height: "100vh",
         scrollSnapType: "y mandatory",
       }}

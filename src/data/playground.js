@@ -10,6 +10,15 @@ const playgrounds = [
     isExternal: false,
   },
   {
+    name: "YOLO",
+    url: "https://shaqian.github.io/tfjs-yolo-demo/",
+    detail: "https://pjreddie.com/darknet/yolo/",
+    image: "https://github.com/shaqian/tfjs-yolo-demo/raw/master/demo.gif",
+    desc:
+      "PoseNet is a vision model that can be used to estimate the pose of a person in an image or video by estimating where key body joints are.You only look once (YOLO) is a state-of-the-art, real-time object detection system.",
+    isExternal: true,
+  },
+  {
     name: "Monalisa Effect",
     url: "https://monalisaeffect.com/",
     detail: "https://github.com/emilyxxie/mona_lisa_eyes",
