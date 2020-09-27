@@ -15,12 +15,19 @@
   "dependencies": {
     "@chakra-ui/core": "^1.0.0-rc.3",
     "framer-motion": "^2.6.15",
+    "imagemin-gifsicle": "^7.0.0",
+    "imagemin-mozjpeg": "^9.0.0",
+    "imagemin-optipng": "^8.0.0",
+    "lqip-loader": "^2.2.1",
     "next": "^9.5.3",
+    "next-compose-plugins": "^2.2.0",
+    "next-optimized-images": "^2.6.2",
     "nprogress": "^0.2.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.11.0",
-    "sass": "^1.26.11"
+    "sass": "^1.26.11",
+    "webp-loader": "^0.6.0"
   },
   "devDependencies": {
     "serve": "^11.3.2"
