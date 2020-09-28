@@ -6,6 +6,7 @@ import {
   useColorModeValue,
   Stack,
   Text,
+  Icon,
 } from "@chakra-ui/core";
 import {
   Drawer,
@@ -16,10 +17,38 @@ import {
   DrawerContent,
   DrawerCloseButton,
   useDisclosure,
+  Menu,
+  MenuButton,
+  MenuList,
+  MenuItem,
 } from "@chakra-ui/core";
-import { FaSun, FaMoon, FaBars } from "react-icons/fa";
+import {
+  FaSun,
+  FaMoon,
+  FaBars,
+  FaChevronDown,
+  FaLanguage,
+  FaImages,
+} from "react-icons/fa";
 import Link from "./Link";
 import { useRouter } from "next/router";
+const ResourcesDropdown = () => {
+  return (
+    <Menu>
+      <MenuButton>
+        Resource <Icon as={FaChevronDown} />
+      </MenuButton>
+      <MenuList>
+        <MenuItem as={Link} href="/resources/nlp" route>
+          <Icon as={FaLanguage} mr="2" /> NLP Bahasa
+        </MenuItem>
+        <MenuItem as={Link} href="/resources/image" route>
+          <Icon as={FaImages} mr="2" /> Image
+        </MenuItem>
+      </MenuList>
+    </Menu>
+  );
+};
 const Navbar = () => {
   const router = useRouter();
   const { toggleColorMode } = useColorMode();
@@ -70,6 +99,7 @@ const Navbar = () => {
           <Link route href="/playground" color={color}>
             Playground
           </Link>
+          <ResourcesDropdown />
           <Link route href="/about" color={color}>
             About
           </Link>
@@ -110,6 +140,7 @@ const Navbar = () => {
                 <Link p="2" route href="/playground" color={color}>
                   Playground
                 </Link>
+                <ResourcesDropdown />
                 <Link p="2" route href="/about" color={color}>
                   About
                 </Link>
