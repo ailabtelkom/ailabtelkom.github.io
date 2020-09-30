@@ -35,7 +35,7 @@ import { useRouter } from "next/router";
 const ResourcesDropdown = () => {
   return (
     <Menu>
-      <MenuButton>
+      <MenuButton textAlign="left" p={{ base: 2, lg: 0 }}>
         Resource <Icon as={FaChevronDown} />
       </MenuButton>
       <MenuList>
