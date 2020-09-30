@@ -8,7 +8,13 @@ const nlp = () => {
   const { data, isLoading } = getNlpData();
   const { colorMode } = useColorMode();
   return (
-    <Box pt="80px" pb="50px" maxW={[null, null, "2xl", "5xl"]} m="auto">
+    <Box
+      pt="80px"
+      pb="50px"
+      maxW={[null, null, "2xl", "5xl"]}
+      m="auto"
+      px={{ default: 6, md: 0 }}
+    >
       {isLoading ? (
         <Spinner />
       ) : (

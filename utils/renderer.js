@@ -4,10 +4,11 @@ import {
   Stack,
   Text,
   Code as InlineCode,
-  List,
   ListItem,
   Divider,
   Image as ChakraImage,
+  OrderedList,
+  UnorderedList,
 } from "@chakra-ui/core";
 import Link from "../components/Link";
 import Code from "../components/Code";
@@ -70,8 +71,12 @@ export const contentRenderer = (colorMode) => ({
   },
   inlineCode: (props) => <InlineCode display="inline" {...props} />,
   link: (props) => <Link isExternal={!props.href.startsWith("#")} {...props} />,
-  list: (props) => <List styleType="disc" {...props} />,
-  listItem: (props) => <ListItem pl={4} {...props} />,
+  list: ({ ordered, tight, ...props }) => (
+    <Box pl={2}>
+      {ordered ? <OrderedList {...props} /> : <UnorderedList {...props} />}
+    </Box>
+  ),
+  listItem: ({ ordered, tight, ...props }) => <ListItem {...props} />,
   paragraph: Text,
   table: (props) => (
     <Box overflow="auto">

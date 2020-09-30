@@ -56,7 +56,6 @@ const Navbar = () => {
   const color = useColorModeValue("gray.800", "white");
   const bgColor = useColorModeValue("white", "#1A202C");
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const btnRef = useRef();
   const [isTop, setIsTop] = useState(true);
   useEffect(() => {
     const handleScroll = () => {
@@ -118,15 +117,9 @@ const Navbar = () => {
           size="sm"
           onClick={onOpen}
           icon={<FaBars />}
-          ref={btnRef}
         />
       </Stack>
-      <Drawer
-        isOpen={isOpen}
-        placement="right"
-        onClose={onClose}
-        finalFocusRef={btnRef}
-      >
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose}>
         <DrawerOverlay zIndex={999}>
           <DrawerContent>
             <DrawerCloseButton />
