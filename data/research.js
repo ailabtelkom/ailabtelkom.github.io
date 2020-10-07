@@ -6,7 +6,7 @@ export default [
     author:
       "Focus Group 2019 ; Anditya Arifianto ; Suyanto Suyanto ; Anis Sirwan ; Dhamir Raniah Kiasati Desrul ; Irfan D Prakoso ; Fedy Fahron Guntara ; Dian Chusnul Hidayati ; Rani Sari Murti",
     publisher: "ICoDSA 2020",
-    url: "https://ieeexplore.ieee.org/document/9213066",
+    url: "https://ieeexplore.ieee.org/document/9212863",
   },
   {
     year: 2020,
