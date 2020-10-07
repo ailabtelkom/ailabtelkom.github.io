@@ -40,12 +40,6 @@ function CustomApp({ Component, pageProps, router }) {
               height: 512,
               alt: siteConfig.title,
             },
-            {
-              url: `${siteConfig.url}/img/og.png`,
-              width: 1024,
-              height: 512,
-              alt: siteConfig.title,
-            },
           ],
         }}
       />
