@@ -1,6 +1,23 @@
 export default [
   {
     year: 2020,
+    title:
+      "Developing an LSTM-based Classification Model of IndiHome Customer Feedbacks",
+    author:
+      "Focus Group 2019 ; Anditya Arifianto ; Suyanto Suyanto ; Anis Sirwan ; Dhamir Raniah Kiasati Desrul ; Irfan D Prakoso ; Fedy Fahron Guntara ; Dian Chusnul Hidayati ; Rani Sari Murti",
+    publisher: "ICoDSA 2020",
+    url: "https://ieeexplore.ieee.org/document/9213066",
+  },
+  {
+    year: 2020,
+    title:
+      "Recognizing Soft Biometric on Pedestrian Using Convolutional Neural Network",
+    author: "Tri Broto Siswoyo ; Anditya Arifianto ; Kutniawan Nur Ramadhani",
+    publisher: "ICoDSA 2020",
+    url: "https://ieeexplore.ieee.org/document/9213066",
+  },
+  {
+    year: 2020,
     title: "Abusive Language Detection on Indonesian Online News Comments",
     author: "R.K. Desrul, Dhamir & Romadhony, Ade",
     publisher: "IEEE",
