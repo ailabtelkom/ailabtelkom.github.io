@@ -17,8 +17,3 @@ div#__next > div {
 html {
   scroll-behavior: smooth;
 }
-@media only screen and (max-width: 600px) {
-  #nprogress .spinner {
-    display: none;
-  }
-}
