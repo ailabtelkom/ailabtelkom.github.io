@@ -4,6 +4,7 @@ import { getCvData } from "../../utils/resourceHooks";
 import Markdown from "react-markdown";
 import { contentRenderer } from "../../utils/renderer";
 import { FaGithub } from "react-icons/fa";
+import { NextSeo } from "next-seo";
 const cv = () => {
   const { data, isLoading } = getCvData();
   const { colorMode } = useColorMode();
@@ -15,6 +16,10 @@ const cv = () => {
       m="auto"
       px={{ default: 6, md: 0 }}
     >
+      <NextSeo
+        title="CV Resources"
+        description="Data resources Computer Vision. This was made for student, researcher, who else that was doing a research or anything about Image Processing and Computer Vision."
+      />
       {isLoading ? (
         <Spinner />
       ) : (

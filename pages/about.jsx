@@ -15,6 +15,7 @@ import Link from "../components/Link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import activities from "../data/activities";
 import teams from "../data/aslab";
+import { NextSeo } from "next-seo";
 const about = () => {
   const MotionBox = motion.custom(Box);
   const bgColor = useColorModeValue("white", "gray.700");
@@ -38,6 +39,10 @@ const about = () => {
 
   return (
     <React.Fragment>
+      <NextSeo
+        title="About"
+        description="About Artificial Intelligence Laboratory Telkom University"
+      />
       <MotionBox
         initial="start"
         animate="end"

@@ -4,6 +4,7 @@ import { getNlpData } from "../../utils/resourceHooks";
 import Markdown from "react-markdown";
 import { contentRenderer } from "../../utils/renderer";
 import { FaGithub } from "react-icons/fa";
+import { NextSeo } from "next-seo";
 const nlp = () => {
   const { data, isLoading } = getNlpData();
   const { colorMode } = useColorMode();
@@ -15,6 +16,10 @@ const nlp = () => {
       m="auto"
       px={{ default: 6, md: 0 }}
     >
+      <NextSeo
+        title="Bahasa Indonesia NLP Resources"
+        description="Kumpulan resource untuk Pemrosesan bahasa alami Bahasa Indonesia. Repository ini dibuat untuk membantu Researcher/Mahasiswa yang sedang membuat tugas akhir atau penelitian tentang pemrosesan bahasa alami yang menggunakan Bahasa Indonesia."
+      />
       {isLoading ? (
         <Spinner />
       ) : (
