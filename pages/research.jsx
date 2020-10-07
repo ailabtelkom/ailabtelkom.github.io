@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Box, Heading, Text } from "@chakra-ui/core";
 import Link from "../components/Link";
 import data from "../data/research";
+import { NextSeo } from "next-seo";
 const research = () => {
   const MotionBox = motion.custom(Box);
   const containerVariant = {
@@ -28,8 +29,9 @@ const research = () => {
       py="50px"
     >
       <Box px={{ default: 6, md: 0 }}>
+        <NextSeo title="Research" description="Past resesearch by our member" />
         <Heading mt="2" fontSize={{ default: "2xl", lg: "3xl" }}>
-          Reasearch
+          Research
         </Heading>
         <Text>Past resesearch by our member</Text>
         <Box overflow="auto" mt="6">
