@@ -43,7 +43,6 @@ const research = () => {
                     as="th"
                     borderWidth={1}
                     p={2}
-                    width={{ base: "100vw", lg: "50%" }}
                   >
                     Title
                   </Box>
