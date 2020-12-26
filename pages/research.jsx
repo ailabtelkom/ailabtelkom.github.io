@@ -35,49 +35,51 @@ const research = () => {
         </Heading>
         <Text>Past resesearch by our member</Text>
         <Box overflow="auto" mt="6">
-          <Box as="table" width="full" textAlign="left">
-            <Box as="thead" fontWeight="bold">
-              <Box as="tr">
-                <Box
-                  as="th"
-                  borderWidth={1}
-                  p={2}
-                  width={{ base: "100vw", lg: "50%" }}
-                >
-                  Title
-                </Box>
-                <Box as="th" borderWidth={1} p={2}>
-                  Author
-                </Box>
-                <Box as="th" borderWidth={1} p={2}>
-                  Year
-                </Box>
-                <Box as="th" borderWidth={1} p={2}>
-                  Publisher
+          <Box w="full" overflow="auto">
+            <Box as="table" width="full" textAlign="left">
+              <Box as="thead" fontWeight="bold">
+                <Box as="tr">
+                  <Box
+                    as="th"
+                    borderWidth={1}
+                    p={2}
+                    width={{ base: "100vw", lg: "50%" }}
+                  >
+                    Title
+                  </Box>
+                  <Box as="th" borderWidth={1} p={2}>
+                    Author
+                  </Box>
+                  <Box as="th" borderWidth={1} p={2}>
+                    Year
+                  </Box>
+                  <Box as="th" borderWidth={1} p={2}>
+                    Publisher
+                  </Box>
                 </Box>
               </Box>
-            </Box>
-            <Box as="tbody">
-              {data.map((data, idx) => {
-                return (
-                  <Box as="tr" key={idx}>
-                    <Box as="td" borderWidth={1} p={2}>
-                      <Link isExternal href={data.url}>
-                        {data.title}
-                      </Link>
+              <Box as="tbody">
+                {data.map((data, idx) => {
+                  return (
+                    <Box as="tr" key={idx}>
+                      <Box as="td" borderWidth={1} p={2}>
+                        <Link isExternal href={data.url}>
+                          {data.title}
+                        </Link>
+                      </Box>
+                      <Box as="td" borderWidth={1} p={2}>
+                        {data.author}
+                      </Box>
+                      <Box as="td" borderWidth={1} p={2}>
+                        {data.year}
+                      </Box>
+                      <Box as="td" borderWidth={1} p={2}>
+                        {data.publisher}
+                      </Box>
                     </Box>
-                    <Box as="td" borderWidth={1} p={2}>
-                      {data.author}
-                    </Box>
-                    <Box as="td" borderWidth={1} p={2}>
-                      {data.year}
-                    </Box>
-                    <Box as="td" borderWidth={1} p={2}>
-                      {data.publisher}
-                    </Box>
-                  </Box>
-                );
-              })}
+                  );
+                })}
+              </Box>
             </Box>
           </Box>
         </Box>
