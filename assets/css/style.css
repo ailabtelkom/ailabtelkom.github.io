@@ -17,3 +17,12 @@ div#__next > div {
 html {
   scroll-behavior: smooth;
 }
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}

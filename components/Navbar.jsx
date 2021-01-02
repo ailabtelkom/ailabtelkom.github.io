@@ -102,6 +102,15 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
+          <Link
+            route
+            href="/recruitment"
+            color={color}
+            fontWeight="bold"
+            className="blink"
+          >
+            Rekruitasi ASLAB 2021
+          </Link>
         </Stack>
       </Stack>
       <Stack direction="row">
@@ -136,6 +145,16 @@ const Navbar = () => {
                 <ResourcesDropdown />
                 <Link p="2" route href="/about" color={color}>
                   About
+                </Link>
+                <Link
+                  p="2"
+                  route
+                  href="/recruitment"
+                  color={color}
+                  fontWeight="bold"
+                  className="blink"
+                >
+                  Rekruitasi ASLAB 2021!!
                 </Link>
               </Stack>
             </DrawerBody>
