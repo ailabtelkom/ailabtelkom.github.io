@@ -39,7 +39,7 @@ const recruitment = () => {
       <Link href="http://bit.ly/aslabAIkuy" isExternal>
         <Button colorScheme="red">{">>Daftar skuy<<<"}</Button>
       </Link>
-      <Box width="100%" h="90vh" mt="2">
+      <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
         <iframe
           src="https://drive.google.com/file/d/1d8YiE4DXJBum-Liaayh5T1jNK2fJ8vY6/preview"
           width="100%"
@@ -47,7 +47,7 @@ const recruitment = () => {
         ></iframe>
       </Box>
       <Image
-        width="200px"
+        width={{ base: "100px", md: "200px" }}
         position="absolute"
         bottom={1}
         left={0}
@@ -55,7 +55,7 @@ const recruitment = () => {
         alt="we want you"
       />
       <Image
-        width="200px"
+        width={{ base: "100px", md: "200px" }}
         position="absolute"
         top="160px"
         right={0}
@@ -63,10 +63,10 @@ const recruitment = () => {
         alt="we want you"
       />
       <Image
-        width="200px"
+        width={{ base: "100px", md: "200px" }}
         position="absolute"
         top="160px"
-        left="-20px"
+        left={{ base: "0", md: "-20px" }}
         src="https://cdn.kapwing.com/video_image-Urvztiziu.jpeg"
         alt="we want you"
       />
