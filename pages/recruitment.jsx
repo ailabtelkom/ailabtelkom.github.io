@@ -41,7 +41,7 @@ const recruitment = () => {
       </Link>
       <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
         <iframe
-          src="https://drive.google.com/file/d/1d8YiE4DXJBum-Liaayh5T1jNK2fJ8vY6/preview"
+          src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
           width="100%"
           height="100%"
         ></iframe>
