@@ -146,7 +146,7 @@ const Navbar = () => {
                 <Link p="2" route href="/about" color={color}>
                   About
                 </Link>
-                <Link
+                {/* <Link
                   p="2"
                   route
                   href="/recruitment"
@@ -155,7 +155,7 @@ const Navbar = () => {
                   className="blink"
                 >
                   Rekruitasi ASLAB 2021!!
-                </Link>
+                </Link> */}
               </Stack>
             </DrawerBody>
 
