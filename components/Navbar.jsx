@@ -102,7 +102,7 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
-          <Link
+          {/* <Link
             route
             href="/recruitment"
             color={color}
@@ -110,7 +110,7 @@ const Navbar = () => {
             className="blink"
           >
             Rekruitasi ASLAB 2021
-          </Link>
+          </Link> */}
         </Stack>
       </Stack>
       <Stack direction="row">
