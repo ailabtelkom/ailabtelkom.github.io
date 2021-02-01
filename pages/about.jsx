@@ -7,6 +7,7 @@ import {
   SimpleGrid,
   Divider,
   useColorModeValue,
+  useColorMode,
   Stack,
   IconButton,
 } from "@chakra-ui/core";
@@ -18,6 +19,7 @@ import teams from "../data/aslab";
 import { NextSeo } from "next-seo";
 const about = () => {
   const MotionBox = motion.custom(Box);
+  const { colorMode } = useColorMode();
   const bgColor = useColorModeValue("white", "gray.700");
   const itemVariant = {
     start: { y: 20, opacity: 0 },
@@ -93,6 +95,7 @@ const about = () => {
                   alt={data.name}
                   src={data.image}
                   fallbackSrc={data.fallback}
+                  loading='lazy'
                   maxH="100px"
                   mx="auto"
                 />
@@ -111,7 +114,16 @@ const about = () => {
             mt="8"
             mb="4"
           >
-            Meet The Gang 👊😎
+            {"Meet The "} 
+            <MotionBox
+              animate={{ scale: [1, 1.1, 1, 0.9, 1] }}
+              transition={{ repeat: Infinity,  duration: 1, type: "spring" }}
+              d="inline-block"
+              className="blink"
+            >
+              New
+            </MotionBox>
+            {" Gang 👊😎"}
           </Heading>
           <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={4}>
             {teams.map((data, idx) => (
@@ -125,7 +137,7 @@ const about = () => {
               >
                 <Image
                   alt={data.name}
-                  src={data.image}
+                  src={colorMode == "dark"?data.image:"https://dummyimage.com/500x500/fff/2d3748.png&text=??"}
                   maxH="300px"
                   mx="auto"
                 />

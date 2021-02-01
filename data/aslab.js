@@ -1,89 +1,73 @@
 export default [
   {
-    name: "Ade Romadhony",
+    name: "??????",
     position: "Laboratory Coordinator",
-    image: "https://dummyimage.com/500x500/eee/fff&text=AR",
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      linkedin: "https://id.linkedin.com/in/ade-romadhony-8a302668",
     },
   },
   {
-    name: "Muhammad Alfhi Saputra",
+    name: "??????",
     position: "Lab.Assistant Coordinator",
-    image: require("../images/aslab/alfhi.jpg?webp"),
-    fallback: require("../images/aslab/alfhi.jpg?lqip"),
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
+    image2: require("../images/aslab/alfhi.jpg?webp"),
     social: {
-      linkedin: "https://id.linkedin.com/in/alfhisa",
-      github: "https://github.com/alfhi24",
-      instagram: "https://www.instagram.com/alfhisa_/",
     },
   },
   {
-    name: "Kartika Putri Dwi Atmojo",
+    name: "??????",
     position: "Secretary",
-    image: require("../images/aslab/tika.jpg?webp"),
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      instagram: "https://www.instagram.com/dwi.kartikaputri/",
     },
   },
   {
-    name: "Muhammad Farrel",
+    name: "??????",
     position: "Treasurer",
-    image: require("../images/aslab/farel.jpg?webp"),
-    fallback: require("../images/aslab/farel.jpg?lqip"),
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      github: "https://github.com/muhammadfarrel",
-      instagram: "https://www.instagram.com/mfarrell___/",
     },
   },
   {
-    name: "Dimitri Irfan Dzidny",
+    name: "??????",
     position: "Internal",
-    image: require("../images/aslab/dimit.jpg?webp"),
-    fallback: require("../images/aslab/dimit.jpg?lqip"),
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      linkedin: "https://id.linkedin.com/in/dimitriirfan",
-      github: "https://github.com/dimitriirfan",
-      instagram: "https://www.instagram.com/dimitriirfann/",
     },
   },
   {
-    name: "Anvaqta Tangguh Wisesa",
-    position: "Inventory 😎",
-    image: require("../images/aslab/vaq.jpg?webp"),
-    fallback: require("../images/aslab/vaq.jpg?lqip"),
+    name: "??????",
+    position: "External",
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      linkedin: "https://id.linkedin.com/in/anvaqta",
-      github: "https://github.com/raisoturu",
-      instagram: "https://www.instagram.com/anvaqta/",
     },
   },
   {
-    name: "Adriansyah Dwi Rendragraha",
+    name: "??????",
+    position: "Inventory ☕",
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
+    social: {
+    },
+  },
+  {
+    name: "??????",
     position: "Focus Group",
-    image: require("../images/aslab/adri.jpg?webp"),
-    fallback: require("../images/aslab/adri.jpg?lqip"),
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      linkedin: "https://www.linkedin.com/in/adriansyahdr?originalSubdomain=id",
-      instagram: "https://www.instagram.com/adriansyah.d.r/",
     },
   },
   {
-    name: "Dimas Bayu Nugraha",
+    name: "??????",
     position: "Study Group",
-    image: require("../images/aslab/dimba.jpg?webp"),
-    fallback: require("../images/aslab/dimba.jpg?lqip"),
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      linkedin: "https://id.linkedin.com/in/dimbay76",
     },
   },
   {
-    name: "Kriesna Bayu Pratama",
+    name: "??????",
     position: "Media",
-    image: require("../images/aslab/kris.jpg?webp"),
-    fallback: require("../images/aslab/kris.jpg?lqip"),
+    image: "https://dummyimage.com/500x500/2d3748/fff.png&text=??",
     social: {
-      instagram: "https://www.instagram.com/kriesnapratama/",
     },
   },
 ];
