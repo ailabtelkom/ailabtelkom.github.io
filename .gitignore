@@ -9,6 +9,7 @@
 # next.js
 /.next/
 /out/
+.next
 
 # production
 /build
@@ -29,3 +30,7 @@ yarn-error.log*
 .env.production.local
 
 .vscode
+
+/images/dbg.png
+/images/ebg.png
+/images/fixbg.png

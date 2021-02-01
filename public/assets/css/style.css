@@ -22,7 +22,20 @@ html {
 }
 
 @keyframes blinker {
-  50% {
+  25% {
+    /* color: yellow; */
     opacity: 0;
+  }
+  50% {
+    /* color: blue; */
+    opacity: 100;
+  }
+  75% {
+    /* color: yellow; */
+    opacity: 0;
+  }
+  100% {
+    /* color: white; */
+    opacity: 100;
   }
 }
