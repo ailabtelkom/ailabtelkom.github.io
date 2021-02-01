@@ -1,0 +1,41 @@
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  height: 100%;
+}
+::-moz-selection {
+  color: white;
+  background: #ecc94b;
+}
+
+::selection {
+  color: white;
+  background: #ecc94b;
+}
+html {
+  scroll-behavior: smooth;
+}
+.blink {
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  25% {
+    /* color: yellow; */
+    opacity: 0;
+  }
+  50% {
+    /* color: blue; */
+    opacity: 100;
+  }
+  75% {
+    /* color: yellow; */
+    opacity: 0;
+  }
+  100% {
+    /* color: white; */
+    opacity: 100;
+  }
+}
