@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { Heading } from "@chakra-ui/core";
 import { useRouter } from 'next/router'
 
 // Here you would fetch and return the user
@@ -14,5 +15,9 @@ export default function Page() {
     }
   }, [user, loading])
 
-  return <p>Redirecting to Discord...</p>
+  return (
+    <Heading as="h2" fontSize={{ default: "lg", lg: "xl" }}>
+      Redirecting to Discord...
+    </Heading>
+  )
 }
