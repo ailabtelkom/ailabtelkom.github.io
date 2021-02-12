@@ -14,6 +14,7 @@ import {
 import { motion } from "framer-motion";
 import Link from "../components/Link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import activities from "../data/activities";
 import teams from "../data/aslab";
 import { NextSeo } from "next-seo";
@@ -137,7 +138,7 @@ const about = () => {
               >
                 <Image
                   alt={data.name}
-                  src={colorMode == "dark"?data.image:"https://dummyimage.com/500x500/fff/2d3748.png&text=??"}
+                  src={data.image}
                   maxH="300px"
                   mx="auto"
                 />
@@ -161,7 +162,7 @@ const about = () => {
                       <IconButton
                         size="sm"
                         colorScheme="yellow"
-                        aria-label="LinkedIn"
+                        aria-label="Github"
                         icon={<FaGithub />}
                       />
                     </Link>
@@ -171,8 +172,18 @@ const about = () => {
                       <IconButton
                         size="sm"
                         colorScheme="yellow"
-                        aria-label="LinkedIn"
+                        aria-label="Instagram"
                         icon={<FaInstagram />}
+                      />
+                    </Link>
+                  )}
+                  {data.social.email && (
+                    <Link href={data.social.email}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="Email"
+                        icon={<MdEmail />}
                       />
                     </Link>
                   )}
