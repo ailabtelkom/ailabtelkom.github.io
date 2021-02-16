@@ -4,6 +4,7 @@ export default [
     position: "Laboratory Coordinator",
     image: "https://dummyimage.com/500x500/eee/fff&text=AR",
     social: {
+      linkedin: "https://id.linkedin.com/in/ade-romadhony-8a302668",
     },
   },
   {

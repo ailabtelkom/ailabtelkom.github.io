@@ -16,7 +16,8 @@ import Link from "../components/Link";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import activities from "../data/activities";
-import teams from "../data/aslab";
+import aslab21 from "../data/aslab21";
+import aslab20 from "../data/aslab20";
 import { NextSeo } from "next-seo";
 const about = () => {
   const MotionBox = motion.custom(Box);
@@ -115,19 +116,85 @@ const about = () => {
             mt="8"
             mb="4"
           >
-            {"Meet The "} 
-            <MotionBox
-              animate={{ scale: [1, 1.1, 1, 0.9, 1] }}
-              transition={{ repeat: Infinity,  duration: 1, type: "spring" }}
-              d="inline-block"
-              className="blink"
-            >
-              New
-            </MotionBox>
-            {" Gang 👊😎"}
+            Meet The Eliza 2021 Gang 👊😎
           </Heading>
           <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={4}>
-            {teams.map((data, idx) => (
+            {aslab21.map((data, idx) => (
+              <MotionBox
+                backgroundColor={bgColor}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
+                key={idx}
+                variants={itemVariant}
+                borderWidth="1px"
+              >
+                <Image
+                  alt={data.name}
+                  src={data.image}
+                  maxH="300px"
+                  mx="auto"
+                />
+                <Heading as="h4" fontSize="lg">
+                  {data.name}
+                </Heading>
+                <Text>{data.position}</Text>
+                <Stack direction="row" justifyContent="center" my="2">
+                  {data.social.linkedin && (
+                    <Link href={data.social.linkedin}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="LinkedIn"
+                        icon={<FaLinkedin />}
+                      />
+                    </Link>
+                  )}
+                  {data.social.github && (
+                    <Link href={data.social.github}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="Github"
+                        icon={<FaGithub />}
+                      />
+                    </Link>
+                  )}
+                  {data.social.instagram && (
+                    <Link href={data.social.instagram}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="Instagram"
+                        icon={<FaInstagram />}
+                      />
+                    </Link>
+                  )}
+                  {data.social.email && (
+                    <Link href={data.social.email}>
+                      <IconButton
+                        size="sm"
+                        colorScheme="yellow"
+                        aria-label="Email"
+                        icon={<MdEmail />}
+                      />
+                    </Link>
+                  )}
+                </Stack>
+              </MotionBox>
+            ))}
+          </SimpleGrid>
+        </Box>
+        <Box px={{ default: 6, md: 0 }}>
+          <Heading
+            as="h2"
+            fontSize={{ default: "xl", lg: "2xl" }}
+            mt="8"
+            mb="4"
+          >
+            Meet The Integer 2020 Gang 👊😎
+          </Heading>
+          <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={4}>
+            {aslab20.map((data, idx) => (
               <MotionBox
                 backgroundColor={bgColor}
                 whileHover={{ scale: 1.02 }}
