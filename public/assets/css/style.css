@@ -22,6 +22,12 @@ html {
 }
 
 @keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes fastblinker {
   25% {
     /* color: yellow; */
     opacity: 0;
