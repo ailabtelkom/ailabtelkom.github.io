@@ -3,7 +3,7 @@ import { Box, Heading, Divider, useColorModeValue, Button, useColorMode } from "
 import { Grid, GridItem, useControllableState } from "@chakra-ui/react";
 import { NextSeo } from "next-seo";
 import { motion } from "framer-motion";
-import ButtonZoom from "../components/buttonZoom";
+import ButtonZoom from "../components/ButtonZoom";
 
 const recruitment = () => {
   const [value, setValue] = useControllableState({ defaultValue: `Redirect to Zoom` })
