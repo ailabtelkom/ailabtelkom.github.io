@@ -15,9 +15,11 @@ const ButtonZoom = () => {
       onHoverStart={() => setText(`Join Us On \n
       27 February 2021 | 19:00 WIB`)}
       onHoverEnd={() => setText(`Redirect to Zoom`)}
-      whileTap={{ opacity: 0 }}
+      // whileTap={{ opacity: 0 }}
+      onClick={() => {(Text===`Redirect to Zoom`)?setText(`Join Us On \n
+      27 February 2021 | 19:00 WIB`):setText(`Redirect to Zoom`)}}
       // color={Color}
-      fontSize={{ default: "lg", lg: "xl" }}
+      fontSize={{ default: "md", lg: "xl" }}
       w="80%"
       h="8vh"
     >

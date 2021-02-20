@@ -53,8 +53,8 @@ export default [
     },
   },
   {
-    name: "Bagja 9102 Kurniawan 🐱😼",
-    position: "External",
+    name: "Bagja 9102 Kurniawan",
+    position: "🐱 External 😼",
     image: "/assets/images/aslab21/bagja.png?webp",
     fallback: "/assets/images/aslab21/bagja.png?lqip",
     social: {
