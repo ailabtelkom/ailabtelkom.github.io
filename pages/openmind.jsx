@@ -1,18 +1,11 @@
 import React from "react";
 import { Box, Heading, Divider, useColorModeValue, Button, useColorMode } from "@chakra-ui/core";
-import { Grid, GridItem, useControllableState } from "@chakra-ui/react";
+import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import ButtonZoom from "../components/ButtonZoom";
 
 const recruitment = () => {
-  const [value, setValue] = useControllableState({ defaultValue: `Redirect to Zoom` })
   const MotionBox = motion.custom(Box);
-  const MotionButton = motion.custom(Button)
-  const bgColor = useColorModeValue("white", "gray.700");
-  const itemVariant = {
-    start: { y: 20, opacity: 0 },
-    end: { y: 0, opacity: 1 },
-  };  
   const containerVariant = {
     start: {
       y: 20,
