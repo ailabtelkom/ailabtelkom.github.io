@@ -6,7 +6,7 @@ import NProgress from "nprogress";
 import { AnimatePresence } from "framer-motion";
 
 import "nprogress/nprogress.css";
-import "../public/assets/css/style.css";
+import "../assets/css/style.css";
 import Navbar from "../components/Navbar";
 import siteConfig from "../data/siteConfig";
 import { DefaultSeo } from "next-seo";
