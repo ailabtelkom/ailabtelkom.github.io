@@ -152,7 +152,7 @@ const Navbar = () => {
                   href="/openmind"
                   color={color}
                   fontWeight="bold"
-                  className="blink"
+                  // className="blink"
                 >
                   Open Mind 2021
                 </Link>

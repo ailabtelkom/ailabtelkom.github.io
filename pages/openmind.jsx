@@ -59,7 +59,7 @@ const recruitment = () => {
           >Video AI Laboratory</iframe>
         </Box>
         <Grid
-          h="70vh"
+          h="65vh"
           mt="10"
           templateRows="repeat(3, 1fr)"
           templateColumns="repeat(4, 1fr)"
