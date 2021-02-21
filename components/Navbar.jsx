@@ -106,8 +106,8 @@ const Navbar = () => {
             route
             href="/openmind"
             color={color}
-            fontWeight="bold"
-            // className="blink"
+            // fontWeight="bold"
+            className="blink"
           >
             Open Mind 2021
           </Link>
@@ -151,8 +151,8 @@ const Navbar = () => {
                   route
                   href="/openmind"
                   color={color}
-                  fontWeight="bold"
-                  // className="blink"
+                  // fontWeight="bold"
+                  className="blink"
                 >
                   Open Mind 2021
                 </Link>
