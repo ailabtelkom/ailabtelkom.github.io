@@ -46,7 +46,7 @@ const recruitment = () => {
         >Video AI Laboratory</iframe>
       </Box>
       <Grid
-        h={{ base: "35vh", md: "50  vh", lg: "70vh" }}
+        h={{ base: "30vh", md: "50vh", lg: "70vh" }}
         mt="5"
         mb="5"
         templateColumns="repeat(4, 1fr)"
