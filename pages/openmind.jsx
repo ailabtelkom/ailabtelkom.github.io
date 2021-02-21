@@ -1,6 +1,6 @@
 import React from "react";
 import { Box, Heading, Divider, useColorModeValue, Button, useColorMode } from "@chakra-ui/core";
-import { Grid, GridItem } from "@chakra-ui/react";
+// import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import ButtonZoom from "../components/ButtonZoom";
 
@@ -45,7 +45,7 @@ const recruitment = () => {
           height="100%"
         >Video AI Laboratory</iframe>
       </Box>
-      <Grid
+      {/* <Grid
         h="65vh"
         mt="10"
         templateRows="repeat(3, 1fr)"
@@ -100,7 +100,7 @@ const recruitment = () => {
           bgPosition="center"
           bgRepeat="no-repeat"
         />
-      </Grid>
+      </Grid> */}
       <Divider mt="2" mb="4" />
       <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="4">
         Let's Join With Us
