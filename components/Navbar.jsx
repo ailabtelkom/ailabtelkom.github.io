@@ -102,6 +102,9 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
+          <Link route href="/openmind" color={color} fontWeight="bold" className="blink">
+            Open Mind
+          </Link>
           <Link
             route
             href="/openmind"
@@ -145,6 +148,9 @@ const Navbar = () => {
                 <ResourcesDropdown />
                 <Link p="2" route href="/about" color={color}>
                   About
+                </Link>
+                <Link p="2" route href="/openmind" color={color} fontWeight="bold" className="blink">
+                  Open Mind
                 </Link>
                 <Link
                   p="2"
