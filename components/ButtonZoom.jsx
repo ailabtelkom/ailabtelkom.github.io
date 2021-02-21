@@ -1,11 +1,10 @@
 import React from "react";
-import { Box, Heading, Divider, useColorModeValue, Button, useColorMode } from "@chakra-ui/core";
-import { Grid, GridItem, useControllableState } from "@chakra-ui/react";
+import { Button } from "@chakra-ui/core";
+import { useControllableState } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 const ButtonZoom = () => {
   const [Text, setText] = useControllableState({ defaultText: `Redirect to Zoom` })
   const MotionButton = motion.custom(Button)
-  const Color = useColorModeValue("black", "white");
   return (
     <MotionButton
       // as="a"
