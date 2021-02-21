@@ -1,9 +1,8 @@
 import React from "react";
 import { Box, Button, Heading, Image, Text, Link, Divider, SimpleGrid, useColorModeValue, useColorMode } from "@chakra-ui/core";
 import { motion } from "framer-motion";
-import activities from "../data/activities";
 
-const recruitment = () => {
+const openRecruitment = () => {
   const MotionBox = motion.custom(Box);
   const bgColor = useColorModeValue("white", "gray.700");
   const itemVariant = {
@@ -55,4 +54,4 @@ const recruitment = () => {
   );
 };
 
-export default recruitment;
+export default openRecruitment;

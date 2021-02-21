@@ -4,7 +4,7 @@ import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, S
 import { motion } from "framer-motion";
 import ButtonZoom from "../components/ButtonZoom";
 
-const recruitment = () => {
+const openMind = () => {
   const MotionBox = motion.custom(Box);
   const containerVariant = {
     start: {
@@ -50,14 +50,14 @@ const recruitment = () => {
         mt="5"
         mb="5"
         templateColumns="repeat(4, 1fr)"
-        gap={{ base: 3, md: 5, lg: 6 }}
+        gap={{ base: 3, md: 4 }}
       >
         {/* <Grid
           h="100%"
           gridTemplateRows="repeat(2, 1fr)"
           gap={6}
         > */}
-        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+        <Stack spacing={{ base: 3, md: 4}}>
           <Box w="100%" h="100%" bg="blue.500" 
             bgImage="url('/assets/images/gallery1.jpg?webp')"
             bgSize="auto 120%"
@@ -71,7 +71,7 @@ const recruitment = () => {
             bgRepeat="no-repeat"
           />
         </Stack>
-        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+        <Stack spacing={{ base: 3, md: 4 }}>
           <Box w="100%" h="50%" bg="blue.500" 
             bgImage="url('/assets/images/gallery5.jpg?webp')"
             bgSize="110% auto"
@@ -85,7 +85,7 @@ const recruitment = () => {
             bgRepeat="no-repeat"
           />
         </Stack>
-        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+        <Stack spacing={{ base: 3, md: 4 }}>
           <Box w="100%" h="100%" bg="blue.500" 
             bgImage="url('/assets/images/gallery7.jpg?webp')"
             bgSize="auto 100%"
@@ -99,7 +99,7 @@ const recruitment = () => {
             bgRepeat="no-repeat"
           />
         </Stack>
-        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+        <Stack spacing={{ base: 3, md: 4 }}>
           <Box w="100%" h="50%" bg="blue.500" 
             bgImage="url('/assets/images/gallery4.jpg?webp')"
             bgSize="100% auto"
@@ -186,4 +186,4 @@ const recruitment = () => {
   );
 };
 
-export default recruitment;
+export default openMind;
