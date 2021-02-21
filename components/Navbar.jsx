@@ -102,7 +102,7 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
-          <Link route href="/openmind" color={color} fontWeight="bold" className="blink">
+          <Link route href="/openmind" color={color}>
             Open Mind
           </Link>
           <Link
@@ -149,7 +149,7 @@ const Navbar = () => {
                 <Link p="2" route href="/about" color={color}>
                   About
                 </Link>
-                <Link p="2" route href="/openmind" color={color} fontWeight="bold" className="blink">
+                <Link p="2" route href="/openmind" color={color}>
                   Open Mind
                 </Link>
                 <Link
