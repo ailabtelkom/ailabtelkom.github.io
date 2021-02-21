@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Divider, useColorModeValue, Button, useColorMode } from "@chakra-ui/core";
+import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, Stack } from "@chakra-ui/core";
 // import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import ButtonZoom from "../components/ButtonZoom";
@@ -45,6 +45,76 @@ const recruitment = () => {
           height="100%"
         >Video AI Laboratory</iframe>
       </Box>
+      <Grid
+        h={{ base: "35vh", md: "50  vh", lg: "70vh" }}
+        mt="5"
+        mb="5"
+        templateColumns="repeat(4, 1fr)"
+        gap={{ base: 3, md: 5, lg: 6 }}
+      >
+        {/* <Grid
+          h="100%"
+          gridTemplateRows="repeat(2, 1fr)"
+          gap={6}
+        > */}
+        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+          <Box w="100%" h="100%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery1.jpg?webp')"
+            bgSize="auto 120%"
+            bgPos="center"
+            bgRepeat="no-repeat"
+          />
+          <Box w="100%" h="50%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery2.jpg?webp')"
+            bgSize="auto 100%"
+            bgPosition="center"
+            bgRepeat="no-repeat"
+          />
+        </Stack>
+        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+          <Box w="100%" h="50%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery5.jpg?webp')"
+            bgSize="110% auto"
+            bgPos="center"
+            bgRepeat="no-repeat"
+          />
+          <Box w="100%" h="100%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery3.jpg?webp')"
+            bgSize="auto 100%"
+            bgPosition="center"
+            bgRepeat="no-repeat"
+          />
+        </Stack>
+        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+          <Box w="100%" h="100%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery7.jpg?webp')"
+            bgSize="auto 100%"
+            bgPos="center"
+            bgRepeat="no-repeat" 
+          />
+          <Box w="100%" h="50%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery6.jpg?webp')"
+            bgSize="auto 100%"
+            bgPosition="center"
+            bgRepeat="no-repeat"
+          />
+        </Stack>
+        <Stack spacing={{ base: 3, md: 5, lg: 6 }}>
+          <Box w="100%" h="50%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery4.jpg?webp')"
+            bgSize="100% auto"
+            bgPos="center"
+            bgRepeat="no-repeat"
+          />
+          <Box w="100%" h="100%" bg="blue.500" 
+            bgImage="url('/assets/images/gallery8.jpg?webp')"
+            bgSize="auto 120%"
+            bgPosition="center"
+            bgRepeat="no-repeat"
+          />
+        </Stack>
+        </Grid>
+      {/* </Grid> */}
       {/* <Grid
         h="65vh"
         mt="10"
