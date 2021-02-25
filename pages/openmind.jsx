@@ -3,6 +3,7 @@ import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, S
 // import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import ButtonZoom from "../components/ButtonZoom";
+import ClickMe from "../components/ClickMe";
 
 const openMind = () => {
   const MotionBox = motion.custom(Box);
@@ -35,6 +36,7 @@ const openMind = () => {
       </Heading>
       <Divider mt="2" mb="4" />
       <ButtonZoom/>
+      <ClickMe/>
       <Heading as="h2" fontSize={{ default: "lg", lg: "xl" }} mb="4" mt="2">
         What Is Artificial Intelligence laboratory???
       </Heading>
@@ -175,7 +177,7 @@ const openMind = () => {
       <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="4">
         Let's Join With Us
       </Heading>
-      <Box width="100%" h={{ base: "65vh", md: "75vh" }}>
+      <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">
         <iframe
           src="https://docs.google.com/forms/d/e/1FAIpQLSdX_G3dE910skx3q4Xap32wc-5QOArj5kA0qCctCpIox0LI9Q/viewform?embedded=true"
           width="100%"
