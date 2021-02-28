@@ -1,9 +1,11 @@
 import React from "react";
-import { Box, Button, Heading, Image, Text, Link, Divider, SimpleGrid, useColorModeValue, useColorMode } from "@chakra-ui/core";
+import { Box, Button, Heading, Image, Divider, Collapse, useColorModeValue, useColorMode } from "@chakra-ui/core";
 import { motion } from "framer-motion";
+import ColapseDoc from "../components/ColapseDoc"
 
 const openRecruitment = () => {
   const MotionBox = motion.custom(Box);
+  
   const bgColor = useColorModeValue("white", "gray.700");
   const itemVariant = {
     start: { y: 20, opacity: 0 },
@@ -23,6 +25,9 @@ const openRecruitment = () => {
     exit: { opacity: 0, transition: { duration: 0.1 } },
   };
   return (
+    
+      
+    
     <MotionBox
       initial="start"
       animate="end"
@@ -36,20 +41,8 @@ const openRecruitment = () => {
       <Heading>
         Open Recruitment Artificial Intelligence laboratory 2021
       </Heading>
-      <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
-        <iframe
-          src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
-          width="100%"
-          height="100%"
-        >Loading…</iframe>
-      </Box>
-      <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
-        <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdX_G3dE910skx3q4Xap32wc-5QOArj5kA0qCctCpIox0LI9Q/viewform?embedded=true"
-          width="100%"
-          height="100%"
-        >Loading…</iframe>
-      </Box>
+      <Divider mt="2" mb="4" />
+      <ColapseDoc/>
     </MotionBox>
   );
 };
