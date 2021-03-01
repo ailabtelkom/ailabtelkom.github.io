@@ -44,7 +44,8 @@ const ColapseDoc = () => {
           </Heading>
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
-              src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
+              // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
+              src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
               width="100%"
               height="100%"
             >Loading…</iframe>
@@ -68,7 +69,8 @@ const ColapseDoc = () => {
           </Heading>
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
-              src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
+              // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
+              src="https://drive.google.com/file/d/1VnfM5drwo98mwEyXpUeB4aPrLi7jIwMb/preview"
               width="100%"
               height="100%"
             >Loading…</iframe>
