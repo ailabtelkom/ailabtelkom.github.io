@@ -12,7 +12,7 @@ const ColapseDoc = () => {
           <Stack>
             <Image
               alt="Study Group"
-              src="/img/undraw_pair_programming_njlp.svg"
+              src="/assets/images/logo_sg.png"
               loading='lazy'
               maxH={{ base: "60px", md: "100px" }}
               mx="auto"
@@ -26,7 +26,7 @@ const ColapseDoc = () => {
           <Stack>
             <Image
               alt="Focus Group"
-              src="/img/undraw_images_aef7.svg"
+              src="/assets/images/logo_fg.png"
               loading='lazy'
               maxH={{ base: "60px", md: "100px" }}
               mx="auto"
@@ -70,7 +70,7 @@ const ColapseDoc = () => {
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
-              src="https://drive.google.com/file/d/1VnfM5drwo98mwEyXpUeB4aPrLi7jIwMb/preview"
+              src="https://drive.google.com/file/d/1RJ8INtAhA5ZGMQkCtY8HF6eMVKhGftm6/preview"
               width="100%"
               height="100%"
             >Loading…</iframe>
