@@ -11,7 +11,7 @@ export default [
     name: "I Nengah Dharma Pradnyandita",
     position: "Lab.Assistant Coordinator",
     image: "/assets/images/aslab21/dharma.png?webp",
-    fallback: "/assets/images/aslab21/dharma.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=IND",
     social: {
       linkedin: "https://id.linkedin.com/in/i-nengah-dharma-pradnyandita-05628b1a3/",
       github: "https://github.com/nengahdharmaa/",
@@ -23,7 +23,7 @@ export default [
     name: "Nisa Maulia Azahra",
     position: "Secretary",
     image: "/assets/images/aslab21/nisa.png?webp",
-    fallback: "/assets/images/aslab21/nisa.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=NMA",
     social: {
       linkedin: "https://id.linkedin.com/in/nisamaulia/",
       github: "https://github.com/nisamaulia/",
@@ -34,7 +34,7 @@ export default [
     name: "Ni Made Dwipadini Puspitarini",
     position: "Treasurer",
     image: "/assets/images/aslab21/dini.png?webp",
-    fallback: "/assets/images/aslab21/dini.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=NMD",
     social: {
       linkedin: "https://id.linkedin.com/in/dinipuspitarini/",
       github: "https://github.com/dinipuspitarini/",
@@ -45,7 +45,7 @@ export default [
     name: "Maiza Radhiya",
     position: "Internal",
     image: "/assets/images/aslab21/maiza.png?webp",
-    fallback: "/assets/images/aslab21/maiza.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=MR",
     social: {
       linkedin: "https://id.linkedin.com/in/maizaradhiya/",
       github: "https://github.com/maizaradhiya/",
@@ -56,7 +56,7 @@ export default [
     name: "Bagja 9102 Kurniawan",
     position: "🐱 External 😼",
     image: "/assets/images/aslab21/bagja.png?webp",
-    fallback: "/assets/images/aslab21/bagja.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=BK",
     social: {
       linkedin: "https://id.linkedin.com/in/bagja9102/",
       github: "https://github.com/Bagja9102Kurniawan/",
@@ -68,7 +68,7 @@ export default [
     name: "Muhammad Zaky Aonillah",
     position: "Focus Group",
     image: "/assets/images/aslab21/zaky.png?webp",
-    fallback: "/assets/images/aslab21/zaky.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=MZA",
     social: {
       linkedin: "https://id.linkedin.com/in/mhmdzaky/",
       github: "https://github.com/mhmdzakyy/",
@@ -79,7 +79,7 @@ export default [
     name: "Haydar Rizaldy Putera Prayudi",
     position: "Study Group",
     image: "/assets/images/aslab21/haydar.png?webp",
-    fallback: "/assets/images/aslab21/hyaydar.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=HRP",
     social: {
       linkedin: "https://id.linkedin.com/in/haydar-rizaldy-putera-prayudi/",
       github: "https://github.com/HaydarRizaldy/",
@@ -90,7 +90,7 @@ export default [
     name: "M Alif Naufal Yasin",
     position: "Inventory ☕",
     image: "/assets/images/aslab21/alif.png?webp",
-    fallback: "/assets/images/aslab21/alif.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=MAN",
     social: {
       linkedin: "https://id.linkedin.com/in/alifnaufalyasin/",
       github: "https://github.com/alifnaufalyasin/",
@@ -102,7 +102,7 @@ export default [
     name: "Kaenova Mahendra Auditama",
     position: "Media",
     image: "/assets/images/aslab21/kae.png?webp",
-    fallback: "/assets/images/aslab21/kae.png?lqip",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=KMA",
     social: {
       linkedin: "https://id.linkedin.com/in/kaenova/",
       github: "https://github.com/kaenova/",
