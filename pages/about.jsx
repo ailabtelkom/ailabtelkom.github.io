@@ -207,7 +207,6 @@ const about = () => {
                 <Image
                   alt={data.name}
                   src={data.image}
-                  fallback={data.fallback}
                   maxH="300px"
                   mx="auto"
                 />
