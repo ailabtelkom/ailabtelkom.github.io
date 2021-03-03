@@ -1,10 +1,11 @@
 import React from "react";
-import { Box, Button, Heading, Image, Text, Collapse, Stack, Divider, useColorModeValue, useColorMode } from "@chakra-ui/core";
+import { Box, Button, Heading, Image, Text, Collapse, Stack, Skeleton, useColorModeValue, useColorMode } from "@chakra-ui/core";
 import { motion } from "framer-motion";
 
 const ColapseDoc = () => {
   const [showSG, setShowSG] = React.useState(true);
   const [showFG, setShowFG] = React.useState(false);
+  const [showSkelton, setShowSkelton] = React.useState(false);
   return (
     <Box mt="4">
       <Box>
@@ -42,14 +43,17 @@ const ColapseDoc = () => {
           <Heading>
             Study Group
           </Heading>
-          <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
-            <iframe
-              // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
-              src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
-              width="100%"
-              height="100%"
-            >Loading…</iframe>
-          </Box>
+          <Skeleton isLoaded={showSkelton}>
+            <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
+              <iframe
+                // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
+                src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
+                width="100%"
+                height="100%"
+                onLoad={()=>setShowSkelton(true)}
+              >Loading…</iframe>
+            </Box>
+          </Skeleton>
           <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
@@ -67,14 +71,17 @@ const ColapseDoc = () => {
           <Heading>
             Focus Group
           </Heading>
-          <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
-            <iframe
-              // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
-              src="https://drive.google.com/file/d/1RJ8INtAhA5ZGMQkCtY8HF6eMVKhGftm6/preview"
-              width="100%"
-              height="100%"
-            >Loading…</iframe>
-          </Box>
+          <Skeleton isLoaded={showSkelton}>
+            <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
+              <iframe
+                // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
+                src="https://drive.google.com/file/d/1RJ8INtAhA5ZGMQkCtY8HF6eMVKhGftm6/preview"
+                width="100%"
+                height="100%"
+                onLoad={()=>setShowSkelton(true)}
+              >Loading…</iframe>
+            </Box>
+          </Skeleton>
           <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
