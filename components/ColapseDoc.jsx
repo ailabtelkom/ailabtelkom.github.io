@@ -75,7 +75,7 @@ const ColapseDoc = () => {
             <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
               <iframe
                 // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
-                src="https://drive.google.com/file/d/1RJ8INtAhA5ZGMQkCtY8HF6eMVKhGftm6/preview"
+                src="https://drive.google.com/file/d/1AMhmJDJgAFgZ1dWjKkPsvJaX_-CNeiDJ/preview"
                 width="100%"
                 height="100%"
                 onLoad={()=>setShowSkelton(true)}
