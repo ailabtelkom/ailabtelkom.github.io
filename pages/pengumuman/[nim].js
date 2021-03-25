@@ -9,8 +9,8 @@ import { Box, Heading, Image, Divider, Text, Stack, useColorModeValue,
   ModalBody,
   ModalCloseButton, useDisclosure, Center  } from "@chakra-ui/core";
 import { motion } from "framer-motion";
-import dataLolos from "../../../data/dataLolos";
-import Masuk from "../../../components/Masuk"
+import dataLolos from "../../data/dataLolos";
+import Masuk from "../../components/Masuk"
 
 const pengumumanNim = () => {
   const router = useRouter()
