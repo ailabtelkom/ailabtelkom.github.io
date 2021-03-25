@@ -47,7 +47,7 @@ const FormSoal = () => {
   const handleChangeNim = (event) => {
     const nim = event.target.value
     setNim(nim)
-    setLink(`/pengumuman/${nim}`)
+    setLink(`/siapayaa?nim=${nim}`)
   }
   const handleChangeJawaban = (event) => {
     const textnya = event.target.value
