@@ -46,4 +46,5 @@ export default {
   '1301184026': {lolos: true, nama: 'Ihsan Ahsanu Amala', image: 'https://images.telkomuniversity.ac.id/pmb/1819/PAS_FOTO/82411952681_PAS_FOTO_1.png'},
   '1301184259': {lolos: true, nama: 'Ridhwan Nashir', image: 'https://images.telkomuniversity.ac.id/pmb/1819/PAS_FOTO/11410321131_PAS_FOTO_1.jpg'},
   '1301184376': {lolos: true, nama: 'Gilang Ramadhan', image: 'https://images.telkomuniversity.ac.id/pmb/1819/PAS_FOTO/11319004141_PAS_FOTO_1.JPG'},
+  '1301184453': {lolos: true, nama: 'Muhammad Farrel', image: 'https://images.telkomuniversity.ac.id/pmb/1819/PAS_FOTO/11319403201_PAS_FOTO_1.jpg'},
 }
