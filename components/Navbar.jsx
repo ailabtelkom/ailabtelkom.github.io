@@ -104,12 +104,12 @@ const Navbar = () => {
           </Link>
           <Link
             route
-            href="/oprec"
+            href="/pengumuman"
             color={color}
             fontWeight="bold"
             className="blink"
           >
-            Open Recruitment 2021
+            {'Pengumuman SG & FG'}
           </Link>
         </Stack>
       </Stack>
@@ -149,12 +149,12 @@ const Navbar = () => {
                 <Link
                   p="2"
                   route
-                  href="/oprec"
+                  href="/pengumuman"
                   color={color}
                   fontWeight="bold"
                   className="blink"
                 >
-                  Open Recruitment 2021
+                  {'Pengumuman SG & FG'}
                 </Link>
               </Stack>
             </DrawerBody>

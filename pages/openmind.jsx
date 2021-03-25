@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, Stack } from "@chakra-ui/core";
 // import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import ButtonZoom from "../components/ButtonZoom";
+// import ButtonZoom from "../components/ButtonZoom";
 import ClickMe from "../components/ClickMe";
 
 const openMind = () => {
@@ -35,7 +35,7 @@ const openMind = () => {
         Open Mind Artificial Intelligence laboratory 2021
       </Heading>
       <Divider mt="2" mb="4" />
-      <ButtonZoom/>
+      {/* <ButtonZoom/> */}
       <ClickMe/>
       <Heading as="h2" fontSize={{ default: "lg", lg: "xl" }} mb="4" mt="2">
         What Is Artificial Intelligence laboratory???

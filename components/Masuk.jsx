@@ -1,0 +1,130 @@
+import React from "react"
+import {
+  Heading,
+  Divider,
+  Box,
+  Center,
+  Stack,
+  Image,
+  Text,
+  useColorModeValue,
+  Button,
+  Link,
+} from "@chakra-ui/core"
+import { motion } from "framer-motion"
+import { FaDiscord, FaLine } from "react-icons/fa"
+// import cookieCutter from 'cookie-cutter'
+
+function useStickyState(defaultValue, key) {
+  const [value, setValue] = React.useState(defaultValue)
+
+  React.useEffect(() => {
+    const stickyValue = window.localStorage.getItem(key)
+    // const stickyValue = cookieCutter.get(key)
+
+    if (stickyValue !== null) {
+      setValue(JSON.parse(stickyValue))
+    }
+  }, [key])
+
+  React.useEffect(() => {
+    window.localStorage.setItem(key, JSON.stringify(value))
+    // cookieCutter.set(key, JSON.stringify(value), { expires: (Date.now() + 30*1000) })
+  }, [key, value])
+
+  return [value, setValue]
+}
+
+const Masuk = (props) => {
+  const { data, nim } = props
+  const [show, setShow] = React.useState(false)
+  const [mode, setMode] = useStickyState(false, "jawabBener")
+  const MotionBox = motion.custom(Box)
+  const MotionButton = motion.custom(Button)
+  const bgColor = useColorModeValue("white", "gray.700")
+  const itemVariant = {
+    start: { y: 20, opacity: 0 },
+    end: { y: 0, opacity: 1 },
+  }
+  const handle = (data) => {
+    if (data.lolos == "nodata") return true
+    else if (!mode) return true
+    else return false
+  }
+
+  // const MotionButton = motion.custom(Button)
+  const lolos = `🎉 Selamat, Kamu Lolos Dan Menjadi Bagian Dari Keluarga Lab AI 🎉`
+  const belom =
+    "😉👍 Semangaatt, kamu masih punya kesempatan dilain waktu, jangan berkecil hati yaa 😁👍"
+  console.log(data, "asdasd")
+  return (
+    <Box mt="2" mb="2">
+      <Heading hidden={handle(data)}>{data.lolos ? lolos : belom}</Heading>
+      <Heading hidden={data.lolos == "nodata" ? false : true}>
+        Nim Tidak Terdaftar
+      </Heading>
+      <Heading hidden={mode}>Anda belum menjawab Pertanyaan</Heading>
+      <Divider mt="2" mb="4" />
+      {/* <Center> */}
+      <Box hidden={handle(data)}>
+        <MotionBox
+          backgroundColor={bgColor}
+          whileHover={{ scale: 1.02 }}
+          whileTap={{ scale: 0.98 }}
+          variants={itemVariant}
+          borderWidth="1px"
+          maxW="300px"
+          mx="auto"
+        >
+          <Image
+            alt={data.nama}
+            src={data.image}
+            fallbackSrc={data.fallback}
+            maxH="300px"
+            mx="auto"
+          />
+          <Heading as="h4" fontSize="xl">
+            {data.nama}
+          </Heading>
+          <Heading as="h4" fontSize="xl" mb="1rem">
+            {nim}
+          </Heading>
+        </MotionBox>
+        <Stack
+          hidden={data.lolos ? false : true}
+          direction="row"
+          justifyContent="center"
+          my="2"
+        >
+          <MotionButton
+            leftIcon={<FaDiscord />}
+            as="a"
+            href="https://ailabtelkom.github.io/discord"
+            target="_blank"
+            variants={itemVariant}
+          >
+            Join Discord
+          </MotionButton>
+        </Stack>
+        <Text hidden={data.lolos ? false : true}>
+          *jika tidak dapat join dapat DM ke ig{" "}
+          <Link href="https://instagram.com/ailabtelkom">@ailabtelkom</Link>
+        </Text>
+      </Box>
+      {/* <Stack h="80vh" hidden={handle(data)}>
+          <Image
+            mt="2"
+            maxH="50%"
+            alt="First Meet AILAB 2020"
+            src={data.image}
+          />
+          <Text>
+            {data.nama}
+          </Text>
+        </Stack> */}
+      {/* </Center> */}
+    </Box>
+  )
+}
+
+export default Masuk
