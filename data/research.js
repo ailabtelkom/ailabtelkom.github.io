@@ -1,5 +1,15 @@
 export default [
   {
+    year: 2021,
+    title:
+      "Translasi Citra Malam Menjadi Citra Siang Menggunakan Deep Convolutional Generative Adversarial Network",
+    author:
+      "Pratama Yoga Santosa ; Ema Rachmawati ; Tjokorda Agung Budi Wirayuda",
+    publisher: "-",
+    url:
+      "https://repository.telkomuniversity.ac.id/pustaka/166788/translasi-citra-malam-menjadi-citra-siang-menggunakan-deep-convolutional-generative-adversarial-network.html",
+  },
+  {
     year: 2020,
     title:
       "Developing an LSTM-based Classification Model of IndiHome Customer Feedbacks",
