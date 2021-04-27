@@ -41,7 +41,7 @@ const playgrounds = [
   {
     name: "Eliza Line Chatbot",
     url: "https://line.me/R/ti/p/%40537amjdd",
-    detail: "https://github.com/raisoturu/eliza-line-chatbot",
+    detail: "https://github.com/svspicious/eliza-line-chatbot",
     image:
       "https://media.graphcms.com/resize=w:450,fit:crop/output=format:webp/compress/4yRG5k1QAyQ7v8CVCDWg",
     desc:

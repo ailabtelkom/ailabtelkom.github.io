@@ -54,7 +54,7 @@ export default [
     fallback: require("../images/aslab20/vaq.jpg?lqip"),
     social: {
       linkedin: "https://id.linkedin.com/in/anvaqta",
-      github: "https://github.com/raisoturu",
+      github: "https://github.com/svspicious",
       instagram: "https://www.instagram.com/anvaqta/",
     },
   },

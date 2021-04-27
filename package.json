@@ -4,7 +4,7 @@
   "description": "ai landing page",
   "main": "index.js",
   "repository": "https://github.com/ailabtelkom/ailabtelkom.github.io.git",
-  "author": "raisoturu <anvaqta@student.telkomuniversity.ac.id>",
+  "author": "svspicious <anvaqta@student.telkomuniversity.ac.id>",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",

@@ -162,8 +162,8 @@ const Navbar = () => {
             <DrawerFooter>
               <Text fontSize="sm">
                 Made with ❤️ by{" "}
-                <Link isExternal href="https://github.com/raisoturu">
-                  @raisoturu
+                <Link isExternal href="https://github.com/svspicious">
+                  @svspicious
                 </Link>
               </Text>
             </DrawerFooter>
