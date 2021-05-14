@@ -3,7 +3,7 @@ import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, S
 // import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 // import ButtonZoom from "../components/ButtonZoom";
-import ClickMe from "../components/ClickMe";
+import ClickMe from "../components/ButtonAiTalks";
 
 const openMind = () => {
   const MotionBox = motion.custom(Box);
@@ -36,7 +36,7 @@ const openMind = () => {
       </Heading>
       <Divider mt="2" mb="4" />
       {/* <ButtonZoom/> */}
-      <ClickMe/>
+      {/* <ClickMe/> */}
       <Heading as="h2" fontSize={{ default: "lg", lg: "xl" }} mb="4" mt="2">
         What Is Artificial Intelligence laboratory???
       </Heading>
