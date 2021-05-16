@@ -22,10 +22,11 @@ const ButtonZoom = () => {
       <MotionBox mt="1">
         <Skeleton isLoaded={showSkelton}>
         <Image
-          alt="https://media.discordapp.net/attachments/810149188984897557/839135003350663178/Artboard_4_copy-100.jpg"
-          src="https://cdn.discordapp.com/attachments/810149188984897557/839135003350663178/Artboard_4_copy-100.jpg"
+          alt="AiTalks Episode 1"
+          src="/assets/images/AiTalksEps1.jpg?webp"
+          fallbackSrc="/assets/images/AiTalksEps1.jpg?lqip"
           loading='lazy'
-          maxH="70vh"
+          maxH={{ default: "70vh", lg: "75vh" }}
           mx="auto"
           onLoad={()=>setShowSkelton(true)}
         />
