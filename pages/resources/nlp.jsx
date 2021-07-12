@@ -1,4 +1,4 @@
-import { Box, Button, Link, Spinner, useColorMode } from "@chakra-ui/core";
+import { Box, Button, Link, Spinner, useColorMode } from "@chakra-ui/react";
 import React from "react";
 import { getNlpData } from "../../utils/resourceHooks";
 import Markdown from "react-markdown";
@@ -7,6 +7,7 @@ import { FaGithub } from "react-icons/fa";
 import { NextSeo } from "next-seo";
 const nlp = () => {
   const { data, isLoading } = getNlpData();
+  // console.log(data);
   const { colorMode } = useColorMode();
   return (
     <Box
@@ -14,7 +15,7 @@ const nlp = () => {
       pb="50px"
       maxW={[null, null, "2xl", "5xl"]}
       m="auto"
-      px={{ default: 6, md: 0 }}
+      px={{ base: 6, md: 0 }}
     >
       <NextSeo
         title="Bahasa Indonesia NLP Resources"

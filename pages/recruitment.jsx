@@ -1,9 +1,9 @@
 import React from "react";
-import { Box, Button, Heading, Image, Text, Link } from "@chakra-ui/core";
+import { Box, Button, Heading, Image, Text, Link } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const recruitment = () => {
-  const MotionBox = motion.custom(Box);
+  const MotionBox = motion(Box)
   // const itemVariant = {
   //   start: { y: 20, opacity: 0 },
   //   end: { y: 0, opacity: 1 },
@@ -52,7 +52,7 @@ const recruitment = () => {
         bottom={1}
         left={0}
         src="/img/uncle_sam.png"
-        alt="we want you"
+        alt="we want you 1"
       />
       <Image
         width={{ base: "100px", md: "200px" }}
@@ -60,7 +60,7 @@ const recruitment = () => {
         top="160px"
         right={0}
         src="https://www.memesmonkey.com/images/memesmonkey/3b/3bc03709bdd2d65178f806816cda9e70.jpeg"
-        alt="we want you"
+        alt="we want you 2"
       />
       <Image
         width={{ base: "100px", md: "200px" }}
@@ -68,7 +68,7 @@ const recruitment = () => {
         top="160px"
         left={{ base: "0", md: "-20px" }}
         src="https://cdn.kapwing.com/video_image-Urvztiziu.jpeg"
-        alt="we want you"
+        alt="we want you 3"
       />
     </MotionBox>
   );

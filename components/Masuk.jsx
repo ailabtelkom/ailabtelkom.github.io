@@ -10,7 +10,8 @@ import {
   useColorModeValue,
   Button,
   Link,
-} from "@chakra-ui/core"
+  Skeleton
+} from "@chakra-ui/react"
 import { motion } from "framer-motion"
 import { FaDiscord, FaLine } from "react-icons/fa"
 // import cookieCutter from 'cookie-cutter'
@@ -38,9 +39,12 @@ function useStickyState(defaultValue, key) {
 const Masuk = (props) => {
   const { data, nim } = props
   const [show, setShow] = React.useState(false)
+  const [showSkelton, setShowSkelton] = React.useState(false);
   const [mode, setMode] = useStickyState(false, "jawabBener")
-  const MotionBox = motion.custom(Box)
-  const MotionButton = motion.custom(Button)
+  const [lsNim, setLsNim] = useStickyState(0, "checkNim")
+
+  const MotionBox = motion(Box)
+  const MotionButton = motion(Button)
   const bgColor = useColorModeValue("white", "gray.700")
   const itemVariant = {
     start: { y: 20, opacity: 0 },
@@ -48,22 +52,25 @@ const Masuk = (props) => {
   }
   const handle = (data) => {
     if (data.lolos == "nodata") return true
+    else if (lsNim!=nim) return true
     else if (!mode) return true
     else return false
   }
 
-  // const MotionButton = motion.custom(Button)
+  // const MotionButton = motion(Button)
   const lolos = `🎉 Selamat, Kamu Lolos Dan Menjadi Bagian Dari Keluarga Lab AI 🎉`
   const belom =
     "😉👍 Semangaatt, kamu masih punya kesempatan dilain waktu, jangan berkecil hati yaa 😁👍"
-  console.log(data, "asdasd")
+  const checkNim = lsNim==nim
   return (
-    <Box mt="2" mb="2">
+    <Box mt="2">
       <Heading hidden={handle(data)}>{data.lolos ? lolos : belom}</Heading>
       <Heading hidden={data.lolos == "nodata" ? false : true}>
         Nim Tidak Terdaftar
       </Heading>
       <Heading hidden={mode}>Anda belum menjawab Pertanyaan</Heading>
+      <Heading hidden={checkNim}>Silahkan menjawab pertanyaan terlebih dahulu</Heading>
+      <Text hidden={checkNim}>tidak bisa melakukan pengecekan dengan hanya mengganti param :) </Text>
       <Divider mt="2" mb="4" />
       {/* <Center> */}
       <Box hidden={handle(data)}>
@@ -76,13 +83,16 @@ const Masuk = (props) => {
           maxW="300px"
           mx="auto"
         >
-          <Image
-            alt={data.nama}
-            src={data.image}
-            fallbackSrc={data.fallback}
-            maxH="300px"
-            mx="auto"
-          />
+          <Skeleton isLoaded={showSkelton} h="300px">
+            <Image
+              alt={data.nama}
+              src={data.image}
+              fallbackSrc={data.fallback}
+              onLoad={ () => setShowSkelton(true) }
+              maxH="300px"
+              mx="auto"
+            />
+          </Skeleton>
           <Heading as="h4" fontSize="xl">
             {data.nama}
           </Heading>
@@ -111,18 +121,6 @@ const Masuk = (props) => {
           <Link href="https://instagram.com/ailabtelkom">@ailabtelkom</Link>
         </Text>
       </Box>
-      {/* <Stack h="80vh" hidden={handle(data)}>
-          <Image
-            mt="2"
-            maxH="50%"
-            alt="First Meet AILAB 2020"
-            src={data.image}
-          />
-          <Text>
-            {data.nama}
-          </Text>
-        </Stack> */}
-      {/* </Center> */}
     </Box>
   )
 }

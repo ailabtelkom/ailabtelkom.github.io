@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Heading,
@@ -9,7 +10,7 @@ import {
   Image as ChakraImage,
   OrderedList,
   UnorderedList,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import Link from "../components/Link";
 import Code from "../components/Code";
 const flatten = (text, child) => {

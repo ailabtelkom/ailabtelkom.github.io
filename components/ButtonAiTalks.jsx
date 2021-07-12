@@ -1,20 +1,20 @@
 import React from "react";
-import { Button, Box, Skeleton, Image } from "@chakra-ui/core";
+import { Button, Box, Skeleton, Image } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 const ButtonZoom = () => {
-  const MotionButton = motion.custom(Button)
-  const MotionBox = motion.custom(Box)
+  const MotionButton = motion(Button)
+  const MotionBox = motion(Box)
   const [showSkelton, setShowSkelton] = React.useState(false);
   return (
-    <Box mt="2" mb="2">
+    <Box mb="2">
       <MotionButton
         as="a"
         href="#Forms"
         animate={{ scale: [1, 1.1, 1] }}
         transition={{ repeat: Infinity,  duration: 2, type: "spring" }}
         colorScheme="blue"
-        fontSize={{ default: "sm", lg: "md" }}
-        w={{ default: "50vw", md:"25vw", lg: "20%" }}
+        fontSize={{ base: "sm", lg: "md" }}
+        w={{ base: "50vw", md:"25vw", lg: "20%" }}
         h="5vh"
       >
         {">>Register Here<<"}
@@ -26,7 +26,7 @@ const ButtonZoom = () => {
           src="/assets/images/AiTalksEps1.jpg?webp"
           fallbackSrc="/assets/images/AiTalksEps1.jpg?lqip"
           loading='lazy'
-          maxH={{ default: "70vh", lg: "75vh" }}
+          maxH={{ base: "70vh", lg: "75vh" }}
           mx="auto"
           onLoad={()=>setShowSkelton(true)}
         />

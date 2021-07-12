@@ -1,6 +1,6 @@
 import React from "react";
 import NextLink from "next/link";
-import { Link as ChakraLink, useColorMode } from "@chakra-ui/core";
+import { Link as ChakraLink, useColorMode } from "@chakra-ui/react";
 const Link = ({
   route,
   href,

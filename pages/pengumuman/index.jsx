@@ -6,13 +6,13 @@ import { Box, Heading, Input, Center, Button, useColorModeValue,
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton, useDisclosure  } from "@chakra-ui/core";
+  ModalCloseButton, useDisclosure  } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import FormSoal from "../../components/FormSoal"
 
 
 const openRecruitment = () => {
-  const MotionBox = motion.custom(Box);
+  const MotionBox = motion(Box)
   const bgColor = useColorModeValue("white", "gray.700");
   const containerVariant = {
     start: {

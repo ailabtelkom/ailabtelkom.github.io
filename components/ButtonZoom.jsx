@@ -1,10 +1,10 @@
 import React from "react";
-import { Button } from "@chakra-ui/core";
+import { Button } from "@chakra-ui/react";
 // import { useControllableState } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 const ButtonZoom = () => {
   const [Text, setText] = React.useState('Redirect to Zoom')
-  const MotionButton = motion.custom(Button)
+  const MotionButton = motion(Button)
   return (
     <MotionButton
       // as="a"
@@ -18,7 +18,7 @@ const ButtonZoom = () => {
       onClick={() => {(Text===`Redirect to Zoom`)?setText(`Join Us On \n
       23 Mei 2021 | 12:30 WIB`):setText(`Redirect to Zoom`)}}
       // color={Color}
-      fontSize={{ default: "md", lg: "xl" }}
+      fontSize={{ base: "md", lg: "xl" }}
       w="80%"
       h="8vh"
     >

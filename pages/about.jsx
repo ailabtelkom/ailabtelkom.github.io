@@ -10,9 +10,10 @@ import {
   useColorMode,
   Stack,
   IconButton,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Link from "../components/Link";
+import CardAslab from "../components/CardAslab"
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import activities from "../data/activities";
@@ -20,7 +21,7 @@ import aslab21 from "../data/aslab21";
 import aslab20 from "../data/aslab20";
 import { NextSeo } from "next-seo";
 const about = () => {
-  const MotionBox = motion.custom(Box);
+  const MotionBox = motion(Box)
   const { colorMode } = useColorMode();
   const bgColor = useColorModeValue("white", "gray.700");
   const itemVariant = {
@@ -59,11 +60,11 @@ const about = () => {
         <Image
           mt="2"
           alt="First Meet AILAB 2020"
-          src={require("../images/firstmeet2020.jpg")}
-          fallbackSrc={require("../images/firstmeet2020.jpg?lqip")}
+          src="/img/firstmeet2020.jpg"
+          fallbackSrc="/img/firstmeet2020.jpg?lqip"
         />
-        <Box px={{ default: 6, md: 0 }}>
-          <Heading mt="2" fontSize={{ default: "2xl", lg: "3xl" }}>
+        <Box px={{ base: 6, md: 0 }}>
+          <Heading mt="2" fontSize={{ base: "2xl", lg: "3xl" }}>
             About Artificial Intelligence Laboratory Telkom University
           </Heading>
           <Text mt="2">
@@ -78,7 +79,7 @@ const about = () => {
             .
           </Text>
           <Divider mt="2" mb="4" />
-          <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="4">
+          <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
             Our activities
           </Heading>
           <SimpleGrid columns={{ base: 1, lg: 3 }} spacing={4}>
@@ -112,153 +113,24 @@ const about = () => {
           </SimpleGrid>
           <Heading
             as="h2"
-            fontSize={{ default: "xl", lg: "2xl" }}
+            fontSize={{ base: "xl", lg: "2xl" }}
             mt="8"
             mb="4"
           >
             Meet The Eliza 2021 Gang 👊😎
           </Heading>
-          <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={4}>
-            {aslab21.map((data, idx) => (
-              <MotionBox
-                backgroundColor={bgColor}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                key={idx}
-                variants={itemVariant}
-                borderWidth="1px"
-              >
-                <Image
-                  alt={data.name}
-                  src={data.image}
-                  fallbackSrc={data.fallback}
-                  maxH="300px"
-                  mx="auto"
-                />
-                <Heading as="h4" fontSize="lg">
-                  {data.name}
-                </Heading>
-                <Text>{data.position}</Text>
-                <Stack direction="row" justifyContent="center" my="2">
-                  {data.social.linkedin && (
-                    <Link href={data.social.linkedin}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="LinkedIn"
-                        icon={<FaLinkedin />}
-                      />
-                    </Link>
-                  )}
-                  {data.social.github && (
-                    <Link href={data.social.github}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="Github"
-                        icon={<FaGithub />}
-                      />
-                    </Link>
-                  )}
-                  {data.social.instagram && (
-                    <Link href={data.social.instagram}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="Instagram"
-                        icon={<FaInstagram />}
-                      />
-                    </Link>
-                  )}
-                  {data.social.email && (
-                    <Link href={data.social.email}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="Email"
-                        icon={<MdEmail />}
-                      />
-                    </Link>
-                  )}
-                </Stack>
-              </MotionBox>
-            ))}
-          </SimpleGrid>
+          <CardAslab dataAslab={aslab21} />
         </Box>
-        <Box px={{ default: 6, md: 0 }}>
+        <Box px={{ base: 6, md: 0 }}>
           <Heading
             as="h2"
-            fontSize={{ default: "xl", lg: "2xl" }}
+            fontSize={{ base: "xl", lg: "2xl" }}
             mt="8"
             mb="4"
           >
             Meet The Integer 2020 Gang 👊😎
           </Heading>
-          <SimpleGrid columns={{ base: 2, lg: 4 }} spacing={4}>
-            {aslab20.map((data, idx) => (
-              <MotionBox
-                backgroundColor={bgColor}
-                whileHover={{ scale: 1.02 }}
-                whileTap={{ scale: 0.98 }}
-                key={idx}
-                variants={itemVariant}
-                borderWidth="1px"
-              >
-                <Image
-                  alt={data.name}
-                  src={data.image}
-                  maxH="300px"
-                  mx="auto"
-                />
-                <Heading as="h4" fontSize="lg">
-                  {data.name}
-                </Heading>
-                <Text>{data.position}</Text>
-                <Stack direction="row" justifyContent="center" my="2">
-                  {data.social.linkedin && (
-                    <Link href={data.social.linkedin}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="LinkedIn"
-                        icon={<FaLinkedin />}
-                      />
-                    </Link>
-                  )}
-                  {data.social.github && (
-                    <Link href={data.social.github}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="Github"
-                        icon={<FaGithub />}
-                      />
-                    </Link>
-                  )}
-                  {data.social.instagram && (
-                    <Link href={data.social.instagram}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="Instagram"
-                        icon={<FaInstagram />}
-                      />
-                    </Link>
-                  )}
-                  {data.social.email && (
-                    <Link href={data.social.email}>
-                      <IconButton
-                        size="sm"
-                        colorScheme="yellow"
-                        aria-label="Email"
-                        icon={<MdEmail />}
-                      />
-                    </Link>
-                  )}
-                </Stack>
-              </MotionBox>
-            ))}
-          </SimpleGrid>
+          <CardAslab dataAslab={aslab20} />
         </Box>
       </MotionBox>
     </React.Fragment>

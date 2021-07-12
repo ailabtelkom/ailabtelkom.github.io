@@ -1,6 +1,6 @@
 import React from "react";
-import { Box, Button, Heading, Image, Text, Collapse, Stack, Skeleton, useColorModeValue, useColorMode } from "@chakra-ui/core";
-import { motion } from "framer-motion";
+import { Box, Button, Heading, Image, Text, Collapse, Stack, Skeleton } from "@chakra-ui/react";
+// import { motion } from "framer-motion";
 
 const ColapseDoc = () => {
   const [showSG, setShowSG] = React.useState(true);
@@ -38,7 +38,7 @@ const ColapseDoc = () => {
           </Stack>
         </Button>
       </Box>
-      <Collapse mt={4} isOpen={showSG}>
+      <Collapse mt={4} in={showSG} animateOpacity>
         <Box>
           <Heading>
             Study Group
@@ -50,11 +50,11 @@ const ColapseDoc = () => {
                 src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
                 width="100%"
                 height="100%"
-                onLoad={()=>setShowSkelton(true)}
+                onLoad={ () => setShowSkelton(true) }
               >Loading…</iframe>
             </Box>
           </Skeleton>
-          <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="2" mt="4">
+          <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
@@ -66,7 +66,7 @@ const ColapseDoc = () => {
           </Box>
         </Box>
       </Collapse>
-      <Collapse mt={4} isOpen={showFG}>
+      <Collapse mt={4} in={showFG} animateOpacity>
         <Box>
           <Heading>
             Focus Group
@@ -82,7 +82,7 @@ const ColapseDoc = () => {
               >Loading…</iframe>
             </Box>
           </Skeleton>
-          <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="2" mt="4">
+          <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">

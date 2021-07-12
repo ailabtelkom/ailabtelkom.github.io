@@ -7,7 +7,7 @@ import {
   Stack,
   Text,
   Icon,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import {
   Drawer,
   DrawerBody,
@@ -21,7 +21,7 @@ import {
   MenuButton,
   MenuList,
   MenuItem,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import {
   FaSun,
   FaMoon,
@@ -81,8 +81,8 @@ const Navbar = () => {
       position="fixed"
       top
       zIndex={1}
-      p={3}
-      px={{ default: 4, lg: 5 }}
+      p={2}
+      px={{ base: 4, lg: 5 }}
       d="flex"
       alignItems="center"
       justifyContent="space-between"
@@ -99,6 +99,9 @@ const Navbar = () => {
             Playground
           </Link>
           <ResourcesDropdown />
+          <Link route href="/member" color={color}>
+            Member
+          </Link>
           <Link route href="/about" color={color}>
             About
           </Link>
@@ -116,14 +119,14 @@ const Navbar = () => {
       <Stack direction="row">
         <IconButton
           variant="transparent"
-          size="sm"
+          w="3vw"
           onClick={toggleColorMode}
           icon={Icons}
         />
         <IconButton
           d={{ base: "flex", lg: "none" }}
           variant="transparent"
-          size="sm"
+          w="3vw"
           onClick={onOpen}
           icon={<FaBars />}
         />
