@@ -9,12 +9,12 @@ import {
   Stack,
   Text,
   useColorMode,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLine, FaMedium } from "react-icons/fa";
 const Jumbotron = (props) => {
-  const MotionStack = motion.custom(Stack);
-  const MotionLink = motion.custom(Link);
+  const MotionStack = motion(Stack)
+  const MotionLink = motion(Link)
   const { colorMode } = useColorMode();
   const links = [
     {
@@ -79,8 +79,8 @@ const Jumbotron = (props) => {
           <Image
             shadow="lg"
             rounded="full"
-            src={require("../images/logo-md.png")}
-            fallbackSrc={require("../images/logo-md.png?lqip")}
+            src="/img/logo-md.png"
+            fallbackSrc="/img/logo-md.png?lqip"
             w={{ base: "200px", lg: "xl" }}
             alt="Artificial Intelligence logo"
           />
@@ -95,7 +95,7 @@ const Jumbotron = (props) => {
           <Stack
             direction="row"
             mt={4}
-            justifyContent={{ default: "center", lg: "unset" }}
+            justifyContent={{ base: "center", lg: "unset" }}
           >
             {links.map((item, idx) => {
               return (

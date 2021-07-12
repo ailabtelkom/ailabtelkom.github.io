@@ -1,10 +1,10 @@
 import React from "react";
-import { Box, Button, Heading, Image, Divider, Collapse, useColorModeValue, useColorMode } from "@chakra-ui/core";
+import { Box, Button, Heading, Image, Divider, Collapse, useColorModeValue, useColorMode } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import ColapseDoc from "../components/ColapseDoc"
 
 const openRecruitment = () => {
-  const MotionBox = motion.custom(Box);
+  const MotionBox = motion(Box)
   
   const bgColor = useColorModeValue("white", "gray.700");
   const itemVariant = {
@@ -25,9 +25,6 @@ const openRecruitment = () => {
     exit: { opacity: 0, transition: { duration: 0.1 } },
   };
   return (
-    
-      
-    
     <MotionBox
       initial="start"
       animate="end"

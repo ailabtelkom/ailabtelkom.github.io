@@ -1,13 +1,6 @@
 import React from "react";
 import { useRouter } from 'next/router'
-import { Box, Heading, Image, Divider, Text, Stack, useColorModeValue,
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton, useDisclosure, Center  } from "@chakra-ui/core";
+import { Box } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import dataLolos from "../data/dataLolos";
 import Masuk from "../components/Masuk"
@@ -15,7 +8,7 @@ import Masuk from "../components/Masuk"
 const pengumumanNim = () => {
   const router = useRouter()
   const { nim } = router.query
-  const MotionBox = motion.custom(Box);
+  const MotionBox = motion(Box)
   const containerVariant = {
     start: {  
       y: 20,
@@ -37,7 +30,9 @@ const pengumumanNim = () => {
       variants={containerVariant}
       maxW={[null, null, "2xl", "5xl"]}
       m="auto"
-      py="50px"
+      mb="0"
+      // py="50px"
+      pt="50px"
       textAlign="center"
       position="relative"
     >

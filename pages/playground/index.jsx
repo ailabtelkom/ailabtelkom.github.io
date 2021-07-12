@@ -7,7 +7,7 @@ import {
   Link,
   Image,
   Button,
-} from "@chakra-ui/core";
+} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import { NextSeo } from "next-seo";
 import React from "react";
@@ -15,7 +15,7 @@ import { FaArrowRight, FaBook } from "react-icons/fa";
 import playgrounds from "../../data/playground";
 
 const index = () => {
-  const MotionBox = motion.custom(Box);
+  const MotionBox = motion(Box)
   const containerVariant = {
     start: {
       y: 20,
@@ -52,22 +52,22 @@ We have something for you to play with 😁`}
         maxW={[null, null, "2xl", "5xl"]}
         m="auto"
         my="40px"
-        px={{ default: 6, md: 0 }}
+        px={{ base: 6, md: 0 }}
       >
-        <Stack pt={{ default: "1em", lg: "2em" }}>
-          <Heading fontSize={{ default: "2xl", lg: "3xl" }}>
+        <Stack pt={{ base: "1em", lg: "2em"  }}>
+          <Heading fontSize={{ base: "xl", lg: "3xl" }}>
             Hey, are you curious about "What AI Looks like" IRL?
           </Heading>
           <Text mb="6">We have something for you to play with 😁</Text>
-          <Grid templateColumns={["repeat(1, 1fr)", "repeat(3, 1fr)"]} gap={6}>
+          <Grid templateColumns={["repeat(1, 1fr)", "repeat(2, 1fr)", "repeat(3, 1fr)"]} gap={6}>
             {playgrounds.map((data, index) => {
               return (
-                <MotionBox key={index} variants={itemVariant} borderWidth="1px">
+                <MotionBox key={index} variants={itemVariant} borderWidth="1px" w="100%">
                   <Link isExternal={data.isExternal} href={data.url}>
                     <Image
-                      width="350px"
+                      width="100%"
                       height="200px"
-                      fit="cover"
+                      fit="center"
                       src={data.image}
                       fallbackSrc={data.fallbackImg}
                       alt={data.name}

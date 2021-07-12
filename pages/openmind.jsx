@@ -1,12 +1,13 @@
 import React from "react";
-import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, Stack } from "@chakra-ui/core";
+import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, Stack, Skeleton } from "@chakra-ui/react";
 // import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 // import ButtonZoom from "../components/ButtonZoom";
-import ClickMe from "../components/ButtonAiTalks";
+// import ClickMe from "../components/ButtonAiTalks";
 
 const openMind = () => {
-  const MotionBox = motion.custom(Box);
+  const MotionBox = motion(Box)
+  const [showSkelton, setShowSkelton] = React.useState(false);
   const containerVariant = {
     start: {
       y: 20,
@@ -31,22 +32,25 @@ const openMind = () => {
       textAlign="center"
       position="relative"
     >
-      <Heading mt="2" fontSize={{ default: "2xl", lg: "3xl" }}>
+      <Heading mt="2" fontSize={{ base: "2xl", lg: "3xl" }}>
         Open Mind Artificial Intelligence laboratory 2021
       </Heading>
       <Divider mt="2" mb="4" />
       {/* <ButtonZoom/> */}
       {/* <ClickMe/> */}
-      <Heading as="h2" fontSize={{ default: "lg", lg: "xl" }} mb="4" mt="2">
+      <Heading as="h2" fontSize={{ base: "lg", lg: "xl" }} mb="4" mt="2">
         What Is Artificial Intelligence laboratory???
       </Heading>
-      <Box width="100%" h={{ base: "35vh", md: "70vh" }} mt="2">
-        <iframe
-          src="https://drive.google.com/file/d/17aWrn7IPJFMgoIjjRsazBH0wjSxAolbS/preview"
-          width="100%"
-          height="100%"
-        >Video AI Laboratory</iframe>
-      </Box>
+      <Skeleton isLoaded={showSkelton}>
+        <Box width="100%" h={{ base: "35vh", md: "70vh" }} mt="2">
+          <iframe
+            src="https://drive.google.com/file/d/17aWrn7IPJFMgoIjjRsazBH0wjSxAolbS/preview"
+            width="100%"
+            height="100%"
+            onLoad={ () => setShowSkelton(true) }
+          >Video AI Laboratory</iframe>
+        </Box>
+      </Skeleton>
       <Grid
         h={{ base: "30vh", md: "50vh", lg: "70vh" }}
         mt="5"
@@ -116,65 +120,8 @@ const openMind = () => {
           />
         </Stack>
         </Grid>
-      {/* </Grid> */}
-      {/* <Grid
-        h="65vh"
-        mt="10"
-        templateRows="repeat(3, 1fr)"
-        templateColumns="repeat(4, 1fr)"
-        gap={6}
-      >
-        <GridItem rowSpan={2} colSpan={1} 
-          bgImage="url('/assets/images/gallery1.jpg?webp')"
-          bgSize="auto 120%"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-        />
-        <GridItem rowSpan={1} colSpan={1}
-          bgImage="url('/assets/images/gallery5.jpg?webp')"
-          bgSize="100% auto"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-        />
-        <GridItem rowSpan={2} colSpan={1}
-          bgImage="url('/assets/images/gallery7.jpg?webp')"
-          bgSize="auto 100%"
-          bgPosition="center"
-          bgRepeat="no-repeat" 
-        />
-        <GridItem rowSpan={1} colSpan={1} 
-          bgImage="url('/assets/images/gallery4.jpg?webp')"
-          bgSize="100% auto"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-        />
-        <GridItem rowSpan={2} colSpan={1}
-          bgImage="url('/assets/images/gallery3.jpg?webp')"
-          bgSize="auto 100%"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-        />
-        <GridItem rowSpan={2} colSpan={1}
-          bgImage="url('/assets/images/gallery8.jpg?webp')"
-          bgSize="auto 120%"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-        />
-        <GridItem rowSpan={1} colSpan={1}
-          bgImage="url('/assets/images/gallery2.jpg?webp')"
-          bgSize="100% auto"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-        />
-        <GridItem rowSpan={1} colSpan={1}
-          bgImage="url('/assets/images/gallery6.jpg?webp')"
-          bgSize="100% auto"
-          bgPosition="center"
-          bgRepeat="no-repeat"
-        />
-      </Grid> */}
       <Divider mt="2" mb="4" />
-      <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="4">
+      <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
         Let's Join With Us
       </Heading>
       <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">

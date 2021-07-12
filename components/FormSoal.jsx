@@ -9,7 +9,7 @@ import {
   Image,
   Stack,
   Link,
-} from "@chakra-ui/core"
+} from "@chakra-ui/react"
 import { motion } from "framer-motion"
 // import cookieCutter from "cookie-cutter";
 
@@ -43,6 +43,7 @@ const FormSoal = () => {
     pesan: "Jangan dipencet",
   })
   const [mode, setMode] = useStickyState(false, "jawabBener")
+  const [lsNim, setLsNim] = useStickyState(0, "checkNim")
 
   const handleChangeNim = (event) => {
     const nim = event.target.value
@@ -52,17 +53,18 @@ const FormSoal = () => {
   const handleChangeJawaban = (event) => {
     const textnya = event.target.value
     setJawaban(textnya)
-    if (textnya.toLowerCase() == "raisa") {
+    if (textnya.toLowerCase() === "raisa") {
       setShow(true)
       setMode(true)
+      setLsNim(nim)
     } else {
       setShow(false)
     }
   }
-  const MotionButton = motion.custom(Button)
+  const MotionButton = motion(Button)
   return (
     <Box mx="auto" h="80vh">
-      <Center mt={{ default: "40%", md: "30%", lg: "15%" }}>
+      <Center mt={{ base: "40%", md: "30%", lg: "15%" }}>
         <Box w="sm">
           <Input
             value={nim}
@@ -77,7 +79,7 @@ const FormSoal = () => {
             variant="flushed"
             placeholder="Masukkan Password (from OA Line)"
           />
-          <Collapse mt={4} isOpen={show}>
+          <Collapse mt={4} in={show}>
             <Stack direction="row" justifyContent="center" my="2">
               <Button hidden={showButton.show} as="a" href={link}>
                 Pencet
@@ -116,7 +118,7 @@ const FormSoal = () => {
         position="absolute"
         top="160px"
         left={{ base: "0", md: "-20px" }}
-        src="http://assets.stickpng.com/images/5ee7713799588c0004aa6848.png"
+        src="http://assets.stickpng.com/images/5ee7713799588c0004aa6848.png?type=webp&to=min&r=640"
         alt="lets check it out"
       />
     </Box>

@@ -1,13 +1,13 @@
 import React from "react";
-import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Image, Skeleton } from "@chakra-ui/core";
+import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Image, Skeleton } from "@chakra-ui/react";
 // import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import ButtonZoom from "../components/ButtonZoom";
+// import ButtonZoom from "../components/ButtonZoom";
 import ButtonAiTalks from "../components/ButtonAiTalks";
 
 const AiTalks = () => {
-  const MotionBox = motion.custom(Box);
-  const MotionImage = motion.custom(Image);
+  const MotionBox = motion(Box)
+  const MotionImage = motion(Image)
   const containerVariant = {
     start: {
       y: 20,
@@ -32,27 +32,17 @@ const AiTalks = () => {
       textAlign="center"
       position="relative"
     >
-      <Heading fontSize={{ default: "2xl", lg: "3xl" }}>
+      <Heading fontSize={{ base: "2xl", lg: "3xl" }}>
         AI TALKS  - Episode 1
       </Heading>
       
       <Divider mt="2" mb="4" />
-      {/* <ButtonZoom/> */}
+
       <ButtonAiTalks/>
-      {/* <Heading as="h2" fontSize={{ default: "lg", lg: "xl" }} mb="4" mt="2">
-        What Is Artificial Intelligence laboratory???
-      </Heading> */}
-      {/* <Box width="100%" h={{ base: "35vh", md: "90vh" }} mt="2">
-        <MotionImage
-          alt="https://media.discordapp.net/attachments/810149188984897557/839135000255135794/Artboard_12_copy_2-100.jpg"
-          src="https://media.discordapp.net/attachments/810149188984897557/839135000255135794/Artboard_12_copy_2-100.jpg"
-          loading='lazy'
-          h="100%"
-          mx="auto"
-        />
-      </Box> */}
+
       <Divider mt="2" mb="4" />
-      <Heading as="h2" fontSize={{ default: "xl", lg: "2xl" }} mb="4">
+      
+      <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
         Register Here
       </Heading>
       <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">

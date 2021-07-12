@@ -1,5 +1,5 @@
 // import App from 'next/app'
-import { Box, ChakraProvider, Stack, useColorModeValue } from "@chakra-ui/core";
+import { Box, ChakraProvider, Stack, useColorModeValue } from "@chakra-ui/react";
 import Router from "next/router";
 import Head from "next/head";
 import NProgress from "nprogress";
