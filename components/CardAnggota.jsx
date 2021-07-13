@@ -1,12 +1,12 @@
 import React from "react";
-import { Button, Box, Heading, Text, Image, SimpleGrid, Stack, IconButton, useColorModeValue } from "@chakra-ui/react";
+import { Button, Box, Heading, Text, Image, SimpleGrid, Stack, IconButton, useColorModeValue, AspectRatio, Wrap, WrapItem } from "@chakra-ui/react";
 import Link from "./Link";
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 const CardAnggota = (props) => {
-  const { dataAslab } = props
+  const { dataAnggota } = props
   const MotionBox = motion(Box)
   const bgColor = useColorModeValue("white", "gray.700");
   const itemVariant = {
@@ -27,8 +27,9 @@ const CardAnggota = (props) => {
     exit: { opacity: 0, transition: { duration: 0.1 } },
   };
   return (
-    <SimpleGrid columns={{ base: 2, md: 3, lg: 5 }} spacing={4}>
-      {dataAslab.map((data, idx) => (
+    <Wrap spacing="2" justify="center" align="stretch">
+      {dataAnggota.map((data, idx) => (
+        <WrapItem w={{ base: "45%", md: "31%", lg: "18%" }} >
         <MotionBox
           backgroundColor={bgColor}
           whileHover={{ scale: 1.02 }}
@@ -36,15 +37,17 @@ const CardAnggota = (props) => {
           key={idx}
           variants={itemVariant}
           borderWidth="1px"
+          h="100%"
+          w="100%"
         >
+          <AspectRatio ratio={4/6}>
           <Image
             alt={data.name}
             src={`https://drive.google.com/thumbnail?id=${data.foto_id}`}
             fallbackSrc={`https://drive.google.com/thumbnail?id=${data.foto_id}`}
-            h="250px"
             fit="cover"
-            mx="auto"
           />
+          </AspectRatio>
           <Heading as="h4" fontSize="lg">
             {data.nama}
           </Heading>
@@ -60,7 +63,7 @@ const CardAnggota = (props) => {
                 />
               </Link>
             )}
-            {data.instagram && (
+            {data.instagram && data.instagram != "" && (
               <Link href={data.instagram}>
                 <IconButton
                   size="sm"
@@ -72,8 +75,9 @@ const CardAnggota = (props) => {
             )}
           </Stack>
         </MotionBox>
+        </WrapItem>
       ))}
-    </SimpleGrid>
+    </Wrap>
   );
 };
 

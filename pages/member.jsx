@@ -5,6 +5,8 @@ import {
   Heading,
   useColorModeValue,
   useColorMode,
+  Spinner,
+  Skeleton
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import Link from "../components/Link";
@@ -14,6 +16,7 @@ import aslab20 from "../data/aslab20";
 import { NextSeo } from "next-seo";
 const member = (props) => {
   const { dataAnggota } = props
+  // const [dataAnggota, setDataAnggota] = React.useState(false);
   const MotionBox = motion(Box)
   const { colorMode } = useColorMode();
   const bgColor = useColorModeValue("white", "gray.700");
@@ -35,16 +38,20 @@ const member = (props) => {
     },
     exit: { opacity: 0, transition: { duration: 0.1 } },
   };
-  dataAnggota.sort(function (a, b) {
-    return b.angkatan_ai - a.angkatan_ai
-  })
-  const tot = year - dataAnggota[dataAnggota.length - 1].angkatan_ai
-  let arrYear = []
-  for (let i=0; i<=tot;i++){
-    arrYear.push(year-i)
-  }
-  return (
-    <React.Fragment>
+  // React.useEffect(() => {
+  //   Axios.post(
+  //     "https://botIgadis.aliven.my.id/getSheetAI",
+  //     {
+  //       id_spreadsheet: "1SaXnuRt-1KXyDGS18KqU7cus4_IWNxpGhiVy0J1vz-U",
+  //       email: "sheet-access@web-amazing-ai.iam.gserviceaccount.com",
+  //       sheet_title: "web"
+  //     })
+  //     .then(response => { console.log(response.data); setDataAnggota(response.data.data)})
+  // }, [])
+
+  if (!dataAnggota) 
+    return (
+      <React.Fragment>
       <NextSeo
         title="About"
         description="Member of Artificial Intelligence Laboratory Telkom University"
@@ -62,39 +69,65 @@ const member = (props) => {
           <Heading mt="2" fontSize={{ base: "2xl", lg: "3xl" }}>
             Member of Artificial Intelligence Laboratory Telkom University
           </Heading>
-          {arrYear.map((tahun,idx)=>{
-            const data = dataAnggota.filter(anggota => anggota.angkatan_ai == tahun)
-            if (data.length >0){
-              return (
-                <Box px={{ base: 6, md: 0 }}>
-                  <Heading
-                    as="h2"
-                    fontSize={{ base: "xl", lg: "2xl" }}
-                    mt="8"
-                    mb="4"
-                  >
-                    {tahun} Generation
-                  </Heading>
-                  <CardAnggota dataAslab={data} />
-                </Box>
-              )
-            }
-          })
-          }
-          {/* <Heading
-            as="h2"
-            fontSize={{ base: "xl", lg: "2xl" }}
-            mt="8"
-            mb="4"
-          >
-            2021 Generation
-          </Heading>
-          <CardAnggota dataAslab={aslab21} /> */}
+          <Skeleton h="500px" m="auto" mt="2"/>
         </Box>
 
       </MotionBox>
-    </React.Fragment>
-  );
+      </React.Fragment>
+    )
+  else{
+    // console.log("dataAnggota",dataAnggota)
+    dataAnggota.sort(function (a, b) {
+      return b.angkatan_ai - a.angkatan_ai
+    })
+    const tot = year - dataAnggota[dataAnggota.length - 1].angkatan_ai
+    let arrYear = []
+    for (let i=0; i<=tot;i++){
+      arrYear.push(year-i)
+    }
+    return (
+      <React.Fragment>
+        <NextSeo
+          title="About"
+          description="Member of Artificial Intelligence Laboratory Telkom University"
+        />
+        <MotionBox
+          initial="start"
+          animate="end"
+          variants={containerVariant}
+          maxW={[null, null, "2xl", "5xl"]}
+          m="auto"
+          py="50px"
+          textAlign="center"
+        >
+          <Box px={{ base: 6, md: 0 }}>
+            <Heading mt="2" fontSize={{ base: "2xl", lg: "3xl" }}>
+              Member of Artificial Intelligence Laboratory Telkom University
+            </Heading>
+            {arrYear.map((tahun,idx)=>{
+              const data = dataAnggota.filter(anggota => anggota.angkatan_ai == tahun)
+              if (data.length >0){
+                return (
+                  <Box px={{ base: 6, md: 0 }} justify="center" alignItems="center">
+                    <Heading
+                      as="h2"
+                      fontSize={{ base: "xl", lg: "2xl" }}
+                      mt="8"
+                      mb="4"
+                    >
+                      {tahun} Generation
+                    </Heading>
+                    <CardAnggota dataAnggota={data} />
+                  </Box>
+                )
+              }
+            })
+            }
+          </Box>
+        </MotionBox>
+      </React.Fragment>
+    );
+  }
 };
 
 member.getInitialProps = async () => {
