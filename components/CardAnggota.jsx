@@ -4,9 +4,14 @@ import Link from "./Link";
 import { motion } from "framer-motion";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+Array.prototype.sortBy = function(p) {
+  return this.slice(0).sort(function(a,b) {
+    return (a[p] > b[p]) ? 1 : (a[p] < b[p]) ? -1 : 0;
+  });
+}
 
 const CardAnggota = (props) => {
-  const { dataAnggota } = props
+  let { dataAnggota } = props
   const MotionBox = motion(Box)
   const bgColor = useColorModeValue("white", "gray.700");
   const itemVariant = {
@@ -26,9 +31,10 @@ const CardAnggota = (props) => {
     },
     exit: { opacity: 0, transition: { duration: 0.1 } },
   };
+  const dataAnggotaBaru = dataAnggota.sortBy('nama')
   return (
     <Wrap spacing="2" justify="center" align="stretch">
-      {dataAnggota.map((data, idx) => (
+      {dataAnggotaBaru.map((data, idx) => (
         <WrapItem w={{ base: "45%", md: "31%", lg: "18%" }} >
         <MotionBox
           backgroundColor={bgColor}
@@ -42,7 +48,7 @@ const CardAnggota = (props) => {
         >
           <AspectRatio ratio={4/6}>
           <Image
-            alt={data.name}
+            alt={data.nama}
             src={`https://drive.google.com/thumbnail?id=${data.foto_id}`}
             fallbackSrc={`https://drive.google.com/thumbnail?id=${data.foto_id}`}
             fit="cover"
