@@ -1,6 +1,6 @@
 export default [
   {
-    name: "Ade Romadhony",
+    name: "Dr. Ade Romadhony S.T., M.T",
     position: "Laboratory Coordinator",
     image: "https://dummyimage.com/500x500/eee/fff&text=AR",
     social: {

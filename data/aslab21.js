@@ -1,10 +1,10 @@
 export default [
   {
-    name: "Ade Romadhony",
+    name: "Mahmud Dwi Sulistiyo, S.T., M.T",
     position: "Laboratory Coordinator",
-    image: "https://dummyimage.com/500x500/eee/fff&text=AR",
+    image: "https://dummyimage.com/500x500/eee/fff&text=MDS",
     social: {
-      linkedin: "https://id.linkedin.com/in/ade-romadhony-8a302668",
+      linkedin: "https://www.linkedin.com/in/mahmud-dwi-sulistiyo-261b3a1a/",
     },
   },
   {
