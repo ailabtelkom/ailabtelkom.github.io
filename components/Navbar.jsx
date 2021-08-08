@@ -146,6 +146,9 @@ const Navbar = () => {
                   Playground
                 </Link>
                 <ResourcesDropdown />
+                <Link p="2" route href="/member" color={color}>
+                  Member
+                </Link>
                 <Link p="2" route href="/about" color={color}>
                   About
                 </Link>

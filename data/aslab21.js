@@ -2,7 +2,8 @@ export default [
   {
     name: "Mahmud Dwi Sulistiyo, S.T., M.T",
     position: "Laboratory Coordinator",
-    image: "https://dummyimage.com/500x500/eee/fff&text=MDS",
+    image: "/assets/images/aslab21/pak_mahmud.png?webp",
+    fallback: "https://dummyimage.com/500x500/eee/fff&text=MDS",
     social: {
       linkedin: "https://www.linkedin.com/in/mahmud-dwi-sulistiyo-261b3a1a/",
     },
