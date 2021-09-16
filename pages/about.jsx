@@ -68,8 +68,7 @@ const about = () => {
             About Artificial Intelligence Laboratory Telkom University
           </Heading>
           <Text mt="2">
-            AI Lab is a research laboratory under the Intelligence, Computing
-            and Multimedia (ICM) research group. We stand in the Informatics
+            AI Lab is a research laboratory under Intelligent System research group. We stand in the Informatics
             Faculty at Telkom University. As a research-focused Lab, we held
             several main activities to fulfill our duty, such as Focus Group,
             Study Group, and Workshop. We located at{" "}
