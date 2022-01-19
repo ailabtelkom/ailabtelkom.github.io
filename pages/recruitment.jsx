@@ -33,15 +33,12 @@ const recruitment = () => {
       position="relative"
     >
       <Heading>
-        Open Recruitment ASLAB Artificial Intelligence laboratory 2021
+        Open Recruitment ASLAB Artificial Intelligence laboratory 2022
       </Heading>
       <Text>👊👊👊👊👊</Text>
-      <Link href="http://bit.ly/aslabAIkuy" isExternal>
-        <Button colorScheme="red">{">>Daftar skuy<<<"}</Button>
-      </Link>
       <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
         <iframe
-          src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
+          src="https://drive.google.com/file/d/1_L_ke8iWlHQbrNLvA0dGoVBUsBSSU8ZB/preview"
           width="100%"
           height="100%"
         ></iframe>
@@ -49,7 +46,7 @@ const recruitment = () => {
       <Image
         width={{ base: "100px", md: "200px" }}
         position="absolute"
-        bottom={1}
+        top={{ base: "78vh", md: "80vh" }}
         left={0}
         src="/img/uncle_sam.png"
         alt="we want you 1"
@@ -70,6 +67,16 @@ const recruitment = () => {
         src="https://cdn.kapwing.com/video_image-Urvztiziu.jpeg"
         alt="we want you 3"
       />
+      <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4" mt="8">
+        Kuyy Daftar!!!
+      </Heading>
+      <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSeUDGKwzW3F3bep4LeolTRG_mvB5nc8HOIlrl_90KcrK0ffew/viewform?embedded=true"
+          width="100%"
+          height="100%"
+        >Loading…</iframe>
+      </Box>
     </MotionBox>
   );
 };
