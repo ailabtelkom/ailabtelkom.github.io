@@ -11,7 +11,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!(user || loading)) {
-      router.push('https://telkomuniversity-ac-id.zoom.us/j/99566436616')
+      router.push('https://ailabtelkom.github.io')
     }
   }, [user, loading])
 
