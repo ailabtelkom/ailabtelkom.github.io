@@ -23,7 +23,7 @@ const ButtonZoom = () => {
         <Skeleton isLoaded={showSkelton}>
         <Image
           alt="AiTalks : Episode 2"
-          src="/assets/images/AiTalksEps2.jpg?webp"
+          src="/assets/images/AiTalksEps2.png?webp"
           fallbackSrc="/assets/images/AiTalksEps2.png?lqip"
           loading='lazy'
           maxH={{ base: "70vh", lg: "75vh" }}
