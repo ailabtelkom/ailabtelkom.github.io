@@ -22,9 +22,9 @@ const ButtonZoom = () => {
       <MotionBox mt="1">
         <Skeleton isLoaded={showSkelton}>
         <Image
-          alt="AiTalks : Episode 1"
-          src="/assets/images/AiTalksEps1.jpg?webp"
-          fallbackSrc="/assets/images/AiTalksEps1.jpg?lqip"
+          alt="AiTalks : Episode 2"
+          src="/assets/images/AiTalksEps2.jpg?webp"
+          fallbackSrc="/assets/images/AiTalksEps2.png?lqip"
           loading='lazy'
           maxH={{ base: "70vh", lg: "75vh" }}
           mx="auto"
