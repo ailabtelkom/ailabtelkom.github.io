@@ -17,7 +17,7 @@ export default function Page() {
 
   return (
     <Heading as="h2" fontSize={{ base: "lg", lg: "xl" }}>
-      Redirecting to Discord...
+      Redirecting to Zoom...
     </Heading>
   )
 }
