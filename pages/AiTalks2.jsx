@@ -11,7 +11,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!(user || loading)) {
-      router.push('https://ailabtelkom.github.io/AiTalks')
+      router.push('https://us02web.zoom.us/j/88046960938?pwd=UUtFYzYxTGdyenNNQXlxc3VVZkViQT09')
     }
   }, [user, loading])
 
