@@ -1,5 +1,15 @@
 export default [
   {
+    year: 2022,
+    title:
+      "Indonesian Digital Wallet Sentiment Analysis Using CNN And LSTM Method",
+    author:
+      "Kaenova Mahendra Auditama; Ananda Affan Fattahila; Fendi Irfan Amorokhman; Kurniadi Ahmad Wijaya; Ade Romadhony",
+    publisher: "IEEE",
+    url:
+      "https://ieeexplore.ieee.org/document/9689712",
+  },
+  {
     year: 2021,
     title:
       "Translasi Citra Malam Menjadi Citra Siang Menggunakan Deep Convolutional Generative Adversarial Network",
