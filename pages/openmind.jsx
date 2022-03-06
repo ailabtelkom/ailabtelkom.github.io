@@ -121,7 +121,7 @@ const openMind = () => {
         </Stack>
         </Grid>
       <Divider mt="2" mb="4" />
-      <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
+      {/* <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
         Let's Join With Us
       </Heading>
       <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">
@@ -130,7 +130,7 @@ const openMind = () => {
           width="100%"
           height="100%"
         >Loading…</iframe>
-      </Box>
+      </Box> */}
     </MotionBox>
   );
 };

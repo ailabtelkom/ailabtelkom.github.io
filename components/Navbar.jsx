@@ -107,12 +107,12 @@ const Navbar = () => {
           </Link>
           {/* <Link
             route
-            href="/recruitment"
+            href="/openmind"
             color={color}
             fontWeight="bold"
             className="blink"
           >
-            {'Recruitment Aslab 2022'}
+            {'Open Mind 2022'}
           </Link> */}
         </Stack>
       </Stack>
@@ -155,12 +155,12 @@ const Navbar = () => {
                 {/* <Link
                   p="2"
                   route
-                  href="/recruitment"
+                  href="/openmind"
                   color={color}
                   fontWeight="bold"
                   className="blink"
                 >
-                  {'Recruitment Aslab 2022'}
+                  {'Open Mind 2022'}
                 </Link> */}
               </Stack>
             </DrawerBody>

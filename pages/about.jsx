@@ -19,6 +19,7 @@ import { MdEmail } from "react-icons/md";
 import activities from "../data/activities";
 import aslab21 from "../data/aslab21";
 import aslab20 from "../data/aslab20";
+import aslab22 from "../data/aslab22";
 import { NextSeo } from "next-seo";
 const about = () => {
   const MotionBox = motion(Box)
@@ -116,9 +117,20 @@ const about = () => {
             mt="8"
             mb="4"
           >
-            Meet The Eliza 2021 Gang 👊😎
+            Meet The Enigma 2022 Gang 👊😎
           </Heading>
-          <CardAslab dataAslab={aslab21} />
+          <CardAslab dataAslab={aslab22} />
+        </Box>
+        <Box px={{ base: 6, md: 0 }}>
+          <Heading
+              as="h2"
+              fontSize={{ base: "xl", lg: "2xl" }}
+              mt="8"
+              mb="4"
+            >
+              Meet The Eliza 2021 Gang 👊😎
+            </Heading>
+            <CardAslab dataAslab={aslab21} />
         </Box>
         <Box px={{ base: 6, md: 0 }}>
           <Heading
