@@ -2,7 +2,7 @@ import React from "react";
 import { Box, Heading, Divider, useColorModeValue, Button, useColorMode, Grid, Stack, Skeleton } from "@chakra-ui/react";
 // import { Grid, GridItem } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-// import ButtonZoom from "../components/ButtonZoom";
+import ButtonZoom from "../components/ButtonZoom";
 // import ClickMe from "../components/ButtonAiTalks";
 
 const openMind = () => {
@@ -36,7 +36,7 @@ const openMind = () => {
         Open Mind Artificial Intelligence laboratory 2021
       </Heading>
       <Divider mt="2" mb="4" />
-      {/* <ButtonZoom/> */}
+      <ButtonZoom/>
       {/* <ClickMe/> */}
       <Heading as="h2" fontSize={{ base: "lg", lg: "xl" }} mb="4" mt="2">
         What Is Artificial Intelligence laboratory???
@@ -44,7 +44,7 @@ const openMind = () => {
       <Skeleton isLoaded={showSkelton}>
         <Box width="100%" h={{ base: "35vh", md: "70vh" }} mt="2">
           <iframe
-            src="https://drive.google.com/file/d/17aWrn7IPJFMgoIjjRsazBH0wjSxAolbS/preview"
+            src="https://drive.google.com/file/d/1ro6hjBbqPXf3egQz2VQU40HaHHvuaRj-/preview"
             width="100%"
             height="100%"
             onLoad={ () => setShowSkelton(true) }
@@ -121,16 +121,16 @@ const openMind = () => {
         </Stack>
         </Grid>
       <Divider mt="2" mb="4" />
-      {/* <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
-        Let's Join With Us
+      <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
+        Fill The Questionaire Here
       </Heading>
       <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSdX_G3dE910skx3q4Xap32wc-5QOArj5kA0qCctCpIox0LI9Q/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLScUlrvrtFvYtairbLpCrC7vDMEmtsY63DgI962bm0q66VHlWA/viewform?usp=sf_link"
           width="100%"
           height="100%"
         >Loading…</iframe>
-      </Box> */}
+      </Box>
     </MotionBox>
   );
 };

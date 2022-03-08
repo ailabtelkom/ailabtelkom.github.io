@@ -7,16 +7,16 @@ const ButtonZoom = () => {
   const MotionButton = motion(Button)
   return (
     <MotionButton
-      as="a"
-      href="https://google.com"
-      target="_blank"
+      // as="a"
+      // href="#"
+      // target="_blank"
       colorScheme="blue"
       onHoverStart={() => setText(`Join Us On \n
-      March 12th, 2022 | 12:30 WIB`)}
+      March 12th, 2022 | 19:00 WIB`)}
       onHoverEnd={() => setText(`Redirect to Zoom`)}
       // whileTap={{ opacity: 0 }}
       onClick={() => {(Text===`Redirect to Zoom`)?setText(`Join Us On \n
-      March 21th, 2022 | 12:30 WIB`):setText(`Redirect to Zoom`)}}
+      March 21th, 2022 | 19:00 WIB`):setText(`Redirect to Zoom`)}}
       // color={Color}
       fontSize={{ base: "md", lg: "xl" }}
       w="80%"
