@@ -33,7 +33,7 @@ const openMind = () => {
       position="relative"
     >
       <Heading mt="2" fontSize={{ base: "2xl", lg: "3xl" }}>
-        Open Mind Artificial Intelligence laboratory 2021
+        Open Mind Artificial Intelligence laboratory 2022
       </Heading>
       <Divider mt="2" mb="4" />
       <ButtonZoom/>
