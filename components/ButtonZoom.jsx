@@ -7,9 +7,9 @@ const ButtonZoom = () => {
   const MotionButton = motion(Button)
   return (
     <MotionButton
-      as="a"
-      href="https://telkomuniversity-ac-id.zoom.us/j/92323205493"
-      target="_blank"
+      // as="a"
+      // href="#"
+      // target="_blank"
       colorScheme="blue"
       onHoverStart={() => setText(`Join Us On \n
       March 12th, 2022 | 19:00 WIB`)}
