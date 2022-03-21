@@ -36,7 +36,7 @@ const openRecruitment = () => {
       position="relative"
     >
       <Heading>
-        Open Recruitment Artificial Intelligence laboratory 2021
+        Open Recruitment Artificial Intelligence laboratory 2022
       </Heading>
       <Divider mt="2" mb="4" />
       <ColapseDoc/>
