@@ -47,7 +47,8 @@ const ColapseDoc = () => {
             <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
               <iframe
                 // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
-                src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
+                // src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
+                src="https://drive.google.com/file/d/1Ly2rjX1qt0xg_O5jSpwaGP62LsyGLZ0J/preview"
                 width="100%"
                 height="100%"
                 onLoad={ () => setShowSkelton(true) }
@@ -59,7 +60,7 @@ const ColapseDoc = () => {
           </Heading>
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSdBnQhv9H1BKDzIpAMY1ZNt6Nh3WHcZPIt_n6Sitj-5bef-vw/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSelXd8hx__5Bonm3KIexMxK_6gKS3AUHePZ4Nz_NPo1NVww0w/viewform?embedded=true"
               width="100%"
               height="100%"
             >Loading…</iframe>
@@ -75,7 +76,8 @@ const ColapseDoc = () => {
             <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
               <iframe
                 // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
-                src="https://drive.google.com/file/d/1AMhmJDJgAFgZ1dWjKkPsvJaX_-CNeiDJ/preview"
+                // src="https://drive.google.com/file/d/1AMhmJDJgAFgZ1dWjKkPsvJaX_-CNeiDJ/preview"
+                src="https://drive.google.com/file/d/1XdjybPIhDBN5fdK2194201kXLBTpykqb/preview"
                 width="100%"
                 height="100%"
                 onLoad={()=>setShowSkelton(true)}
@@ -87,7 +89,7 @@ const ColapseDoc = () => {
           </Heading>
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
-              src="https://docs.google.com/forms/d/e/1FAIpQLSeRzvWNn9vI77m4KqlQjDJ-uhKYTaRQrFwR1wvrXX1xlxi_tw/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdgxZ66clye8h9slK6p73dpRcCY4Vwx1p5siSz-odY0uLcBaQ/viewform?embedded=true"
               width="100%"
               height="100%"
             >Loading…</iframe>

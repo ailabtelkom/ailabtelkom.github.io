@@ -105,15 +105,15 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
-          {/* <Link
+          <Link
             route
-            href="/openmind"
+            href="/oprec"
             color={color}
             fontWeight="bold"
             className="blink"
           >
-            {'Open Mind 2022'}
-          </Link> */}
+            {'Open Recruitment AI Lab 2022'}
+          </Link>
         </Stack>
       </Stack>
       <Stack direction="row">
@@ -152,16 +152,16 @@ const Navbar = () => {
                 <Link p="2" route href="/about" color={color}>
                   About
                 </Link>
-                {/* <Link
+                <Link
                   p="2"
                   route
-                  href="/openmind"
+                  href="/oprec"
                   color={color}
                   fontWeight="bold"
                   className="blink"
                 >
-                  {'Open Mind 2022'}
-                </Link> */}
+                  {'Open Recruitment AI Lab 2022'}
+                </Link>
               </Stack>
             </DrawerBody>
 
