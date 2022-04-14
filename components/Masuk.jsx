@@ -58,9 +58,8 @@ const Masuk = (props) => {
   }
 
   // const MotionButton = motion(Button)
-  const lolos = `🎉 Selamat, Kamu Lolos Dan Menjadi Bagian Dari Keluarga Lab AI 🎉`
-  const belom =
-    "😉👍 Semangaatt, kamu masih punya kesempatan dilain waktu, jangan berkecil hati yaa 😁👍"
+  const lolos = `Hi Chagi👋 Selamat! Kamu lolos dan menjadi bagian dari Keluarga Lab AI!✨`
+  const belom = "HAPPINESS~ Jangan berkecil hati yaa, tetap semangat. Much better chances are always waiting for you!" 
   const checkNim = lsNim==nim
   return (
     <Box mt="2">
@@ -73,6 +72,16 @@ const Masuk = (props) => {
       <Text hidden={checkNim}>tidak bisa melakukan pengecekan dengan hanya mengganti param :) </Text>
       <Divider mt="2" mb="4" />
       {/* <Center> */}
+      <Stack
+          hidden={data.lolos ? false : true}
+          direction="row"
+          justifyContent="center"
+          my="2"
+      >
+        <Heading as="h4" fontSize="xl" mb="1rem">
+          ciee lolos:p dijaga komitmennya yaa!
+        </Heading>
+      </Stack>
       <Box hidden={handle(data)}>
         <MotionBox
           backgroundColor={bgColor}

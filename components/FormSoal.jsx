@@ -91,7 +91,7 @@ const FormSoal = () => {
                 onClick={() =>
                   setShowButton({
                     show: true,
-                    pesan: "😆 Kan dah dibilangin jan dipencet 😜",
+                    pesan: "Hm kan, kok ngeyel ya anda :D",
                   })
                 }
               >
@@ -105,22 +105,23 @@ const FormSoal = () => {
           </Text>
         </Box>
       </Center>
-      <Image
+      {/* <Image
         width={{ base: "100px", md: "150px", lg: "200px" }}
         position="absolute"
         top="160px"
-        right={0}
+        left={{ base: "0", md: "-20px" }}
+        // right={0}
         src="https://cdn130.picsart.com/260832909030212.png?type=webp&to=min&r=640"
         alt="check it check it"
-      />
-      <Image
+      /> */}
+      {/* <Image
         width={{ base: "100px", md: "150px", lg: "200px" }}
         position="absolute"
         top="160px"
         left={{ base: "0", md: "-20px" }}
         src="http://assets.stickpng.com/images/5ee7713799588c0004aa6848.png?type=webp&to=min&r=640"
         alt="lets check it out"
-      />
+      /> */}
     </Box>
   )
 }

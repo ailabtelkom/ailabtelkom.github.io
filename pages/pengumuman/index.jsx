@@ -6,7 +6,7 @@ import { Box, Heading, Input, Center, Button, useColorModeValue,
   ModalHeader,
   ModalFooter,
   ModalBody,
-  ModalCloseButton, useDisclosure  } from "@chakra-ui/react";
+  ModalCloseButton, useDisclosure, Divider} from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import FormSoal from "../../components/FormSoal"
 
@@ -45,6 +45,7 @@ const openRecruitment = () => {
       <Heading>
         Silahkan Mengisi Data Dibawah Terlebih Dahulu
       </Heading>
+      <Divider mt="2" mb="4" />
       <FormSoal/>
     </MotionBox>
   );
