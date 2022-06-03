@@ -112,7 +112,7 @@ const Navbar = () => {
             fontWeight="bold"
             className="blink"
           >
-            {'Pengumuman Nih!!!'}
+            {'Pengumuman Nih!!'}
           </Link> */}
         </Stack>
       </Stack>
@@ -160,7 +160,7 @@ const Navbar = () => {
                   fontWeight="bold"
                   className="blink"
                 >
-                  {'Pengumuman Nih!!!'}
+                  {'Pengumuman Nih!!'}
                 </Link> */}
               </Stack>
             </DrawerBody>
