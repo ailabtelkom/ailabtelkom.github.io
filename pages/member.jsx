@@ -133,7 +133,7 @@ const member = (props) => {
 member.getInitialProps = async () => {
   try {
     const res = await Axios.post(
-      "https://botIgadis.aliven.my.id/getSheetAI",
+      "https://be-web-ai.herokuapp.com/getSheetAI",
       {
         id_spreadsheet: "1SaXnuRt-1KXyDGS18KqU7cus4_IWNxpGhiVy0J1vz-U",
         email: "sheet-access@web-amazing-ai.iam.gserviceaccount.com",
