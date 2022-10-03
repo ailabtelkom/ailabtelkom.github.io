@@ -4,7 +4,7 @@ export default [
     title:
       "Implementation of BERT, IndoBERT, and CNN-LSTM in Classifying Public Opinion about COVID-19 Vaccine in Indonesia",
     author:
-      "Kaenova Mahendra Auditama; Siti Saadah; Ananda Affan Fattahila; Fendi Irfan Amorokhman",
+      "Kaenova Mahendra Auditama; Siti Saadah; Ananda Affan Fattahila; Fendi Irfan Amorokhman; Annisa Aditsania; Aniq Atiqi Rohmawati",
     publisher: "RESTI",
     url:
       "http://jurnal.iaii.or.id/index.php/RESTI/article/view/4215",
