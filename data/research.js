@@ -2,6 +2,16 @@ export default [
   {
     year: 2022,
     title:
+      "Implementation of BERT, IndoBERT, and CNN-LSTM in Classifying Public Opinion about COVID-19 Vaccine in Indonesia",
+    author:
+      "Kaenova Mahendra Auditama; Siti Saadah; Ananda Affan Fattahila; Fendi Irfan Amorokhman",
+    publisher: "RESTI",
+    url:
+      "http://jurnal.iaii.or.id/index.php/RESTI/article/view/4215",
+  },
+  {
+    year: 2022,
+    title:
       "Indonesian Digital Wallet Sentiment Analysis Using CNN And LSTM Method",
     author:
       "Kaenova Mahendra Auditama; Ananda Affan Fattahila; Fendi Irfan Amorokhman; Kurniadi Ahmad Wijaya; Ade Romadhony",
