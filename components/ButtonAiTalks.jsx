@@ -12,7 +12,7 @@ const ButtonZoom = () => {
         href="#Forms"
         animate={{ scale: [1, 1.1, 1] }}
         transition={{ repeat: Infinity,  duration: 2, type: "spring" }}
-        colorScheme="blue"
+        colorScheme="blue"s
         fontSize={{ base: "sm", lg: "md" }}
         w={{ base: "50vw", md:"25vw", lg: "20%" }}
         h="5vh"
@@ -22,9 +22,9 @@ const ButtonZoom = () => {
       <MotionBox mt="1">
         <Skeleton isLoaded={showSkelton}>
         <Image
-          alt="AiTalks : Episode 2"
-          src="/assets/images/AiTalksEps2.png?webp"
-          fallbackSrc="/assets/images/AiTalksEps2.png?lqip"
+          alt="AiTalks : Episode 3"
+          src="/assets/images/AiTalks3.jpg?webp"
+          fallbackSrc="/assets/images/AiTalks3.jpg?lqip"
           loading='lazy'
           maxH={{ base: "70vh", lg: "75vh" }}
           mx="auto"

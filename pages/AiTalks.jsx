@@ -33,7 +33,7 @@ const AiTalks = () => {
       position="relative"
     >
       <Heading fontSize={{ base: "2xl", lg: "3xl" }}>
-        AI TALKS  - Episode 2
+        AI TALKS  - Episode 3
       </Heading>
       
       <Divider mt="2" mb="4" />
@@ -47,7 +47,7 @@ const AiTalks = () => {
       </Heading>
       <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSck3YP3hv0s1Qs3_Pcoq1IRE5VnzmwhRMJZAOM2qf7nzs0IoQ/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSejEU-tb6RaVi8gg7a1EEeJi0FXzlnMENeUSrWGQtDAcfYWog/viewform"
           width="100%"
           height="100%"
         >Loading…</iframe>

@@ -40,7 +40,8 @@
     "react-syntax-highlighter": "^13.5.3",
     "sass": "^1.35.2",
     "swr": "^0.3.11",
-    "webp-loader": "^0.6.0"
+    "webp-loader": "^0.6.0",
+    "yarn": "^1.22.19"
   },
   "devDependencies": {
     "serve": "^11.3.2"
