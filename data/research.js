@@ -42,7 +42,7 @@ export default [
     year: 2020,
     title:
       "Recognizing Soft Biometric on Pedestrian Using Convolutional Neural Network",
-    author: "Tri Broto Siswoyo ; Anditya Arifianto ; Kutniawan Nur Ramadhani",
+    author: "Tri Broto Siswoyo ; Anditya Arifianto ; Kurniawan Nur Ramadhani",
     publisher: "ICoDSA 2020",
     url: "https://ieeexplore.ieee.org/document/9213066",
   },
