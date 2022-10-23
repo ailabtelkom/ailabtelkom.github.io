@@ -73,8 +73,8 @@ const about = () => {
             Faculty at Telkom University. As a research-focused Lab, we held
             several main activities to fulfill our duty, such as Focus Group,
             Study Group, and Workshop. We located at{" "}
-            <Link href="https://goo.gl/maps/JkPuorDbXQPJktyy8" isExternal>
-              North Kultubai Building room E107 Telkom University
+            <Link href="https://goo.gl/maps/UUez97ixTdQcv83KA" isExternal>
+              Room TULT 0607 Telkom University Landmark Tower
             </Link>
             .
           </Text>
