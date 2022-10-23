@@ -105,7 +105,7 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
-          <Link
+          {/* <Link
             route
             href="/AiTalks"
             color={color}
@@ -113,7 +113,7 @@ const Navbar = () => {
             className="blink"
           >
             {'Registrasi AiTalks!'}
-          </Link>
+          </Link> */}
         </Stack>
       </Stack>
       <Stack direction="row">
@@ -152,7 +152,7 @@ const Navbar = () => {
                 <Link p="2" route href="/about" color={color}>
                   About
                 </Link>
-                <Link
+                {/* <Link
                   p="2"
                   route
                   href="/AiTalks"
@@ -161,7 +161,7 @@ const Navbar = () => {
                   className="blink"
                 >
                   {'Registrasi AiTalks!'}
-                </Link>
+                </Link> */}
               </Stack>
             </DrawerBody>
 
