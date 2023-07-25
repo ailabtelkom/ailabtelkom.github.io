@@ -19,7 +19,7 @@
     "@emotion/styled": "^11.3.0",
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^9.5.5",
-    "axios": "^0.21.1",
+    "axios": "^0.21.2",
     "framer-motion": "^4.1.17",
     "gray-matter": "^4.0.3",
     "imagemin-gifsicle": "^7.0.0",
