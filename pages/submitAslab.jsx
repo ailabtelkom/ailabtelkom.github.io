@@ -11,7 +11,7 @@ export default function Page() {
 
   useEffect(() => {
     if (!(user || loading)) {
-      router.push('https://forms.gle/rf5fLS5UJRZJ9DLW7)
+      router.push('https://forms.gle/rf5fLS5UJRZJ9DLW7')
     }
   }, [user, loading])
 
