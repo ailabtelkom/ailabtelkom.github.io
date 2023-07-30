@@ -105,7 +105,7 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
-          <Link
+          {/* <Link
             route
             href="/openmind"
             color={color}
@@ -113,7 +113,7 @@ const Navbar = () => {
             className="blink"
           >
             {'OPENMIND 2023'}
-          </Link>
+          </Link> */}
         </Stack>
       </Stack>
       <Stack direction="row">
