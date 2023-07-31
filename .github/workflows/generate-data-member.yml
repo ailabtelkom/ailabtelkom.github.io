@@ -16,13 +16,13 @@ jobs:
         run: |
           cd ./scripts
           python script.py
-          mkdir /tmp/data
+          mkdir -p /tmp/data
           cp ./dataMember.json tmp/data/dataMember.json
           git checkout -b production
           git fetch
           cd ..
           cp /tmp/data/dataMember.json ./data/dataMember.json
-          mkdir ./data
+          mkdir -p ./data
           git add ./data/dataMember.json
           
        # Commit the changes
