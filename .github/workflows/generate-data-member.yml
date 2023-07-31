@@ -21,7 +21,7 @@ jobs:
           cd ..
           rm -rf ./scripts
           git add ./data/dataMember.json
-          
+
        # Commit the changes
       - name: Commit changes
         run: |
@@ -33,6 +33,6 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.TOKEN_SECRET }}
 
       
