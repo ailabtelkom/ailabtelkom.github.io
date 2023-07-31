@@ -19,7 +19,7 @@ jobs:
           git checkout -b production
           git fetch
           cp ./dataMember.json ../data/dataMember.json
-          git add ./data/dataMember.json
+          git add ../data/dataMember.json
           
        # Commit the changes
       - name: Commit changes
