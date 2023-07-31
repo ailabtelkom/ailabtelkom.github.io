@@ -24,10 +24,6 @@ jobs:
           cp /tmp/data/dataMember.json ./data/dataMember.json
           mkdir -p ./data
           git add ./data/dataMember.json
-          
-       # Commit the changes
-      - name: Commit changes
-        run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Update data member from GitHub Action" || true
