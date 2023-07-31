@@ -20,7 +20,7 @@ jobs:
           cp ./dataMember.json /tmp/data/dataMember.json
           git checkout -b production
           git fetch
-          git pull origin production
+          git pull --rebase origin production
           cd ..
           cp /tmp/data/dataMember.json ./data/dataMember.json
           mkdir -p ./data
