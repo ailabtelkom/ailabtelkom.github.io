@@ -24,8 +24,8 @@ jobs:
           cd ..
           cp /tmp/data/dataMember.json ./data/dataMember.json
           mkdir -p ./data
-          git config --global user.email "actions@example.com"
-          git config --global user.name "GitHub Actions"
+          git config --global user.email "alifnaufalyasin@users.noreply.github.com"
+          git config --global user.name "alifnaufalyasin"
           git add ./data/dataMember.json
           git commit -m "Update data member from GitHub Action" || true
           git push origin production
