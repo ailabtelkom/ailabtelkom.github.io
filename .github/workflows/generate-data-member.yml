@@ -20,8 +20,9 @@ jobs:
           git checkout -b production
           git fetch
           cd ..
-          mkdir ~/data
-          cp ~/data/dataMember.json ./data/dataMember.json
+          mkdir /tmp/data
+          cp /tmp/data/dataMember.json ./data/dataMember.json
+          mkdir ./data/data
           git add ./data/dataMember.json
           
        # Commit the changes
