@@ -17,7 +17,7 @@ jobs:
           cd ./scripts
           python script.py
           mkdir -p /tmp/data
-          cp ./dataMember.json tmp/data/dataMember.json
+          cp ./dataMember.json /tmp/data/dataMember.json
           git checkout -b production
           git fetch
           cd ..
