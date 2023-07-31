@@ -17,6 +17,7 @@ jobs:
           cd ./scripts
           python script.py
           git checkout -b production
+          git fetch
           cp ./dataMember.json ../data/dataMember.json
           
        # Commit the changes
