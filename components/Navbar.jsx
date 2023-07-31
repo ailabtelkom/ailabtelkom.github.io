@@ -99,9 +99,9 @@ const Navbar = () => {
             Playground
           </Link>
           <ResourcesDropdown />
-          <Link route href="/member" color={color}>
+          {/* <Link route href="/member" color={color}>
             Member
-          </Link>
+          </Link> */}
           <Link route href="/about" color={color}>
             About
           </Link>
@@ -146,9 +146,9 @@ const Navbar = () => {
                   Playground
                 </Link>
                 <ResourcesDropdown />
-                <Link p="2" route href="/member" color={color}>
+                {/* <Link p="2" route href="/member" color={color}>
                   Member
-                </Link>
+                </Link> */}
                 <Link p="2" route href="/about" color={color}>
                   About
                 </Link>
