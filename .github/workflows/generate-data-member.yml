@@ -19,6 +19,6 @@ jobs:
           git checkout -b production
           cp ./dataMember.json ../data/dataMember.json
           cd ..
-          rm ./scripts
+          rm -rf ./scripts
 
       
