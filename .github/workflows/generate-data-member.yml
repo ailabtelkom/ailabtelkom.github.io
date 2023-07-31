@@ -21,18 +21,13 @@ jobs:
           cd ..
           rm -rf ./scripts
           git add ./data/dataMember.json
-
+          
        # Commit the changes
       - name: Commit changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git commit -m "Update data member from GitHub Action" || true
-
-      # Push the changes back to the repository
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.TOKEN_SECRET }}
+          git push origin production
 
       
