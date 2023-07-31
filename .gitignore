@@ -34,3 +34,6 @@ yarn-error.log*
 /images/dbg.png
 /images/ebg.png
 /images/fixbg.png
+
+/scripts/*.csv
+/scripts/*.json

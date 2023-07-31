@@ -18,8 +18,6 @@ jobs:
           python script.py
           git checkout -b production
           cp ./dataMember.json ../data/dataMember.json
-          cd ..
-          rm -rf ./scripts/dataMember.json ./scripts/dataMember.csv
           
        # Commit the changes
       - name: Commit changes
