@@ -32,3 +32,6 @@ jobs:
           BRANCH: production # The branch the action should deploy to.
           FOLDER: out # The folder the action should deploy.
           CLEAN: true # Automatically remove deleted files from the deploy branch
+          clean-exclude: |
+            data/*.json
+

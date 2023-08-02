@@ -1,0 +1,39 @@
+name: Generate Data Member in Json
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  generate_data_member:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Download csv file of member form in gsheet
+        run: |
+          curl -L -o ./scripts/dataMember.csv https://docs.google.com/spreadsheets/d/1SaXnuRt-1KXyDGS18KqU7cus4_IWNxpGhiVy0J1vz-U/export?format=csv
+      - name: run python script to convert csv to json
+        run: |
+          cd ./scripts
+          python script.py
+          mkdir -p /tmp/data
+          cp ./dataMember.json /tmp/data/dataMember.json
+          git checkout -b production
+          git fetch
+          git pull --rebase origin production
+          cd ..
+          cp /tmp/data/dataMember.json ./data/dataMember.json
+          mkdir -p ./data
+
+      - name: Commit changes
+        run: |
+          git config --global user.email "actions@example.com"
+          git config --global user.name "GitHub Actions"
+          git add .
+          git commit -m "Commit changes from GitHub Actions"
+      
+      - name: Push changes
+        run: |
+          git push origin production
+
+      
