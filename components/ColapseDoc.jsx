@@ -48,7 +48,7 @@ const ColapseDoc = () => {
               <iframe
                 // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
                 // src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
-                src="https://drive.google.com/file/d/1Ly2rjX1qt0xg_O5jSpwaGP62LsyGLZ0J/preview"
+                src="https://docs.google.com/document/d/1YEapkWn2Olm7l-yMXaUirnS9ZQIRPJD-/preview"
                 width="100%"
                 height="100%"
                 onLoad={ () => setShowSkelton(true) }
@@ -77,7 +77,7 @@ const ColapseDoc = () => {
               <iframe
                 // src="https://drive.google.com/file/d/1xZcqU14U9j361ngTp_mz9lG2qcc3Nkvg/preview"
                 // src="https://drive.google.com/file/d/1AMhmJDJgAFgZ1dWjKkPsvJaX_-CNeiDJ/preview"
-                src="https://drive.google.com/file/d/1XdjybPIhDBN5fdK2194201kXLBTpykqb/preview"
+                src="https://docs.google.com/document/d/1FeGvHJL9gBVFMpEj-f3jqRtGLSPw6jC7/preview"
                 width="100%"
                 height="100%"
                 onLoad={()=>setShowSkelton(true)}
