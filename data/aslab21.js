@@ -96,7 +96,7 @@ export default [
       linkedin: "https://id.linkedin.com/in/alifnaufalyasin/",
       github: "https://github.com/alifnaufalyasin/",
       instagram: "https://www.instagram.com/alifnaufal_yasin/",
-      email: "mailto:alifnaufalyasin@student.telkomuniversity.ac.id",
+      email: "mailto:alifnaufalyasin@gmail.com",
     },
   },
   {
