@@ -40,7 +40,7 @@ const FormSoal = () => {
   const [show, setShow] = React.useState(false)
   const [showButton, setShowButton] = React.useState({
     show: false,
-    pesan: "Jangan dipencet",
+    pesan: "Jangan Pencet , Source : Trust me Bro",
   })
   const [mode, setMode] = useStickyState(false, "jawabBener")
   const [lsNim, setLsNim] = useStickyState(0, "checkNim")
@@ -91,7 +91,7 @@ const FormSoal = () => {
                 onClick={() =>
                   setShowButton({
                     show: true,
-                    pesan: "Hm kan, kok ngeyel ya anda :D",
+                    pesan: "MWEHEHHEHEHEHEHEHE",
                   })
                 }
               >

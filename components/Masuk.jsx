@@ -58,8 +58,8 @@ const Masuk = (props) => {
   }
 
   // const MotionButton = motion(Button)
-  const lolos = `Hi Chagi👋 Selamat! Kamu lolos dan menjadi bagian dari Keluarga Lab AI!✨`
-  const belom = "HAPPINESS~ Jangan berkecil hati yaa, tetap semangat. Much better chances are always waiting for you!" 
+  const lolos = `Hi Nakama👋 Selamat! Kamu lolos dan menjadi bagian dari Keluarga Lab AI!✨`
+  const belom = "Don't give up, there's no shame in falling down! The true shame is to not stand up again!" 
   const checkNim = lsNim==nim
   return (
     <Box mt="2">
@@ -79,7 +79,7 @@ const Masuk = (props) => {
           my="2"
       >
         <Heading as="h4" fontSize="xl" mb="1rem">
-          ciee lolos:p dijaga komitmennya yaa!
+          anjay lolos dijaga komitmennya yaa!
         </Heading>
       </Stack>
       <Box hidden={handle(data)}>

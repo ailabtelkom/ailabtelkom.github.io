@@ -107,12 +107,12 @@ const Navbar = () => {
           </Link>
           {/* <Link
             route
-            href="/oprec"
+            href="/eittss"
             color={color}
             fontWeight="bold"
             className="blink"
           >
-            {'OPREC'}
+            {'PENGUMUMAN'}
           </Link> */}
         </Stack>
       </Stack>
@@ -155,12 +155,12 @@ const Navbar = () => {
                 {/* <Link
                   p="2"
                   route
-                  href="/oprec"
+                  href="/eittss"
                   color={color}
                   fontWeight="bold"
                   className="blink"
                 >
-                  {'OPREC'}
+                  {'PENGUMUMAN'}
                 </Link> */}
               </Stack>
             </DrawerBody>
