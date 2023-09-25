@@ -78,9 +78,9 @@ const Masuk = (props) => {
           justifyContent="center"
           my="2"
       >
-        <Heading as="h4" fontSize="xl" mb="1rem">
+        {/* <Heading as="h4" fontSize="xl" mb="1rem">
           anjay lolos dijaga komitmennya yaa!
-        </Heading>
+        </Heading> */}
       </Stack>
       <Box hidden={handle(data)}>
         <MotionBox
