@@ -59,7 +59,7 @@ const Masuk = (props) => {
 
   // const MotionButton = motion(Button)
   const lolos = `Hi Nakama👋 Selamat! Kamu lolos dan menjadi bagian dari Keluarga Lab AI!✨`
-  const belom = "Don't give up, there's no shame in falling down! The true shame is to not stand up again!" 
+  const belom = "Don't give up, there's no shame in falling down! The true shame is to not stand up again! \n Semangat ya jangan menyerah coba lagi tahun depan" 
   const checkNim = lsNim==nim
   return (
     <Box mt="2">
