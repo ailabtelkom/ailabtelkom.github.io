@@ -53,7 +53,7 @@ const FormSoal = () => {
   const handleChangeJawaban = (event) => {
     const textnya = event.target.value
     setJawaban(textnya)
-    if (textnya.toLowerCase() === "raisa") {
+    if (textnya.toLowerCase() === "gpt2023") {
       setShow(true)
       setMode(true)
       setLsNim(nim)

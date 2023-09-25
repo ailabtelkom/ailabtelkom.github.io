@@ -69,7 +69,7 @@ const Masuk = (props) => {
       </Heading>
       <Heading hidden={mode}>Anda belum menjawab Pertanyaan</Heading>
       <Heading hidden={checkNim}>Silahkan menjawab pertanyaan terlebih dahulu</Heading>
-      <Text hidden={checkNim}>tidak bisa melakukan pengecekan dengan hanya mengganti param :) </Text>
+      <Text hidden={checkNim}>ampun puh sepuh tolong jawab pertanyaan dulu ya puh :p </Text>
       <Divider mt="2" mb="4" />
       {/* <Center> */}
       <Stack
