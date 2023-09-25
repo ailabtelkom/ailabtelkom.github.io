@@ -7,7 +7,6 @@ export default {
   '1301213445': {lolos: true, nama: 'Gloria Natasya Irene Sidebang', image: '/assets/images/fotololos/lolos4.jpg?webp'},
   '1301213488': {lolos: true, nama: 'Muhammad Rafly Arjasubrata', image: '/assets/images/fotololos/lolos.jpg?webp'},
   '1305210087': {lolos: true, nama: 'Akmal Muzakki Bakir', image: '/assets/images/fotololos/lolos2.jpg?webp'},
-
   //lolos sg
   '1305223033': {lolos: true, nama: 'Tiara Sabrina', image: '/assets/images/fotololos/lolos2.jpg?webp'},
   '1302223041': {lolos: true, nama: 'Syahreza Adnan Al Azhar', image: '/assets/images/fotololos/lolos3.jpg?webp'},
@@ -21,7 +20,10 @@ export default {
   '1301223287': {lolos: true, nama: 'Imelda Damayanti', image: '/assets/images/fotololos/lolos4.jpg?webp'},
   '1301223401': {lolos: true, nama: 'Farah Saraswati', image: '/assets/images/fotololos/lolos.jpg?webp'},
   '1302223042': {lolos: true, nama: 'Iksan Oktav Risandy', image: '/assets/images/fotololos/lolos2.jpg?webp'},
-
+  //lolos smt 1
+  '103012300150': {lolos: true, nama: 'YYolanda Rahma Chrysti', image: '/assets/images/fotololos/lolos.jpg?webp'},
+  '103012300465': {lolos: true, nama: 'Tisee', image: '/assets/images/fotololos/lolos2.jpg?webp'},
+  '103012330264': {lolos: true, nama: 'Muhammad Ghozy Abdurrahman', image: '/assets/images/fotololos/lolos3.jpg?webp'},
   //galolos sg
   '1301220006': {lolos: false, nama: 'Aulia Faradis Ishmah', image: '/assets/images/fotololos/galolos.jpg?webp'},
   '1301223193': {lolos: false, nama: 'Hafizh Kamaluddin Abdillah', image: '/assets/images/fotololos/galolos2.jpg?webp'},
@@ -36,12 +38,6 @@ export default {
   '1305220100': {lolos: false, nama: 'Luthfillah Akhtar Fakhrudin', image: '/assets/images/fotololos/galolos3.jpg?webp'},
   '1301220198': {lolos: false, nama: 'Embun Nawang Sari', image: '/assets/images/fotololos/galolos2.jpg?webp'},
   '1301223044': {lolos: false, nama: 'Agil Ditya Rafiazmi', image: '/assets/images/fotololos/galolos3.jpg?webp'},
-
-  //lolos smt 1
-  '103012300150': {lolos: true, nama: 'YOLANDA RAHMA CHRYSTI', image: '/assets/images/fotololos/lolos.jpg?webp'},
-  '103012300465': {lolos: true, nama: 'Tisee', image: '/assets/images/fotololos/lolos2.jpg?webp'},
-  '103012330264': {lolos: true, nama: 'Muhammad Ghozy Abdurrahman', image: '/assets/images/fotololos/lolos3.jpg?webp'},
-
   //sg smt 1
   '103012330009': {lolos: false, nama: 'M. Rifqi Dzaky Azhad', image: '/assets/images/fotololos/galolos.jpg?webp'},
   '103012330386': {lolos: false, nama: 'Axel Davin Lazar Panenggak', image: '/assets/images/fotololos/galolos3.jpg?webp'},
