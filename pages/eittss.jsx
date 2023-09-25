@@ -37,7 +37,7 @@ const eittss = () => {
       </MotionBox>
 
       <Heading fontSize={{ base: "2xl", lg: "3xl" }}>
-        Silakan chat ke OA LINE kami dulu minna-san
+        Silakan chat "Pengumuman/SG/FG" ke OA LINE kami dulu minna-san
       </Heading>
       <Heading fontSize={{ base: "2xl", lg: "3xl" }}>
         👇👇👇
