@@ -38,6 +38,7 @@ export default {
   '1305220100': {lolos: false, nama: 'Luthfillah Akhtar Fakhrudin', image: '/assets/images/fotololos/galolos3.jpg?webp'},
   '1301220198': {lolos: false, nama: 'Embun Nawang Sari', image: '/assets/images/fotololos/galolos2.jpg?webp'},
   '1301223044': {lolos: false, nama: 'Agil Ditya Rafiazmi', image: '/assets/images/fotololos/galolos3.jpg?webp'},
+  '1301223227': {lolos: false, nama: 'Brian Anashari', image: '/assets/images/fotololos/galolos3.jpg?webp'},
   //sg smt 1
   '103012330009': {lolos: false, nama: 'M. Rifqi Dzaky Azhad', image: '/assets/images/fotololos/galolos.jpg?webp'},
   '103012330386': {lolos: false, nama: 'Axel Davin Lazar Panenggak', image: '/assets/images/fotololos/galolos3.jpg?webp'},
@@ -50,5 +51,6 @@ export default {
   '101012330057': {lolos: false, nama: 'Hamzah Haki Triadi', image: '/assets/images/fotololos/galolos4.jpg?webp'},
   '101012300409': {lolos: false, nama: 'Mohammad Nur Afrizal Pahlevi', image: '/assets/images/fotololos/galolos.jpg?webp'},
   '103012300316': {lolos: false, nama: 'NABILA PUTRI AZHARI', image: '/assets/images/fotololos/galolos2.jpg?webp'},
+  '103012300241': {lolos: false, nama: 'Jehezkiel Beny Brian', image: '/assets/images/fotololos/galolos3.jpg?webp'},
 
 }
