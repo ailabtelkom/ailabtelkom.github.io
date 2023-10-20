@@ -1,5 +1,5 @@
 import React from "react";
-import Axios from "axios";
+import { promises as fs } from 'fs';
 import {
   Box,
   Heading,
@@ -9,22 +9,13 @@ import {
   Skeleton
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import Link from "../components/Link";
 import CardAnggota from "../components/CardAnggota"
-import aslab21 from "../data/aslab21";
-import aslab20 from "../data/aslab20";
 import { NextSeo } from "next-seo";
 const member = (props) => {
   const { dataAnggota } = props
   // const [dataAnggota, setDataAnggota] = React.useState(false);
   const MotionBox = motion(Box)
-  const { colorMode } = useColorMode();
-  const bgColor = useColorModeValue("white", "gray.700");
   const year = new Date().getFullYear()
-  const itemVariant = {
-    start: { y: 20, opacity: 0 },
-    end: { y: 0, opacity: 1 },
-  };
   const containerVariant = {
     start: {
       y: 20,
@@ -38,16 +29,6 @@ const member = (props) => {
     },
     exit: { opacity: 0, transition: { duration: 0.1 } },
   };
-  // React.useEffect(() => {
-  //   Axios.post(
-  //     "https://botIgadis.aliven.my.id/getSheetAI",
-  //     {
-  //       id_spreadsheet: "1SaXnuRt-1KXyDGS18KqU7cus4_IWNxpGhiVy0J1vz-U",
-  //       email: "sheet-access@web-amazing-ai.iam.gserviceaccount.com",
-  //       sheet_title: "web"
-  //     })
-  //     .then(response => { console.log(response.data); setDataAnggota(response.data.data)})
-  // }, [])
 
   if (!dataAnggota) 
     return (
