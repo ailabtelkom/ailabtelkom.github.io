@@ -11,8 +11,8 @@ import {
 import { motion } from "framer-motion";
 import CardAnggota from "../components/CardAnggota"
 import { NextSeo } from "next-seo";
-const member = async (props) => {
-  const file = await fs.readFile(process.cwd() + '/data/dataMember.json', 'utf8');
+const member = (props) => {
+  const file = fs.readFile(process.cwd() + '/data/dataMember.json', 'utf8');
   const dataAnggota = JSON.parse(file);
   // const [dataAnggota, setDataAnggota] = React.useState(false);
   const MotionBox = motion(Box)
