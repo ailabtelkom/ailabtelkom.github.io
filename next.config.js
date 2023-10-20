@@ -4,6 +4,15 @@ const optimizedImages = require("next-optimized-images");
 const nextConfig = {};
 module.exports = withPlugins([optimizedImages], nextConfig);
 
+module.exports = {
+  webpack5: true,
+  webpack: (config) => {
+    config.resolve.fallback = { fs: false };
+
+    return config;
+  },
+};
+
 // const withOptimizedImages = require('next-optimized-images');
 
 // module.exports = withOptimizedImages({
