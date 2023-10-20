@@ -30,7 +30,7 @@ jobs:
           python script.py
           mkdir -p /tmp/data
           ls ../
-          cp ./dataMember.json /data/dataMember.json
+          cp ./dataMember.json ../data/dataMember.json
         
       - name: Build 🔧
         run: |
