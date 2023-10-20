@@ -28,7 +28,7 @@ jobs:
       - name: run python script to convert csv to json
         run: |
           python ./scripts/script.py
-          cp ./dataMember.json ./data/dataMember.json
+          cp ./scripts/dataMember.json ./data/dataMember.json
         
       - name: Build 🔧
         run: |
