@@ -131,19 +131,10 @@ const member = (props) => {
 };
 
 member.getInitialProps = async () => {
-  try {
-    const res = await Axios.post(
-      "http://raisa.aliven.my.id:5000/getSheetAI",
-      {
-        id_spreadsheet: "1SaXnuRt-1KXyDGS18KqU7cus4_IWNxpGhiVy0J1vz-U",
-        email: "sheet-access@web-amazing-ai.iam.gserviceaccount.com",
-        sheet_title: "web"
-      }
-      );
-    return {dataAnggota: res.data.data};
-  } catch (err) {
-    console.log(err)
-  }
+  const file = await fs.readFile(process.cwd() + '/data/dataMember.json', 'utf8');
+  const data = JSON.parse(file);
+  return {dataAnggota: data};
+
 }
 
 export default member;

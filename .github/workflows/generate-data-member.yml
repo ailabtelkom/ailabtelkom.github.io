@@ -1,8 +1,5 @@
 name: Generate Data Member in Json
 on:
-  push:
-    branches: [master]
-  workflow_dispatch:
 
 jobs:
   generate_data_member:
