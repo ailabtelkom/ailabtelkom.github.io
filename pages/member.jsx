@@ -11,10 +11,8 @@ import {
 import { motion } from "framer-motion";
 import CardAnggota from "../components/CardAnggota"
 import { NextSeo } from "next-seo";
-
-export default async function member() {
-  const file = await fs.readFile(process.cwd() + '/data/dataMember.json', 'utf8');
-  const dataAnggota = JSON.parse(file);
+const member = (props) => {
+  const { dataAnggota } = props
   // const [dataAnggota, setDataAnggota] = React.useState(false);
   const MotionBox = motion(Box)
   const year = new Date().getFullYear()
@@ -112,3 +110,12 @@ export default async function member() {
     );
   }
 };
+
+member.getInitialProps = async () => {
+  const file = await fs.readFile(process.cwd() + '/data/dataMember.json', 'utf8');
+  const data = JSON.parse(file);
+  return {dataAnggota: data};
+
+}
+
+export default member;
