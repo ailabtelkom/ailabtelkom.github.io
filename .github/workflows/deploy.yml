@@ -26,7 +26,7 @@ jobs:
         run: |
           python ./scripts/script.py
           cp ./scripts/dataMember.json ./data/dataMember.json
-          ls.
+          ls .
 
       - name: Install 🔧
         run: yarn install
