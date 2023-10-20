@@ -11,11 +11,10 @@ import {
 import { motion } from "framer-motion";
 import CardAnggota from "../components/CardAnggota"
 import { NextSeo } from "next-seo";
-import dataAnggota from "../data/dataMember.json"
 
 export default async function member() {
-  // const file = await fs.readFile(process.cwd() + '/data/dataMember.json', 'utf8');
-  // const dataAnggota = JSON.parse(file);
+  const file = await fs.readFile(process.cwd() + '/data/dataMember.json', 'utf8');
+  const dataAnggota = JSON.parse(file);
   // const [dataAnggota, setDataAnggota] = React.useState(false);
   const MotionBox = motion(Box)
   const year = new Date().getFullYear()
