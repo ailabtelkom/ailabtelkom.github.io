@@ -19,13 +19,6 @@ jobs:
             
       - name: Install 🔧
         run: yarn install
-        
-      - name: Build 🔧
-        run: |
-          yarn build:production
-          touch out/.nojekyll
-        env:
-          GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
 
       - uses: actions/checkout@v3
       - name: Download csv file of member form in gsheet
@@ -34,10 +27,15 @@ jobs:
           
       - name: run python script to convert csv to json
         run: |
-          cd ./scripts
-          python script.py
-          cp ./dataMember.json ../data/dataMember.json
-          cd ..
+          python ./scripts/script.py
+          cp ./dataMember.json ./data/dataMember.json
+        
+      - name: Build 🔧
+        run: |
+          yarn build:production
+          touch out/.nojekyll
+        env:
+          GITHUB_TOKEN: ${{ secrets.TOKEN_SECRET }}
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.3
