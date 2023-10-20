@@ -29,7 +29,8 @@ jobs:
           cd ./scripts
           python script.py
           mkdir -p /tmp/data
-          cp /dataMember.json /data/dataMember.json
+          ls .
+          cp ./dataMember.json /data/dataMember.json
         
       - name: Build 🔧
         run: |
