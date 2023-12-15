@@ -18,9 +18,10 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import activities from "../data/activities";
 import aslab21 from "../data/aslab21";
-import aslab20 from "../data/aslab20";
+// import aslab20 from "../data/aslab20";
 import aslab22 from "../data/aslab22";
 import { NextSeo } from "next-seo";
+import aslab23 from "../data/aslab23";
 const about = () => {
   const MotionBox = motion(Box)
   const { colorMode } = useColorMode();
@@ -117,9 +118,9 @@ const about = () => {
             mt="8"
             mb="4"
           >
-            Meet The Enigma 2022 Gang 👊😎
+            Meet The .GPT 2023 Gang 👊😎
           </Heading>
-          <CardAslab dataAslab={aslab22} />
+          <CardAslab dataAslab={aslab23} />
         </Box>
         <Box px={{ base: 6, md: 0 }}>
           <Heading
@@ -128,9 +129,9 @@ const about = () => {
               mt="8"
               mb="4"
             >
-              Meet The Eliza 2021 Gang 👊😎
+              Meet The Enigma 2022 Gang 👊😎
             </Heading>
-            <CardAslab dataAslab={aslab21} />
+            <CardAslab dataAslab={aslab22} />
         </Box>
         <Box px={{ base: 6, md: 0 }}>
           <Heading
@@ -139,9 +140,9 @@ const about = () => {
             mt="8"
             mb="4"
           >
-            Meet The Integer 2020 Gang 👊😎
+            Meet The Eliza 2021 Gang 👊😎
           </Heading>
-          <CardAslab dataAslab={aslab20} />
+          <CardAslab dataAslab={aslab21} />
         </Box>
       </MotionBox>
     </React.Fragment>
