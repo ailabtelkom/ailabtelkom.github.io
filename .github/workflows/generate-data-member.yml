@@ -13,12 +13,12 @@ jobs:
           python ./scripts/script.py
           mkdir -p /tmp/data
           cp ./scripts/dataMember.json /tmp/data/dataMember.json
+          git config --global user.email "alifnaufalyasin@gmail.com"
+          git config --global user.name " Alif Naufal"
           git checkout -b production
           git fetch
           git pull --rebase origin production
           cp /tmp/data/dataMember.json ./data/dataMember.json`
-          git config --global user.email "alifnaufalyasin@gmail.com"
-          git config --global user.name " Alif Naufal"
           git add .
           git commit -m "Commit changes from GitHub Actions"
       
