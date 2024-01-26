@@ -1,6 +1,5 @@
 name: Generate Data Member in Json
-on:
-
+on: workflow_dispatch
 jobs:
   generate_data_member:
     runs-on: ubuntu-latest
