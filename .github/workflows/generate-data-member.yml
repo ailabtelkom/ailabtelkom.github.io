@@ -10,8 +10,6 @@ jobs:
           curl -L -o ./scripts/dataMember.csv https://docs.google.com/spreadsheets/d/1SaXnuRt-1KXyDGS18KqU7cus4_IWNxpGhiVy0J1vz-U/export?format=csv
       - name: run python script to convert csv to json and commit it
         run: |
-          git config --global user.email "alifnaufalyasin@gmail.com"
-          git config --global user.name " Alif Naufal"
           cd ./scripts
           python script.py
           mkdir -p /tmp/data
@@ -20,8 +18,10 @@ jobs:
           git fetch
           git pull --rebase origin production
           cd ..
-          cp /tmp/data/dataMember.json ./data/dataMember.json
           mkdir -p ./data
+          cp /tmp/data/dataMember.json ./data/dataMember.json`
+          git config --global user.email "alifnaufalyasin@gmail.com"
+          git config --global user.name " Alif Naufal"
           git add .
           git commit -m "Commit changes from GitHub Actions"
       
