@@ -13,9 +13,9 @@ def csv_to_json(csv_file, json_file):
 
 if __name__ == "__main__":
     # Replace 'input.csv' with the path of your CSV file
-    csv_file_path = './dataMember.csv'
+    csv_file_path = './scripts/dataMember.csv'
     
     # Replace 'output.json' with the desired path for the JSON output file
-    json_file_path = './dataMember.json'
+    json_file_path = './scripts/dataMember.json'
 
     csv_to_json(csv_file_path, json_file_path)
