@@ -33,7 +33,7 @@ const openMind = () => {
       position="relative"
     >
       <Heading mt="2" fontSize={{ base: "2xl", lg: "3xl" }}>
-        Open Mind Artificial Intelligence laboratory 2023
+        Open Mind Artificial Intelligence laboratory 2024
       </Heading>
       <Divider mt="2" mb="4" />
       {/* <ButtonZoom/> */}
@@ -126,7 +126,7 @@ const openMind = () => {
       </Heading>
       <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">
         <iframe
-          src="https://forms.microsoft.com/Pages/ResponsePage.aspx?id=D_6vkKPCCEG7mGzrTpTvFVE7-EOI0Y5IqalPSQSBkZJUQUVaQ0sxT01VSEU5MjE2WjROSEpCRk5VSi4u"
+          src="https://forms.office.com/r/PA1vJFXcZs"
           width="100%"
           height="100%"
         >Loading…</iframe>
