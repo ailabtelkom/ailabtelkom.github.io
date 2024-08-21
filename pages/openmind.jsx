@@ -122,7 +122,7 @@ const openMind = () => {
         </Grid>
       <Divider mt="2" mb="4" />
       <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="4">
-        Here's The Zoom Link
+        Here's The Microsoft Teams Link
       </Heading>
       <Box width="100%" h={{ base: "65vh", md: "75vh" }} id="Forms">
         <iframe
