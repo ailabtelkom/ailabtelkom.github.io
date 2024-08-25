@@ -105,6 +105,9 @@ const Navbar = () => {
           <Link route href="/about" color={color}>
             About
           </Link>
+          <Link route href="/oprec" color={color}>
+            Open Recruitment
+          </Link>
           {/* <Link
             route
             href="/eittss"
@@ -151,6 +154,9 @@ const Navbar = () => {
                 </Link>
                 <Link p="2" route href="/about" color={color}>
                   About
+                </Link>
+                <Link p="2" route href="/oprec" color={color}>
+                  Open Recruitment
                 </Link>
                 {/* <Link
                   p="2"
