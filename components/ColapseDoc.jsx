@@ -51,7 +51,9 @@ const ColapseDoc = () => {
                 // 2022
                 // src="https://drive.google.com/file/d/1xZFeHC-q_DjNgB3Jn9bG0TQCm6sWOBbF/preview"
                 // 2023
-                src="https://docs.google.com/document/d/1YEapkWn2Olm7l-yMXaUirnS9ZQIRPJD-/preview"
+                // src="https://docs.google.com/document/d/1YEapkWn2Olm7l-yMXaUirnS9ZQIRPJD-/preview"
+                // 2024
+                src = "https://docs.google.com/document/d/1ySWKzz-FA5xcDXEstyJwK9xB_emXigfxOEERBSHMWVc/preview"
                 width="100%"
                 height="100%"
                 onLoad={ () => setShowSkelton(true) }
