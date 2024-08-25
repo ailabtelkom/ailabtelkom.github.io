@@ -66,6 +66,8 @@ const ColapseDoc = () => {
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               // src="https://forms.office.com/r/Nc8d1ftUw9"
+              // 2024
+              src = "https://forms.office.com/r/4vHky2PQQv"
               width="100%"
               height="100%"
             >Loading…</iframe>
@@ -100,6 +102,8 @@ const ColapseDoc = () => {
           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               //src="https://forms.office.com/r/mcKwRMivwy"
+              // 2024
+              src="https://forms.office.com/r/gwL4hzhSeL"
               width="100%"
               height="100%"
             >Loading…</iframe>
