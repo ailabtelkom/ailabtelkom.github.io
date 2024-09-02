@@ -64,7 +64,7 @@ const ColapseDoc = () => {
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
-          <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
+{/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               // src="https://forms.office.com/r/Nc8d1ftUw9"
               // 2024
@@ -72,7 +72,7 @@ const ColapseDoc = () => {
               width="100%"
               height="100%"
             >Loading…</iframe>
-          </Box>
+          </Box> */}
         </Box>
       </Collapse>
       <Collapse mt={4} in={showFG} animateOpacity>
