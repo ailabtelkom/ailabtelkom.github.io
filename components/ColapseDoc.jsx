@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Button, Heading, Image, Text, Collapse, Stack, Skeleton } from "@chakra-ui/react";
+import { Box, Button, Heading, Image, Text, Collapse, Stack, Skeleton, Table, Thead, Tbody, Tr, Th, Td } from "@chakra-ui/react";
 // import { motion } from "framer-motion";
 
 const ColapseDoc = () => {
