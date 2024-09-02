@@ -75,7 +75,7 @@ const ColapseDoc = () => {
           <Skeleton isLoaded={showSkelton}>
             <Box mt={8} overflowX="auto">
               
-              <SimpleGrid columns={{ base: 2, lg: 5 }} spacing={4}>
+              <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
                 {dataNIM.map((nim, index) => (
                   <Box
                     key={index}
