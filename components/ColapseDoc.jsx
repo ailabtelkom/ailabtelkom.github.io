@@ -64,16 +64,18 @@ const ColapseDoc = () => {
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
-          <Box mt={8} overflowX="auto">
-            <Heading as="h3" size="lg" mb={4}>Daftar Nomor Induk Mahasiswa (NIM)</Heading>
-            <SimpleGrid columns={{ base: 2, lg: 5 }} spacing={4}>
-              {dataNIM.map((nim, index) => (
-                <Box key={index} p={4} borderWidth={1} borderRadius="md">
-                  {nim}
-                </Box>
-              ))}
-            </SimpleGrid>
-          </Box>
+          <Skeleton isLoaded={showSkelton}>
+            <Box mt={8} overflowX="auto">
+              <Heading as="h3" size="lg" mb={4}>Daftar Nomor Induk Mahasiswa (NIM)</Heading>
+              <SimpleGrid columns={{ base: 2, lg: 5 }} spacing={4}>
+                {dataNIM.map((nim, index) => (
+                  <Box key={index} p={4} borderWidth={1} borderRadius="md">
+                    {nim}
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Box>
+          </Skeleton>
 {/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               // src="https://forms.office.com/r/Nc8d1ftUw9"
