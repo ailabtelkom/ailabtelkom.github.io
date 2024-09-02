@@ -64,6 +64,23 @@ const ColapseDoc = () => {
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
+          <Box mt={8} overflowX="auto">
+            <Heading as="h3" size="lg" mb={4}>Daftar Nomor Induk Mahasiswa (NIM)</Heading>
+            <Table variant="striped" colorScheme="teal">
+              <Thead>
+                <Tr>
+                  <Th>NIM</Th>
+                </Tr>
+              </Thead>
+              <Tbody>
+                {dataNIM.map((nim, index) => (
+                  <Tr key={index}>
+                    <Td>{nim}</Td>
+                  </Tr>
+                ))}
+              </Tbody>
+            </Table>
+          </Box>
 {/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               // src="https://forms.office.com/r/Nc8d1ftUw9"
