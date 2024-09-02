@@ -62,14 +62,20 @@ const ColapseDoc = () => {
             </Box>
           </Skeleton>
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
-            Let's Join With Us
+            Daftar Lolos Seleksi Berkas Study Group 2024
           </Heading>
           <Skeleton isLoaded={showSkelton}>
             <Box mt={8} overflowX="auto">
-              <Heading as="h3" size="lg" mb={4}>Daftar Nomor Induk Mahasiswa (NIM)</Heading>
+              
               <SimpleGrid columns={{ base: 2, lg: 5 }} spacing={4}>
                 {dataNIM.map((nim, index) => (
-                  <Box key={index} p={4} borderWidth={1} borderRadius="md">
+                  <Box
+                    key={index}
+                    p={4}
+                    borderWidth={1}
+                    borderRadius="md"
+                    bg={index % 2 === 0 ? "#EAB533" : "white"}
+                  >
                     {nim}
                   </Box>
                 ))}
