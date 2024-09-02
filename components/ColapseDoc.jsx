@@ -6,6 +6,7 @@ const ColapseDoc = () => {
   const [showSG, setShowSG] = React.useState(true);
   const [showFG, setShowFG] = React.useState(false);
   const [showSkelton, setShowSkelton] = React.useState(false);
+  const dataNIM = ["210001", "210002", "210003", "210004"];
   return (
     <Box mt="4">
       <Box>
