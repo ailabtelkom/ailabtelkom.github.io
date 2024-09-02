@@ -72,13 +72,13 @@ const ColapseDoc = () => {
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Daftar Lolos Seleksi Berkas Study Group 2024
           </Heading>
-          <Text fontSize={{ base: "md", lg: "lg" }} mt="2">
+          <Heading as="h4" fontSize={{ base: "md", lg: "lg" }} mt="2">
             Mohon isi jadwal wawancara disini: 
             <a href="https://docs.google.com/spreadsheets/d/1rcVcbJ1HKh6IOS9BSYbMNOqIvSPk3MIsbNWH64rGccA/edit?usp=sharing"
               style={{ color: "#3182CE", textDecoration: "underline" }}>
               Link Wawancara
             </a>
-          </Text>
+          </Heading>
           <Skeleton isLoaded={showSkelton}>
             <Box mt={8} overflowX="auto">
               
