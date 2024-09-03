@@ -89,7 +89,7 @@ const ColapseDoc = () => {
                     p={4}
                     borderWidth={1}
                     borderRadius="md"
-                    bg={index % 2 === 0 ? "#EAB533" : "white"}
+                    bg={index % 2 === 0 ? "#EAB533" : "#8F8F8F"}
                   >
                     {nim}
                   </Box>
