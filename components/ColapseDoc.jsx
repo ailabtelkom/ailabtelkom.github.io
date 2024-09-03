@@ -73,11 +73,7 @@ const ColapseDoc = () => {
             Daftar Lolos Seleksi Berkas Study Group 2024
           </Heading>
           <Heading as="h4" fontSize={{ base: "md", lg: "lg" }} mt="2">
-            Mohon isi jadwal wawancara disini: 
-            <a href="https://docs.google.com/spreadsheets/d/1rcVcbJ1HKh6IOS9BSYbMNOqIvSPk3MIsbNWH64rGccA/edit?usp=sharing"
-              style={{ color: "#3182CE", textDecoration: "underline" }}>
-              Link Wawancara
-            </a>
+            Teman teman harap bergabung pada Microsoft Teams dengan kode berikut: 68tbr5v
           </Heading>
           <Skeleton isLoaded={showSkelton}>
             <Box mt={8} overflowX="auto">
