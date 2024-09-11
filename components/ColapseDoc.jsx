@@ -72,7 +72,7 @@ const ColapseDoc = () => {
           <Heading as="h4" fontSize={{ base: "md", lg: "lg" }} mt="2">
             Teman teman harap bergabung pada Microsoft Teams dengan kode berikut: 68tbr5v
           </Heading>
-          <Skeleton isLoaded={showSkelton}>
+          
             <Box mt={8} overflowX="auto">
               
               <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
@@ -89,7 +89,7 @@ const ColapseDoc = () => {
                 ))}
               </SimpleGrid>
             </Box>
-          </Skeleton>
+          
 {/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               // src="https://forms.office.com/r/Nc8d1ftUw9"
@@ -130,24 +130,24 @@ const ColapseDoc = () => {
             Teman teman harap bergabung pada Microsoft Teams dengan kode berikut: 68tbr5v
           </Heading>
 
-          <Skeleton isLoaded={showSkelton}>
-            <Box mt={8} overflowX="auto">
+          
+          <Box mt={8} overflowX="auto">
               
-              <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
-                {dataNIM.slice(-9).map((nim, index) => (
-                  <Box
+            <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
+              {dataNIM.slice(-9).map((nim, index) => (
+                <Box
                     key={index}
                     p={4}
                     borderWidth={1}
                     borderRadius="md"
                     bg={index % 2 === 0 ? "#EAB533" : "#8F8F8F"}
-                  >
-                    {nim}
-                  </Box>
-                ))}
-              </SimpleGrid>
-            </Box>
-          </Skeleton>
+                >
+                  {nim}
+                </Box>
+              ))}
+            </SimpleGrid>
+          </Box>
+          
           
 {/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
