@@ -106,7 +106,7 @@ const ColapseDoc = () => {
           <Heading>
             Focus Group
           </Heading>
-          <Skeleton isLoaded={showSkelton}>
+{/*           <Skeleton isLoaded={showSkelton}>
             <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
               <iframe
                 // 2021
@@ -122,13 +122,33 @@ const ColapseDoc = () => {
                 onLoad={()=>setShowSkelton(true)}
               >Loading…</iframe>
             </Box>
-          </Skeleton>
+          </Skeleton> */}
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Daftar Lolos Seleksi Berkas Focus Group 2024
           </Heading>
           <Heading as="h4" fontSize={{ base: "md", lg: "lg" }} mt="2">
             Teman teman harap bergabung pada Microsoft Teams dengan kode berikut: 68tbr5v
           </Heading>
+
+          <Skeleton isLoaded={showSkelton}>
+            <Box mt={8} overflowX="auto">
+              
+              <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
+                {dataNIM.slice(-9).map((nim, index) => (
+                  <Box
+                    key={index}
+                    p={4}
+                    borderWidth={1}
+                    borderRadius="md"
+                    bg={index % 2 === 0 ? "#EAB533" : "#8F8F8F"}
+                  >
+                    {nim}
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Box>
+          </Skeleton>
+          
 {/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               //src="https://forms.office.com/r/mcKwRMivwy"
