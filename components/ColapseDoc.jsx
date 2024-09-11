@@ -6,15 +6,8 @@ const ColapseDoc = () => {
   const [showSG, setShowSG] = React.useState(true);
   const [showFG, setShowFG] = React.useState(false);
   const [showSkelton, setShowSkelton] = React.useState(false);
-  const dataNIM = [
-  "103052330011", "103012300018", "103052300112", "103012300100", "103012330009", "103032300013", "101012300025", "103012300313", 
-  "103052300054", "103052300026", "6706223155", "103052300066", "103012300394", "103012300096", "103012330023", "103012300116", 
-  "103012300483", "103012300198", "103012300176", "103022300057", "103052300084", "10312300105", "103052300008", "103012300245", 
-  "103012330330", "103012330104", "103052300003", "103012300309", "103012300464", "103012300025", "103012300397", "103012300249", 
-  "1101223268", "103012300328", "103012300487", "103052330034", "103032330147", "103012300094", "103052300082", "103052300024", 
-  "103012300306", "103022330068", "103012300463", "103012300012", "103032330103", "103012330298", "103012300037", "103012300480", 
-  "103012330401", "103012300166", "103012300316", "103012300453", "103012300371", "103012330370", "103042310059", "7708223080", 
-  "103022300097", "103052300111"];
+  const dataNIMSG = ["103052300084", "103032330103", "103052300026", "103012300483", "103012300316", "103012330009", "103052330011", "103012300394", "103012330104", "103012300453", "7708223080", "103012300309", "103012300328", "103012300025", "103012300105", "103012300249", "103012300480", "103012300397", "103012300176", "103012330401", "103052330034", "103052300082", "103012300166", "103032300013", "103012300463", "103052300008", "103012300012", "103012300245", "103012330023", "103052300054", "103012300018", "103012300371"];
+  const dataNIMFG = ["1301223015", "103012330264", "1301224059", "1301220409", "103012300150", "1305220010", "1302223041", "1305223033", "1301223287"];
   return (
     <Box mt="4">
       <Box>
@@ -79,7 +72,7 @@ const ColapseDoc = () => {
             <Box mt={8} overflowX="auto">
               
               <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
-                {dataNIM.map((nim, index) => (
+                {dataNIMSG.map((nim, index) => (
                   <Box
                     key={index}
                     p={4}
@@ -109,7 +102,7 @@ const ColapseDoc = () => {
           <Heading>
             Focus Group
           </Heading>
-          <Skeleton isLoaded={showSkelton}>
+{/*           <Skeleton isLoaded={showSkelton}>
             <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
               <iframe
                 // 2021
@@ -125,11 +118,32 @@ const ColapseDoc = () => {
                 onLoad={()=>setShowSkelton(true)}
               >Loading…</iframe>
             </Box>
-          </Skeleton>
+          </Skeleton> */}
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
-            Let's Join With Us
+            Daftar Lolos Seleksi Berkas Focus Group 2024
           </Heading>
-          <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
+          <Heading as="h4" fontSize={{ base: "md", lg: "lg" }} mt="2">
+            Teman teman harap bergabung pada Microsoft Teams dengan kode berikut: 68tbr5v
+          </Heading>
+          <Skeleton isLoaded={showSkelton}>
+            <Box mt={8} overflowX="auto">
+              
+              <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
+                {dataNIMFG.map((nim, index) => (
+                  <Box
+                    key={index}
+                    p={4}
+                    borderWidth={1}
+                    borderRadius="md"
+                    bg={index % 2 === 0 ? "#EAB533" : "#8F8F8F"}
+                  >
+                    {nim}
+                  </Box>
+                ))}
+              </SimpleGrid>
+            </Box>
+          </Skeleton>
+{/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               //src="https://forms.office.com/r/mcKwRMivwy"
               // 2024
@@ -137,7 +151,7 @@ const ColapseDoc = () => {
               width="100%"
               height="100%"
             >Loading…</iframe>
-          </Box>
+          </Box> */}
         </Box>
       </Collapse>
     </Box>
