@@ -11,6 +11,8 @@ const ColapseDoc = () => {
   "103012330104", "103012300453", "7708223080", "103012300309", "103012300328", "103012300025", "103012300105", "103012300249",
   "103012300480", "103012300397", "103012300176", "103012330401", "103052330034", "103052300082", "103012300166", "103032300013",
   "103012300463", "103052300008", "103012300012", "103012300245", "103012330023", "103052300054", "103012300018", "103012300371"];
+  const dataNIMFG = [
+  "1301223015", "103012330264", "1301224059", "1301220409", "103012300150", "1305220010", "1302223041", "1305223033", "1301223287"];
   return (
     <Box mt="4">
       <Box>
@@ -66,7 +68,7 @@ const ColapseDoc = () => {
             </Box>
           </Skeleton> */}
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
-            Daftar Lolos Seleksi Berkas Study Group 2024
+            Daftar Lolos Tes Tulis Study Group 2024
           </Heading>
           <Heading as="h4" fontSize={{ base: "md", lg: "lg" }} mt="2">
             Teman teman harap bergabung pada Microsoft Teams dengan kode berikut: 68tbr5v
@@ -105,7 +107,7 @@ const ColapseDoc = () => {
           <Heading>
             Focus Group
           </Heading>
-          <Skeleton isLoaded={showSkelton}>
+{/*           <Skeleton isLoaded={showSkelton}>
             <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
               <iframe
                 // 2021
@@ -121,11 +123,11 @@ const ColapseDoc = () => {
                 onLoad={()=>setShowSkelton(true)}
               >Loading…</iframe>
             </Box>
-          </Skeleton>
+          </Skeleton> */}
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Let's Join With Us
           </Heading>
-          <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
+{/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               //src="https://forms.office.com/r/mcKwRMivwy"
               // 2024
@@ -133,7 +135,7 @@ const ColapseDoc = () => {
               width="100%"
               height="100%"
             >Loading…</iframe>
-          </Box>
+          </Box> */}
         </Box>
       </Collapse>
     </Box>
