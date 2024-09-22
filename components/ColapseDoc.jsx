@@ -69,13 +69,13 @@ const ColapseDoc = () => {
             </Box>
           </Skeleton>
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
-            Daftar Lolos Tes Tulis Study Group 2024
+            Come Join Us!!!
           </Heading>
           <Heading as="h4" fontSize={{ base: "md", lg: "lg" }} mt="2">
-            Teman teman harap bergabung pada Microsoft Teams dengan kode berikut: 68tbr5v
+            Teman teman harap mengisi form dibawah ini
           </Heading>
           
-            <Box mt={8} overflowX="auto">
+{/*             <Box mt={8} overflowX="auto">
               
               <SimpleGrid columns={{ base: 2, sm: 3, md: 4, lg: 5 }} spacing={4}>
                 {dataNIM.slice(0, dataNIM.length - 9).map((nim, index) => (
@@ -90,17 +90,19 @@ const ColapseDoc = () => {
                   </Box>
                 ))}
               </SimpleGrid>
-            </Box>
+            </Box> */}
           
-{/*           <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
+          <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
             <iframe
               // src="https://forms.office.com/r/Nc8d1ftUw9"
               // 2024
-              src = "https://forms.office.com/r/4vHky2PQQv"
+              // src = "https://forms.office.com/r/4vHky2PQQv"
+              // 2024 Maba
+              src = "https://forms.office.com/r/mCmZx0pLRU"
               width="100%"
               height="100%"
             >Loading…</iframe>
-          </Box> */}
+          </Box>
         </Box>
       </Collapse>
       <Collapse mt={4} in={showFG} animateOpacity>
