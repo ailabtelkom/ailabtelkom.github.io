@@ -49,7 +49,7 @@ const ColapseDoc = () => {
           <Heading>
             Study Group
           </Heading>
-{/*           <Skeleton isLoaded={showSkelton}>
+          <Skeleton isLoaded={showSkelton}>
             <Box width="100%" h={{ base: "75vh", md: "90vh" }} mt="2">
               <iframe
                 // 2021
@@ -59,13 +59,15 @@ const ColapseDoc = () => {
                 // 2023
                 // src="https://docs.google.com/document/d/1YEapkWn2Olm7l-yMXaUirnS9ZQIRPJD-/preview"
                 // 2024
-                src = "https://docs.google.com/document/d/1ySWKzz-FA5xcDXEstyJwK9xB_emXigfxOEERBSHMWVc/preview"
+                // src = "https://docs.google.com/document/d/1ySWKzz-FA5xcDXEstyJwK9xB_emXigfxOEERBSHMWVc/preview"
+                // 2024 Maba
+                src = "https://docs.google.com/document/d/1QS0fG4nAPzrWk8QhDblHU4V4458p_6plnkO8yfRVdCk/preview"
                 width="100%"
                 height="100%"
                 onLoad={ () => setShowSkelton(true) }
               >Loading…</iframe>
             </Box>
-          </Skeleton> */}
+          </Skeleton>
           <Heading as="h2" fontSize={{ base: "xl", lg: "2xl" }} mb="2" mt="4">
             Daftar Lolos Tes Tulis Study Group 2024
           </Heading>
